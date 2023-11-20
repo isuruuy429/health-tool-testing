@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/MedicationRequest/medicationrequest-nzeps-long-term-medication> a fhir:MedicationRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medicationrequest-nzeps-long-term-medication"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"medicationrequest-nzeps-long-term-medication\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest \"medicationrequest-nzeps-long-term-medication\" </p></div><p><b>NZePS Long Term Medication Indicator</b>: true</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Codeine phosphate <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#261000)</span></p><p><b>subject</b>: <a href=\"Patient-patient-dhb.html\">Patient/patient-dhb</a> \" DOE\"</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org.nz/fhir/StructureDefinition/nzeps-long-term-medication" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:261000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "261000" ];
+       fhir:Coding.display [ fhir:value "Codeine phosphate" ]
+     ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <http://fhir.org.nz/ig/base/Patient/patient-dhb>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-dhb" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/MedicationRequest/medicationrequest-nzeps-long-term-medication.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

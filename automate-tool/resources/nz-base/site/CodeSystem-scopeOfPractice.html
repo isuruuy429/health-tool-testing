@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR.ORG.NZ.IG.BASE\Scope of practice - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.81"}
+    h3,h4,h5,h6{--heading-prefix:"7.81"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+
+      
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="http://hl7.org.nz">
+      <img height="50" alt="Project home" src="assets/images/hl7nz-logo.jpg"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7® FHIR® New Zealand Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="namingSystems.html">Identifiers</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artifacts (Json)</a>
+      </li>
+      <li>
+        <a href="definitions.xml.zip">Artifacts (Xml)</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Scope of practice</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7® FHIR® New Zealand Base Implementation Guide - Local Development build (v2.0.0). See the <a href="http://fhir.org.nz/ig/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-scopeOfPractice.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-scopeOfPractice.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-scopeOfPractice.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Scope of practice
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          Active
+          
+            as of 2022-10-13
+          
+        
+      </td>
+
+
+
+      <td>
+        <i>Realm:</i> <img alt="New Zealand flag" src="assets/images/nzl.svg" height="16" title="New Zealand"/>
+      </td>
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ScopeOfPractice</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority.</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-practitioner-scope-of-practice.html">PractitionerScopeOfPractice</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CHIR<a name="scopeOfPractice-CHIR"> </a></td><td>Chiropractor</td></tr><tr><td style="white-space:nowrap">DEAA<a name="scopeOfPractice-DEAA"> </a></td><td>Administering Local Anaesthetic in Dental Hygiene Practice</td></tr><tr><td style="white-space:nowrap">DEAC<a name="scopeOfPractice-DEAC"> </a></td><td>Adult Care in Dental Therapy Practice</td></tr><tr><td style="white-space:nowrap">DECD<a name="scopeOfPractice-DECD"> </a></td><td>Clinical Dental Technology Practice</td></tr><tr><td style="white-space:nowrap">DEDA<a name="scopeOfPractice-DEDA"> </a></td><td>Dental Auxiliary Practice</td></tr><tr><td style="white-space:nowrap">DEDH<a name="scopeOfPractice-DEDH"> </a></td><td>Dental Hygiene Practice</td></tr><tr><td style="white-space:nowrap">DEDR<a name="scopeOfPractice-DEDR"> </a></td><td>Diagnostic Radiography in Dental Therapy Practice</td></tr><tr><td style="white-space:nowrap">DEDT<a name="scopeOfPractice-DEDT"> </a></td><td>Dental Technology Practice</td></tr><tr><td style="white-space:nowrap">DEEN<a name="scopeOfPractice-DEEN"> </a></td><td>Endodontic Specialists</td></tr><tr><td style="white-space:nowrap">DEEO<a name="scopeOfPractice-DEEO"> </a></td><td>Extra Oral Radiography Practice in Dental Hygiene, Dental Auxiliary and Orthodontic Auxiliary Practice</td></tr><tr><td style="white-space:nowrap">DEGD<a name="scopeOfPractice-DEGD"> </a></td><td>General Dental Therapy Practice</td></tr><tr><td style="white-space:nowrap">DEIA<a name="scopeOfPractice-DEIA"> </a></td><td>Implant over dentures in clinical dental technology practice</td></tr><tr><td style="white-space:nowrap">DEIO<a name="scopeOfPractice-DEIO"> </a></td><td>Intra Oral Radiography in Dental Hygiene, Dental Auxiliary and Orthodontic Auxiliary Practice</td></tr><tr><td style="white-space:nowrap">DENT<a name="scopeOfPractice-DENT"> </a></td><td>General Dental Practice</td></tr><tr><td style="white-space:nowrap">DEOA<a name="scopeOfPractice-DEOA"> </a></td><td>Orthodontic Auxiliary Practice</td></tr><tr><td style="white-space:nowrap">DEOH<a name="scopeOfPractice-DEOH"> </a></td><td>Oral Health Practice</td></tr><tr><td style="white-space:nowrap">DEOM<a name="scopeOfPractice-DEOM"> </a></td><td>Oral Medicine Specialists</td></tr><tr><td style="white-space:nowrap">DEOP<a name="scopeOfPractice-DEOP"> </a></td><td>Oral Pathology Specialists</td></tr><tr><td style="white-space:nowrap">DEOR<a name="scopeOfPractice-DEOR"> </a></td><td>Oral and Maxillofacial Surgery Specialists</td></tr><tr><td style="white-space:nowrap">DEOS<a name="scopeOfPractice-DEOS"> </a></td><td>Oral Surgery Specialists</td></tr><tr><td style="white-space:nowrap">DEPA<a name="scopeOfPractice-DEPA"> </a></td><td>Paediatric Dentistry Specialists</td></tr><tr><td style="white-space:nowrap">DEPD<a name="scopeOfPractice-DEPD"> </a></td><td>Pulpotomies in Dental Therapy Practice</td></tr><tr><td style="white-space:nowrap">DEPE<a name="scopeOfPractice-DEPE"> </a></td><td>Periodontic Specialists</td></tr><tr><td style="white-space:nowrap">DEPH<a name="scopeOfPractice-DEPH"> </a></td><td>Public Health Dentistry(or Community Dentistry) Specialists</td></tr><tr><td style="white-space:nowrap">DEPS<a name="scopeOfPractice-DEPS"> </a></td><td>Prosthodontic Specialists</td></tr><tr><td style="white-space:nowrap">DERD<a name="scopeOfPractice-DERD"> </a></td><td>Radiography in Dental Therapy Practice</td></tr><tr><td style="white-space:nowrap">DERE<a name="scopeOfPractice-DERE"> </a></td><td>Restorative Dentistry Specialists</td></tr><tr><td style="white-space:nowrap">DESN<a name="scopeOfPractice-DESN"> </a></td><td>Special Needs Dentistry Specialists</td></tr><tr><td style="white-space:nowrap">DESP<a name="scopeOfPractice-DESP"> </a></td><td>Orthodontic Specialists</td></tr><tr><td style="white-space:nowrap">DESS<a name="scopeOfPractice-DESS"> </a></td><td>Stainless Steel Crowns in Dental Therapy Practice</td></tr><tr><td style="white-space:nowrap">DEUO<a name="scopeOfPractice-DEUO"> </a></td><td>Undertaking Orthodontic Procedures in Dental Hygiene Practice</td></tr><tr><td style="white-space:nowrap">DIET<a name="scopeOfPractice-DIET"> </a></td><td>Dietitian</td></tr><tr><td style="white-space:nowrap">LTAT<a name="scopeOfPractice-LTAT"> </a></td><td>Anaesthetic Technician</td></tr><tr><td style="white-space:nowrap">LTLS<a name="scopeOfPractice-LTLS"> </a></td><td>Medical Laboratory Scientist</td></tr><tr><td style="white-space:nowrap">LTLT<a name="scopeOfPractice-LTLT"> </a></td><td>Medical Laboratory Technician</td></tr><tr><td style="white-space:nowrap">LTPA<a name="scopeOfPractice-LTPA"> </a></td><td>Medical Laboratory Pre-Analytical Technician</td></tr><tr><td style="white-space:nowrap">MCAM<a name="scopeOfPractice-MCAM"> </a></td><td>Vocational Scope of Accident and Medical Practice</td></tr><tr><td style="white-space:nowrap">MCAN<a name="scopeOfPractice-MCAN"> </a></td><td>Vocational Scope of Anaesthesia</td></tr><tr><td style="white-space:nowrap">MCAP<a name="scopeOfPractice-MCAP"> </a></td><td>Vocational Scope of Pain Medicine</td></tr><tr><td style="white-space:nowrap">MCBM<a name="scopeOfPractice-MCBM"> </a></td><td>Vocational Scope of Breast Medicine</td></tr><tr><td style="white-space:nowrap">MCCG<a name="scopeOfPractice-MCCG"> </a></td><td>Vocational Scope of Clinical Genetics</td></tr><tr><td style="white-space:nowrap">MCCS<a name="scopeOfPractice-MCCS"> </a></td><td>Vocational Scope of Cardiothoracic Surgery</td></tr><tr><td style="white-space:nowrap">MCDE<a name="scopeOfPractice-MCDE"> </a></td><td>Vocational Scope of Dermatology</td></tr><tr><td style="white-space:nowrap">MCDI<a name="scopeOfPractice-MCDI"> </a></td><td>Vocational Scope of Diagnostic and Interventional Radiology</td></tr><tr><td style="white-space:nowrap">MCEM<a name="scopeOfPractice-MCEM"> </a></td><td>Vocational Scope of Emergency Medicine</td></tr><tr><td style="white-space:nowrap">MCFP<a name="scopeOfPractice-MCFP"> </a></td><td>Vocational Scope of Family Planning / Reproductive Health</td></tr><tr><td style="white-space:nowrap">MCGE<a name="scopeOfPractice-MCGE"> </a></td><td>General Scope of Practice</td></tr><tr><td style="white-space:nowrap">MCGP<a name="scopeOfPractice-MCGP"> </a></td><td>Vocational Scope of General Practice</td></tr><tr><td style="white-space:nowrap">MCGS<a name="scopeOfPractice-MCGS"> </a></td><td>Vocational Scope of General Surgery</td></tr><tr><td style="white-space:nowrap">MCIC<a name="scopeOfPractice-MCIC"> </a></td><td>Vocational Scope of Intensive Care Medicine</td></tr><tr><td style="white-space:nowrap">MCIM<a name="scopeOfPractice-MCIM"> </a></td><td>Vocational Scope of Internal Medicine</td></tr><tr><td style="white-space:nowrap">MCMA<a name="scopeOfPractice-MCMA"> </a></td><td>Vocational Scope of Medical Administration</td></tr><tr><td style="white-space:nowrap">MCMM<a name="scopeOfPractice-MCMM"> </a></td><td>Vocational Scope of Musculoskeletal Medicine</td></tr><tr><td style="white-space:nowrap">MCNS<a name="scopeOfPractice-MCNS"> </a></td><td>Vocational Scope of Neurosurgery</td></tr><tr><td style="white-space:nowrap">MCOG<a name="scopeOfPractice-MCOG"> </a></td><td>Vocational Scope of Obstetrics and Gynaecology</td></tr><tr><td style="white-space:nowrap">MCOH<a name="scopeOfPractice-MCOH"> </a></td><td>Vocational Scope of Otolaryngology Head and Neck Surgery</td></tr><tr><td style="white-space:nowrap">MCOM<a name="scopeOfPractice-MCOM"> </a></td><td>Vocational Scope of Occupational Medicine</td></tr><tr><td style="white-space:nowrap">MCOP<a name="scopeOfPractice-MCOP"> </a></td><td>Vocational Scope of Ophthalmology</td></tr><tr><td style="white-space:nowrap">MCOR<a name="scopeOfPractice-MCOR"> </a></td><td>Vocational Scope of Oral and Maxillofacial Surgery</td></tr><tr><td style="white-space:nowrap">MCOS<a name="scopeOfPractice-MCOS"> </a></td><td>Vocational Scope of Orthopaedic Surgery</td></tr><tr><td style="white-space:nowrap">MCPA<a name="scopeOfPractice-MCPA"> </a></td><td>Vocational Scope of Pathology</td></tr><tr><td style="white-space:nowrap">MCPE<a name="scopeOfPractice-MCPE"> </a></td><td>Vocational Scope of Paediatrics</td></tr><tr><td style="white-space:nowrap">MCPG<a name="scopeOfPractice-MCPG"> </a></td><td>Provisional General Scope of Practice</td></tr><tr><td style="white-space:nowrap">MCPH<a name="scopeOfPractice-MCPH"> </a></td><td>Vocational Scope of Public Health Medicine</td></tr><tr><td style="white-space:nowrap">MCPM<a name="scopeOfPractice-MCPM"> </a></td><td>Vocational Scope of Palliative Medicine</td></tr><tr><td style="white-space:nowrap">MCPR<a name="scopeOfPractice-MCPR"> </a></td><td>Vocational Scope of Plastic and Reconstructive Surgery</td></tr><tr><td style="white-space:nowrap">MCPS<a name="scopeOfPractice-MCPS"> </a></td><td>Vocational Scope of Paediatric Surgery</td></tr><tr><td style="white-space:nowrap">MCPV<a name="scopeOfPractice-MCPV"> </a></td><td>Provisional Vocational Scope of Practice</td></tr><tr><td style="white-space:nowrap">MCPY<a name="scopeOfPractice-MCPY"> </a></td><td>Vocational Scope of Psychiatry</td></tr><tr><td style="white-space:nowrap">MCRH<a name="scopeOfPractice-MCRH"> </a></td><td>Vocational Scope of Rural Hospital Medicine</td></tr><tr><td style="white-space:nowrap">MCRM<a name="scopeOfPractice-MCRM"> </a></td><td>Vocational Scope of Rehabilitation Medicine</td></tr><tr><td style="white-space:nowrap">MCRO<a name="scopeOfPractice-MCRO"> </a></td><td>Vocational Scope of Radiation Oncology</td></tr><tr><td style="white-space:nowrap">MCSH<a name="scopeOfPractice-MCSH"> </a></td><td>Vocational Scope of Sexual Health Medicine</td></tr><tr><td style="white-space:nowrap">MCSM<a name="scopeOfPractice-MCSM"> </a></td><td>Vocational Scope of Sports Medicine</td></tr><tr><td style="white-space:nowrap">MCSP<a name="scopeOfPractice-MCSP"> </a></td><td>Special Purpose Scope of Practice</td></tr><tr><td style="white-space:nowrap">MCTR<a name="scopeOfPractice-MCTR"> </a></td><td>Medical Council Temporary Registration</td></tr><tr><td style="white-space:nowrap">MCUR<a name="scopeOfPractice-MCUR"> </a></td><td>Vocational Scope of Urology</td></tr><tr><td style="white-space:nowrap">MCVO<a name="scopeOfPractice-MCVO"> </a></td><td>Vocational Scope of Practice</td></tr><tr><td style="white-space:nowrap">MCVS<a name="scopeOfPractice-MCVS"> </a></td><td>Vocational Scope of Vascular Surgery</td></tr><tr><td style="white-space:nowrap">MWIF<a name="scopeOfPractice-MWIF"> </a></td><td>Midwife</td></tr><tr><td style="white-space:nowrap">NCEN<a name="scopeOfPractice-NCEN"> </a></td><td>Enrolled Nurse</td></tr><tr><td style="white-space:nowrap">NCNA<a name="scopeOfPractice-NCNA"> </a></td><td>Nurse Assistant</td></tr><tr><td style="white-space:nowrap">NCNP<a name="scopeOfPractice-NCNP"> </a></td><td>Nurse Practitioner</td></tr><tr><td style="white-space:nowrap">NCRN<a name="scopeOfPractice-NCRN"> </a></td><td>Registered Nurse</td></tr><tr><td style="white-space:nowrap">OPDI<a name="scopeOfPractice-OPDI"> </a></td><td>Optical Dispensing(Dispensing Optician)</td></tr><tr><td style="white-space:nowrap">OPED<a name="scopeOfPractice-OPED"> </a></td><td>Educator in Optometry(Educator Optometrist)</td></tr><tr><td style="white-space:nowrap">OPET<a name="scopeOfPractice-OPET"> </a></td><td>Educator in Optometry(TPA Endorsement)(Educator Optometrist with Therapeutic Pharmaceutical Agents(TPA) Endorsement)</td></tr><tr><td style="white-space:nowrap">OPLS<a name="scopeOfPractice-OPLS"> </a></td><td>Ophthalmic Laser Surgeries</td></tr><tr><td style="white-space:nowrap">OPPO<a name="scopeOfPractice-OPPO"> </a></td><td>Provisional Optometrist</td></tr><tr><td style="white-space:nowrap">OPTE<a name="scopeOfPractice-OPTE"> </a></td><td>Optometry(TPA Endorsement)(Optometrist with Therapeutic Pharmaceutical Agents(TPA) Endorsement)</td></tr><tr><td style="white-space:nowrap">OPTP<a name="scopeOfPractice-OPTP"> </a></td><td>Optometry(Optometrist)</td></tr><tr><td style="white-space:nowrap">OSTE<a name="scopeOfPractice-OSTE"> </a></td><td>Osteopath</td></tr><tr><td style="white-space:nowrap">OCCT<a name="scopeOfPractice-OCCT"> </a></td><td>Occupational Therapist</td></tr><tr><td style="white-space:nowrap">OSED<a name="scopeOfPractice-OSED"> </a></td><td>Osteopath - Educator</td></tr><tr><td style="white-space:nowrap">OSGE<a name="scopeOfPractice-OSGE"> </a></td><td>Osteopath -Gerontology</td></tr><tr><td style="white-space:nowrap">OSPM<a name="scopeOfPractice-OSPM"> </a></td><td>Osteopath -Pain Management</td></tr><tr><td style="white-space:nowrap">OSSP<a name="scopeOfPractice-OSSP"> </a></td><td>Osteopath - Special Purpose</td></tr><tr><td style="white-space:nowrap">OSTO<a name="scopeOfPractice-OSTO"> </a></td><td>Trainee Osteopath</td></tr><tr><td style="white-space:nowrap">OSVO<a name="scopeOfPractice-OSVO"> </a></td><td>Visiting Osteopath Presenter</td></tr><tr><td style="white-space:nowrap">OSWA<a name="scopeOfPractice-OSWA"> </a></td><td>Osteopath -Western Medical Acupuncture</td></tr><tr><td style="white-space:nowrap">OSCA<a name="scopeOfPractice-OSCA"> </a></td><td>Osteopath -Child and Adolescent Health</td></tr><tr><td style="white-space:nowrap">PAPS<a name="scopeOfPractice-PAPS"> </a></td><td>Paramedic</td></tr><tr><td style="white-space:nowrap">PBPS<a name="scopeOfPractice-PBPS"> </a></td><td>Psychotherapist</td></tr><tr><td style="white-space:nowrap">PBCA<a name="scopeOfPractice-PBCA"> </a></td><td>Psychotherapist with Child and Adolescent Specialism</td></tr><tr><td style="white-space:nowrap">PBIN<a name="scopeOfPractice-PBIN"> </a></td><td>Interim Psychotherapist</td></tr><tr><td style="white-space:nowrap">PSCE<a name="scopeOfPractice-PSCE"> </a></td><td>Clinical and Educational</td></tr><tr><td style="white-space:nowrap">PSCL<a name="scopeOfPractice-PSCL"> </a></td><td>Clinical Psychologist</td></tr><tr><td style="white-space:nowrap">PSCO<a name="scopeOfPractice-PSCO"> </a></td><td>Counselling Psychologist</td></tr><tr><td style="white-space:nowrap">PSED<a name="scopeOfPractice-PSED"> </a></td><td>Educational Psychologist</td></tr><tr><td style="white-space:nowrap">PSHE<a name="scopeOfPractice-PSHE"> </a></td><td>Health Psychologist</td></tr><tr><td style="white-space:nowrap">PSIT<a name="scopeOfPractice-PSIT"> </a></td><td>Trainee or Intern Psychologist</td></tr><tr><td style="white-space:nowrap">PSNE<a name="scopeOfPractice-PSNE"> </a></td><td>Neuropsychologist</td></tr><tr><td style="white-space:nowrap">PSYC<a name="scopeOfPractice-PSYC"> </a></td><td>Psychologist</td></tr><tr><td style="white-space:nowrap">PHAR<a name="scopeOfPractice-PHAR"> </a></td><td>Pharmacist</td></tr><tr><td style="white-space:nowrap">PHIN<a name="scopeOfPractice-PHIN"> </a></td><td>Intern Pharmacist</td></tr><tr><td style="white-space:nowrap">PHPP<a name="scopeOfPractice-PHPP"> </a></td><td>Pharmacist Prescriber</td></tr><tr><td style="white-space:nowrap">PODI<a name="scopeOfPractice-PODI"> </a></td><td>Podiatrist</td></tr><tr><td style="white-space:nowrap">PODP<a name="scopeOfPractice-PODP"> </a></td><td>Podiatric Prescriber</td></tr><tr><td style="white-space:nowrap">PODR<a name="scopeOfPractice-PODR"> </a></td><td>Podiatric Radiographic Imager</td></tr><tr><td style="white-space:nowrap">PODS<a name="scopeOfPractice-PODS"> </a></td><td>Podiatric Surgeon</td></tr><tr><td style="white-space:nowrap">POVD<a name="scopeOfPractice-POVD"> </a></td><td>Visiting Podiatrist Educator/ Presenter</td></tr><tr><td style="white-space:nowrap">PHSO<a name="scopeOfPractice-PHSO"> </a></td><td>Physiotherapist</td></tr><tr><td style="white-space:nowrap">RTMR<a name="scopeOfPractice-RTMR"> </a></td><td>Magnetic Resonance Technologist</td></tr><tr><td style="white-space:nowrap">RTMS<a name="scopeOfPractice-RTMS"> </a></td><td>Sonographer</td></tr><tr><td style="white-space:nowrap">RTMT<a name="scopeOfPractice-RTMT"> </a></td><td>Nuclear Medicine Technologist</td></tr><tr><td style="white-space:nowrap">RTRT<a name="scopeOfPractice-RTRT"> </a></td><td>Radiation Therapist</td></tr><tr><td style="white-space:nowrap">RTTE<a name="scopeOfPractice-RTTE"> </a></td><td>Medical Imaging Technologist</td></tr><tr><td style="white-space:nowrap">RTTM<a name="scopeOfPractice-RTTM"> </a></td><td>Trainee Magnetic Resonance Imaging(MRI) Technologist</td></tr><tr><td style="white-space:nowrap">RTTN<a name="scopeOfPractice-RTTN"> </a></td><td>Trainee Nuclear Medicine Technologist</td></tr><tr><td style="white-space:nowrap">RTTS<a name="scopeOfPractice-RTTS"> </a></td><td>Trainee Sonographer</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:admin@hl7.org.nz">HL7 New Zealand</a>.  Package fhir.org.nz.ig.base#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 13, 2022 12:42+1300">2022-10-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

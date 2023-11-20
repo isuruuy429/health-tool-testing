@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/citizenship-status> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "citizenship-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://standards.digital.health.nz/ns/nz-citizenship-status-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"citizenship-status-yes\"> </a></td><td>Yes</td><td>This person is a citizen.</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"citizenship-status-no\"> </a></td><td>No</td><td>This person is not a citizen.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"citizenship-status-unknown\"> </a></td><td>The citizenship status is unknown</td><td/></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://standards.digital.health.nz/ns/nz-citizenship-status-code"];
+  fhir:CodeSystem.version [ fhir:value "1.1.0"];
+  fhir:CodeSystem.name [ fhir:value "CitizenshipStatus"];
+  fhir:CodeSystem.title [ fhir:value "NZ Citizenship status"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-13T12:42:02+13:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 New Zealand"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 New Zealand" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:admin@hl7.org.nz" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Is this person a NZ Citizen"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "yes" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Yes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "This person is a citizen." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "no" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "This person is not a citizen." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "The citizenship status is unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/citizenship-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

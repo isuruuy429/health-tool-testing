@@ -1,0 +1,714 @@
+[
+  {
+    "id": "fhir.org.nz.ig.base",
+    "type": "ImplementationGuide",
+    "url": "http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base",
+    "version": "2.0.0",
+    "name": "HL7FHIRNewZealandBaseImplementationGuide"
+  },
+  {
+    "id": "hpiFacility",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/hpiFacility",
+    "name": "HPIFacility"
+  },
+  {
+    "id": "hpiOrganization",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/hpiOrganization",
+    "name": "HPIOrganization"
+  },
+  {
+    "id": "hpiProvider",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/hpiProvider",
+    "name": "HPIProvider"
+  },
+  {
+    "id": "hpipractitionerrole",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/hpipractitionerrole",
+    "name": "HPIPractitionerRole"
+  },
+  {
+    "id": "nhi",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nhi",
+    "name": "NHI"
+  },
+  {
+    "id": "nzbn",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzbn",
+    "name": "NBN"
+  },
+  {
+    "id": "nzchrir",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzchrir",
+    "name": "NZChiro"
+  },
+  {
+    "id": "nzdental",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzdental",
+    "name": "NZDental"
+  },
+  {
+    "id": "nzdiet",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzdiet",
+    "name": "NZDiet"
+  },
+  {
+    "id": "nzmc",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzmc",
+    "name": "NZMC"
+  },
+  {
+    "id": "nzmwife",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzmwife",
+    "name": "NZMidwife"
+  },
+  {
+    "id": "nznc",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nznc",
+    "name": "NZNC"
+  },
+  {
+    "id": "nzocc",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzocc",
+    "name": "NZOCC"
+  },
+  {
+    "id": "nzopt",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzopt",
+    "name": "NZOpt"
+  },
+  {
+    "id": "nzost",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzost",
+    "name": "NZOst"
+  },
+  {
+    "id": "nzparamed",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzparamed",
+    "name": "NZParamed"
+  },
+  {
+    "id": "nzpharm",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzpharm",
+    "name": "NZMC"
+  },
+  {
+    "id": "nzphysio",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzphysio",
+    "name": "NZPhysio"
+  },
+  {
+    "id": "nzpod",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzpod",
+    "name": "NZPodiatry"
+  },
+  {
+    "id": "nzpsycho",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzpsycho",
+    "name": "NZPsycho"
+  },
+  {
+    "id": "nzpsyhc",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzpsyhc",
+    "name": "NZPsych"
+  },
+  {
+    "id": "nzrad",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzrad",
+    "name": "NZRadiologist"
+  },
+  {
+    "id": "nzscience",
+    "type": "NamingSystem",
+    "url": "http://fhir.org.nz/ig/base/NamingSystem/nzscience",
+    "name": "NZScience"
+  },
+  {
+    "id": "NzAddress",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzAddress",
+    "version": "2.0.0",
+    "name": "NzAddress"
+  },
+  {
+    "id": "NzCondition",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzCondition",
+    "version": "2.0.0",
+    "name": "NzCondition"
+  },
+  {
+    "id": "NzContactPoint",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzContactpoint",
+    "version": "2.0.0",
+    "name": "NzContactPoint"
+  },
+  {
+    "id": "NzCoverage",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzCoverage",
+    "version": "2.0.0",
+    "name": "NzCoverage"
+  },
+  {
+    "id": "NzHealthcareService",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzHealthcareService",
+    "version": "2.0.0",
+    "name": "NzHealthcareService"
+  },
+  {
+    "id": "NzLocation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzLocation",
+    "version": "2.0.0",
+    "name": "NzLocation"
+  },
+  {
+    "id": "NzMedicationRequest",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzMedicationRequest",
+    "version": "2.0.0",
+    "name": "NzMedicationRequest"
+  },
+  {
+    "id": "NzMedicationStatement",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzMedicationStatement",
+    "version": "2.0.0",
+    "name": "NzMedicationStatement"
+  },
+  {
+    "id": "NzOrganization",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzOrganization",
+    "version": "2.0.0",
+    "name": "NzOrganization"
+  },
+  {
+    "id": "NzPatient",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzPatient",
+    "version": "2.0.0",
+    "name": "NzPatient"
+  },
+  {
+    "id": "NzPractitioner",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner",
+    "version": "2.0.0",
+    "name": "NzPractitioner"
+  },
+  {
+    "id": "NzPractitionerRole",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/NzPractitionerRole",
+    "version": "2.0.0",
+    "name": "NzPractitionerRole"
+  },
+  {
+    "id": "additional-authorisation",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation",
+    "version": "2.0.0",
+    "name": "AdditionalAuthorisation"
+  },
+  {
+    "id": "alias-type",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/alias-type",
+    "version": "2.0.0",
+    "name": "AliasType"
+  },
+  {
+    "id": "building-name",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/building-name",
+    "version": "0.1.0",
+    "name": "Building_name"
+  },
+  {
+    "id": "condition-on-practice",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice",
+    "version": "2.0.0",
+    "name": "ConditionOnPractice"
+  },
+  {
+    "id": "contactpoint-purpose",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose",
+    "version": "1.0",
+    "name": "Contactpoint_purpose"
+  },
+  {
+    "id": "death-date",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/death-date",
+    "version": "0.1.0",
+    "name": "Death_date"
+  },
+  {
+    "id": "dhb",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/dhb",
+    "version": "1.0",
+    "name": "Dhb"
+  },
+  {
+    "id": "domicile-code",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/domicile-code",
+    "version": "0.1.0",
+    "name": "Domicile_code"
+  },
+  {
+    "id": "edi-address",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
+    "version": "0.1.0",
+    "name": "Edi_address"
+  },
+  {
+    "id": "educational-qualification",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification",
+    "version": "2.0.0",
+    "name": "EducationalQualification"
+  },
+  {
+    "id": "established",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/established",
+    "version": "2.0.0",
+    "name": "Established"
+  },
+  {
+    "id": "funded-programme",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/funded-programme",
+    "version": "1.0",
+    "name": "Funded_programme"
+  },
+  {
+    "id": "information-source",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/information-source",
+    "version": "0.1.0",
+    "name": "Information_source"
+  },
+  {
+    "id": "long-term-condition",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/long-term-condition",
+    "version": "1.0",
+    "name": "Long_term_condition"
+  },
+  {
+    "id": "messaging-address",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/messaging-address",
+    "version": "0.1.0",
+    "name": "Messaging_address"
+  },
+  {
+    "id": "nz-citizenship",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship",
+    "version": "1.1.0",
+    "name": "Nz_citizenship"
+  },
+  {
+    "id": "nz-ethnicity",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+    "version": "0.1.0",
+    "name": "Nz_ethnicity"
+  },
+  {
+    "id": "nz-geocode",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-geocode",
+    "version": "0.1.0",
+    "name": "Nz_geocode"
+  },
+  {
+    "id": "nz-iwi",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-iwi",
+    "version": "2.0.0",
+    "name": "Nz_iwi"
+  },
+  {
+    "id": "nz-residency",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency",
+    "version": "2.0.0",
+    "name": "NZResidency"
+  },
+  {
+    "id": "nzeps-long-term-medication",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nzeps-long-term-medication",
+    "version": "1.0",
+    "name": "Nzeps_long_term_medication"
+  },
+  {
+    "id": "nzeps-supply-period-reason",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nzeps-supply-period-reason",
+    "version": "1.0",
+    "name": "Nzeps_supply_period_reason"
+  },
+  {
+    "id": "nzeps-unusual-dose-quantity",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/nzeps-unusual-dose-quantity",
+    "version": "1.0",
+    "name": "Nzeps_unusual_dose_quantity"
+  },
+  {
+    "id": "pho",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/pho",
+    "version": "1.0",
+    "name": "Pho"
+  },
+  {
+    "id": "practitionerRole-creator",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator",
+    "version": "2.0.0",
+    "name": "PractitionerRoleCreator"
+  },
+  {
+    "id": "practitionerRole-status-reason",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason",
+    "version": "2.0.0",
+    "name": "PractitionerRoleStatusReason"
+  },
+  {
+    "id": "registration-initial-date",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date",
+    "version": "2.0.0",
+    "name": "RegistrationInitialDate"
+  },
+  {
+    "id": "registration-status-code",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code",
+    "version": "2.0.0",
+    "name": "RegistrationStatusCode"
+  },
+  {
+    "id": "scope-of-practice",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice",
+    "version": "2.0.0",
+    "name": "ScopeOfPractice"
+  },
+  {
+    "id": "sex-at-birth",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth",
+    "version": "0.2.0",
+    "name": "Sex_at_birth"
+  },
+  {
+    "id": "suburb",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
+    "version": "1.0",
+    "name": "Suburb"
+  },
+  {
+    "id": "location-alias-type",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/alias-type-code",
+    "version": "1.0.0",
+    "name": "AliasType"
+  },
+  {
+    "id": "contact-point-purpose",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/contact-point-purpose-code",
+    "version": "1.0.0",
+    "name": "ContactPointPurpose"
+  },
+  {
+    "id": "coverage-category",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/coverage-category-code",
+    "version": "1.0.0",
+    "name": "CoverageCategory"
+  },
+  {
+    "id": "coverage-type",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/coverage-type-code",
+    "version": "1.0.0",
+    "name": "CoverageType"
+  },
+  {
+    "id": "dhb",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/dhb-code",
+    "version": "1.0.0",
+    "name": "DHB"
+  },
+  {
+    "id": "dod-information-source",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/dod-information-source-code",
+    "version": "1.0.0",
+    "name": "DodInformationSource"
+  },
+  {
+    "id": "domicile-code",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/domicile-code",
+    "version": "3.0",
+    "name": "DomicileCode"
+  },
+  {
+    "id": "ethnicity",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code",
+    "version": "2.1.0",
+    "name": "Ethnicity"
+  },
+  {
+    "id": "funded-programme",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/funded-programme-code",
+    "version": "1.0.0",
+    "name": "FundedProgramme"
+  },
+  {
+    "id": "hpi-practitionerrole-status-reason",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/hpi-practitioner-role-status-reason-code",
+    "version": "1.0.0",
+    "name": "PractitionerRoleStatusReason"
+  },
+  {
+    "id": "information-source",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/information-source-code",
+    "version": "1.0.0",
+    "name": "InformationSource"
+  },
+  {
+    "id": "iwi",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/iwi-code",
+    "version": "2.0.0",
+    "name": "Iwi"
+  },
+  {
+    "id": "nhi-use",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/nhi-use-code",
+    "version": "2.0.0",
+    "name": "NHIUse"
+  },
+  {
+    "id": "citizenship-status",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-citizenship-status-code",
+    "version": "1.1.0",
+    "name": "CitizenshipStatus"
+  },
+  {
+    "id": "datumCode",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-datum-code",
+    "version": "2.0.0",
+    "name": "DatumCode"
+  },
+  {
+    "id": "nz-residency",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/nz-residency-code",
+    "version": "1.1.0",
+    "name": "NZResidency"
+  },
+  {
+    "id": "pho",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/pho-code",
+    "version": "1.0.0",
+    "name": "PHO"
+  },
+  {
+    "id": "practitioner-additional-authorisation-code",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code",
+    "version": "1.0.0",
+    "name": "PractitionerAdditionalAuthorisationCode"
+  },
+  {
+    "id": "practitioner-registration-status-code",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code",
+    "version": "2.0",
+    "name": "PractitionerRegistrationStatusCode"
+  },
+  {
+    "id": "practitioner-scope-of-practice",
+    "type": "ValueSet",
+    "url": "https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code",
+    "version": "1.0.0",
+    "name": "PractitionerScopeOfPractice"
+  },
+  {
+    "id": "alias-type",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/alias-type-code",
+    "version": "1.0.0",
+    "name": "AliasType"
+  },
+  {
+    "id": "contact-point-purpose",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/contact-point-purpose-code",
+    "version": "1.0.0",
+    "name": "ContactPointPurpose"
+  },
+  {
+    "id": "coverage-category",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/coverage-category-code",
+    "version": "1.0.0",
+    "name": "CoverageCategory"
+  },
+  {
+    "id": "coverage-type",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/coverage-type-code",
+    "version": "1.0.0",
+    "name": "CoverageType"
+  },
+  {
+    "id": "dhb-code",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/dhb-code",
+    "version": "1.0.0",
+    "name": "Dhb_code"
+  },
+  {
+    "id": "domicile-code",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/domicile-code",
+    "version": "3.0",
+    "name": "DomicileCode"
+  },
+  {
+    "id": "ethnicityL4",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+    "version": "2.1.0",
+    "name": "EthnicityL4"
+  },
+  {
+    "id": "funded-programme",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/funded-programme-code",
+    "version": "1.0.0",
+    "name": "FundedProgramme"
+  },
+  {
+    "id": "hpi-practitionerRole-status-reason",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/hpi-practitioner-role-status-reason-code",
+    "version": "1.0.0",
+    "name": "PractitionerRoleStatusReason"
+  },
+  {
+    "id": "information-source",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/information-source-code",
+    "version": "1.0.0",
+    "name": "InformationSource"
+  },
+  {
+    "id": "iwi-code",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/iwi-code",
+    "version": "2.0.0",
+    "name": "Iwi_code"
+  },
+  {
+    "id": "citizenship-status",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/nz-citizenship-status-code",
+    "version": "1.1.0",
+    "name": "CitizenshipStatus"
+  },
+  {
+    "id": "datum-code",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/nz-datum-code",
+    "version": "2.0.0",
+    "name": "DatumCode"
+  },
+  {
+    "id": "nz-residency",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/nz-residency-code",
+    "version": "1.1.0",
+    "name": "NZResidency"
+  },
+  {
+    "id": "pho-status",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/pho-code",
+    "version": "1.0.0",
+    "name": "PHO"
+  },
+  {
+    "id": "practitioner-additional-authorisation",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/practitioner-additional-authorisation-code",
+    "version": "1.0.0",
+    "name": "AdditionalAuthorisation"
+  },
+  {
+    "id": "practitioner-registration-status-code",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/practitioner-registration-status-code",
+    "version": "2.0",
+    "name": "PractitionerRegistrationStatusCode"
+  },
+  {
+    "id": "scopeOfPractice",
+    "type": "CodeSystem",
+    "url": "https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code",
+    "version": "1.0.0",
+    "name": "ScopeOfPractice"
+  }
+]

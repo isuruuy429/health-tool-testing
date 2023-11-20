@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR.ORG.NZ.IG.BASE\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+
+      
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="http://hl7.org.nz">
+      <img height="50" alt="Project home" src="assets/images/hl7nz-logo.jpg"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7® FHIR® New Zealand Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="namingSystems.html">Identifiers</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artifacts (Json)</a>
+      </li>
+      <li>
+        <a href="definitions.xml.zip">Artifacts (Xml)</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7® FHIR® New Zealand Base Implementation Guide - Local Development build (v2.0.0). See the <a href="http://fhir.org.nz/ig/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzCondition.html"
+                     title="StructureDefinition/NzCondition">Condition resource for use in NZ</a>
+               </td>
+               <td>
+<p>This profile adds the Long-Term Condition extension to the base Condition resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzCoverage.html"
+                     title="StructureDefinition/NzCoverage">Coverage resource for use in NZ (Trial use)</a>
+               </td>
+               <td>
+<p>Coverage resource for use in NZ (Trial use)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzHealthcareService.html"
+                     title="StructureDefinition/NzHealthcareService">HealthcareService resource for use in NZ</a>
+               </td>
+               <td>
+<p>HealthcareService resource for use in NZ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzLocation.html"
+                     title="StructureDefinition/NzLocation">Location resource for use in NZ</a>
+               </td>
+               <td>
+<p>Location resource for use in NZ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzMedicationRequest.html"
+                     title="StructureDefinition/NzMedicationRequest">MedicationRequest resource for use in NZ</a>
+               </td>
+               <td>
+<p>MedicationRequest resource for use in NZ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzMedicationStatement.html"
+                     title="StructureDefinition/NzMedicationStatement">MedicationStatement resource for use in NZ</a>
+               </td>
+               <td>
+<p>MedicationStatement resource for use in NZ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzOrganization.html"
+                     title="StructureDefinition/NzOrganization">Organization resource for use in NZ</a>
+               </td>
+               <td>
+<p>Organization resource for use in NZ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzPatient.html"
+                     title="StructureDefinition/NzPatient">NZ Patient</a>
+               </td>
+               <td>
+<p>The base New Zealand Patient profile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzPractitioner.html"
+                     title="StructureDefinition/NzPractitioner">Practitioner resource for use in NZ</a>
+               </td>
+               <td>
+<p>Practitioner resource for use in NZ</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzPractitionerRole.html"
+                     title="StructureDefinition/NzPractitionerRole">PractitionerRole resource for use in NZ</a>
+               </td>
+               <td>
+<p>PractitionerRole resource for use in NZ</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzAddress.html"
+                     title="StructureDefinition/NzAddress">Common NZ Address datatype</a>
+               </td>
+               <td>
+<p>Adds building name, suburb, domicile code and geocode to the Address datatype</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-NzContactPoint.html"
+                     title="StructureDefinition/NzContactPoint">Common NZ ContactPoint datatype</a>
+               </td>
+               <td>
+<p>This profile adds the Contact Point Purpose and EDI address extensions to the standard data type</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-additional-authorisation.html"
+                     title="StructureDefinition/additional-authorisation">AdditionalAuthorisation</a>
+               </td>
+               <td>
+<p>Additional authorisations that a practitioner is authorised to perform</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-alias-type.html"
+                     title="StructureDefinition/alias-type">AliasType</a>
+               </td>
+               <td>
+<p>Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-building-name.html"
+                     title="StructureDefinition/building-name">Building Name</a>
+               </td>
+               <td>
+<p>The name of a building cited in an address.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-on-practice.html"
+                     title="StructureDefinition/condition-on-practice">ConditionOnPractice</a>
+               </td>
+               <td>
+<p>A full description of the conditions the health practitioner is subject to in relation to their scope of practice.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-contactpoint-purpose.html"
+                     title="StructureDefinition/contactpoint-purpose">A specific purpose for which this ContactPoint dataType would be used</a>
+               </td>
+               <td>
+<p>A specific purpose for which this ContactPoint dataType would be used. An example would be to indicate that this ContactPoint is used for video conferencing.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-death-date.html"
+                     title="StructureDefinition/death-date">Date of death</a>
+               </td>
+               <td>
+<p>The date of death of the individual, plus the source of that information</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dhb.html" title="StructureDefinition/dhb">District Health Board linked to a NZ Healthcare Service, Location or Patient</a>
+               </td>
+               <td>
+<p>District Health Board relating to a NZ Healthcare Service, Location (Facility) or Patient (primary, physical home address).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-domicile-code.html"
+                     title="StructureDefinition/domicile-code">NZ Domicile Code</a>
+               </td>
+               <td>
+<p>NZ Domicile Code. Derived from a patient’s primary physical, home address.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-edi-address.html"
+                     title="StructureDefinition/edi-address">EDI Address</a>
+               </td>
+               <td>
+<p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being ‘other’. The value of the extension is the EDI supplier, the actual EDI address is the value element. Note that a new extension ‘messaging address’ is preferred.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-educational-qualification.html"
+                     title="StructureDefinition/educational-qualification">EducationalQualification</a>
+               </td>
+               <td>
+<p>Educational qualifications a practitioner has. These may or may not be related to registration information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-established.html"
+                     title="StructureDefinition/established">Established</a>
+               </td>
+               <td>
+<p>The period over which the location or Organization is open</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-funded-programme.html"
+                     title="StructureDefinition/funded-programme">Funded Healthcare Programme</a>
+               </td>
+               <td>
+<p>Funded NZ Healthcare Programmes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-information-source.html"
+                     title="StructureDefinition/information-source">Information Source</a>
+               </td>
+               <td>
+<p>The official source of information held about a patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-long-term-condition.html"
+                     title="StructureDefinition/long-term-condition">Long Term Condition Indicator</a>
+               </td>
+               <td>
+<p>Long Term Condition Indicator. A long term condition can be  defined as any ongoing, long term or recurring conditions that can have a significant impact on people’s lives.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-messaging-address.html"
+                     title="StructureDefinition/messaging-address">Messaging Address</a>
+               </td>
+               <td>
+<p>The address to where electronic communications might be sent. For historical reasons, there is an overlap with edi-address.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nz-residency.html"
+                     title="StructureDefinition/nz-residency">NZResidency</a>
+               </td>
+               <td>
+<p>NZ Residency status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nz-citizenship.html"
+                     title="StructureDefinition/nz-citizenship">NZ Citizenship</a>
+               </td>
+               <td>
+<p>New Zealand citizenship</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nz-ethnicity.html"
+                     title="StructureDefinition/nz-ethnicity">NZ Ethnicity</a>
+               </td>
+               <td>
+<p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
+
+<p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nz-geocode.html"
+                     title="StructureDefinition/nz-geocode">NZ Geocode</a>
+               </td>
+               <td>
+<p>New Zealand Geocode. This uses a different datum from that defined in the HL7 FHIR specification for a Geocode.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nz-iwi.html"
+                     title="StructureDefinition/nz-iwi">Nz_iwi</a>
+               </td>
+               <td>
+<p>Persons Iwi affiliation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nzeps-long-term-medication.html"
+                     title="StructureDefinition/nzeps-long-term-medication">NZePS Long Term Medication Indicator</a>
+               </td>
+               <td>
+<p>NZePS Long Term Medication Indicator</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nzeps-supply-period-reason.html"
+                     title="StructureDefinition/nzeps-supply-period-reason">NZePS Supply Period Reason</a>
+               </td>
+               <td>
+<p>The reason for a non-standard Supply Period.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-nzeps-unusual-dose-quantity.html"
+                     title="StructureDefinition/nzeps-unusual-dose-quantity">NZePS Unusual Dose Quantity Indicator</a>
+               </td>
+               <td>
+<p>NZePS Unusual Dose Quantity Indicator</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-pho.html" title="StructureDefinition/pho">Primary Healthcare Organisation</a>
+               </td>
+               <td>
+<p>Primary Healthcare Organisation associated with a General Practice linked to a NZ Healthcare Service, Location (Facility) or Patient (GP).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-practitionerRole-creator.html"
+                     title="StructureDefinition/practitionerRole-creator">PractitionerRoleCreator</a>
+               </td>
+               <td>
+<p>The organisation and person that created this role</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-practitionerRole-status-reason.html"
+                     title="StructureDefinition/practitionerRole-status-reason">PractitionerRoleStatusReason</a>
+               </td>
+               <td>
+<p>The reason for the status. Generally only used for inactive resources.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-registration-initial-date.html"
+                     title="StructureDefinition/registration-initial-date">RegistrationInitialDate</a>
+               </td>
+               <td>
+<p>The date the practitioner first became registered with the Responsible Authority or professional body</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-registration-status-code.html"
+                     title="StructureDefinition/registration-status-code">RegistrationStatusCode</a>
+               </td>
+               <td>
+<p>An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-scope-of-practice.html"
+                     title="StructureDefinition/scope-of-practice">ScopeOfPractice</a>
+               </td>
+               <td>
+<p>The type or range of health services a practitioner is authorised to perform, as determined by the Responsible Authority or professional body.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sex-at-birth.html"
+                     title="StructureDefinition/sex-at-birth">Sex At Birth</a>
+               </td>
+               <td>
+<p>A person’s sex at the time of their birth (considered to be immutable).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-suburb.html"
+                     title="StructureDefinition/suburb">NZ Suburb</a>
+               </td>
+               <td>
+<p>Suburb element of a NZ Address.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-location-alias-type.html"
+                     title="ValueSet/location-alias-type">Alias types</a>
+               </td>
+               <td>
+<p>The complete set of alias types that apply to Locations and Organizations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-citizenship-status.html"
+                     title="ValueSet/citizenship-status">NZ Citizenship status</a>
+               </td>
+               <td>
+<p>Citizenship status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-contact-point-purpose.html"
+                     title="ValueSet/contact-point-purpose">ContactPoint purpose</a>
+               </td>
+               <td>
+<p>The purpose of a ContactPoint - what it is used for.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-coverage-category.html"
+                     title="ValueSet/coverage-category">Coverage Category</a>
+               </td>
+               <td>
+<p>New Zealand codes for Coverage category types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-coverage-type.html" title="ValueSet/coverage-type">Coverage Type</a>
+               </td>
+               <td>
+<p>New Zealand codes for Coverage Types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-dhb.html" title="ValueSet/dhb">District Health Board Identifer</a>
+               </td>
+               <td>
+<p>District Health Board Identifer. Assigned by the HPI.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-datumCode.html" title="ValueSet/datumCode">Datum code</a>
+               </td>
+               <td>
+<p>Datum codes used</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-dod-information-source.html"
+                     title="ValueSet/dod-information-source">Death date Information Source</a>
+               </td>
+               <td>
+<p>The source from where the date of death was sourced</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-domicile-code.html" title="ValueSet/domicile-code">Domicile Code</a>
+               </td>
+               <td>
+<p>Domicile Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ethnicity.html" title="ValueSet/ethnicity">Ethnicity of a person</a>
+               </td>
+               <td>
+<p>Codes to record a person’s ethnicity, drawn from <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">Level 4 of the Ethnicity code system</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-funded-programme.html" title="ValueSet/funded-programme">Funded Programme</a>
+               </td>
+               <td>
+<p>Some sort of funded programme</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-information-source.html"
+                     title="ValueSet/information-source">Information Source</a>
+               </td>
+               <td>
+<p>The source from where the value of this item was sourced</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-iwi.html" title="ValueSet/iwi">Iwi</a>
+               </td>
+               <td>
+<p>New Zealand iwi codes.  The 2 digit codes are abstract codes and provided in the expansion for navigational purposes. A user should not select an abstract code directly as a proper value.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-nhi-use.html" title="ValueSet/nhi-use">Valid use values for NHI</a>
+               </td>
+               <td>
+<p>NHI Use codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-nz-residency.html" title="ValueSet/nz-residency">NZ Residency status</a>
+               </td>
+               <td>
+<p>Is the person a NZ resident</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-pho.html" title="ValueSet/pho">PHO</a>
+               </td>
+               <td>
+<p>Primary Healthcare Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-practitioner-additional-authorisation-code.html"
+                     title="ValueSet/practitioner-additional-authorisation-code">Additional Practitioner authorisations</a>
+               </td>
+               <td>
+<p>A coded type for additional authorisations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-practitioner-registration-status-code.html"
+                     title="ValueSet/practitioner-registration-status-code">Registration Status of Practitioners</a>
+               </td>
+               <td>
+<p>The code list represents the current practicing status of the Provider Person as per their registration with an RA.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-hpi-practitionerrole-status-reason.html"
+                     title="ValueSet/hpi-practitionerrole-status-reason">PractitionerRole status reason</a>
+               </td>
+               <td>
+<p>The reason for the current status of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-practitioner-scope-of-practice.html"
+                     title="ValueSet/practitioner-scope-of-practice">Scope of practice</a>
+               </td>
+               <td>
+<p>A coded type for professional scope of practice.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-practitioner-additional-authorisation.html"
+                     title="CodeSystem/practitioner-additional-authorisation">Additional Authorisation</a>
+               </td>
+               <td>
+<p>Additional authorisations that a practitioner is authorised to practice or prescribe.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-alias-type.html" title="CodeSystem/alias-type">Type of Alias</a>
+               </td>
+               <td>
+<p>Used in Organization and Location to indicate what is the type of Alias</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-citizenship-status.html"
+                     title="CodeSystem/citizenship-status">NZ Citizenship status</a>
+               </td>
+               <td>
+<p>Is this person a NZ Citizen</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-contact-point-purpose.html"
+                     title="CodeSystem/contact-point-purpose">ContactPoint purpose</a>
+               </td>
+               <td>
+<p>The purpose of a ContactPoint - what it is used for.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-coverage-category.html"
+                     title="CodeSystem/coverage-category">Coverage category</a>
+               </td>
+               <td>
+<p>New Zealand codes for Coverage category types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-coverage-type.html" title="CodeSystem/coverage-type">Coverage type</a>
+               </td>
+               <td>
+<p>New Zealand codes for Coverage Types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-datum-code.html" title="CodeSystem/datum-code">Datum codes</a>
+               </td>
+               <td>
+<p>Possible datum codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-dhb-code.html" title="CodeSystem/dhb-code">NZ DHB</a>
+               </td>
+               <td>
+<p>NZ District Health Board (HPI-ORG) Codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-domicile-code.html" title="CodeSystem/domicile-code">Domicile Code</a>
+               </td>
+               <td>
+<p>Domicile Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ethnicityL4.html" title="CodeSystem/ethnicityL4">Level 4 ethnicity codes</a>
+               </td>
+               <td>
+<p>Codes to record a person’s ethnicity, drawn from Level 4 of the Ethnicity code system 
+described <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-funded-programme.html"
+                     title="CodeSystem/funded-programme">Funded Programme</a>
+               </td>
+               <td>
+<p>Some sort of funded programme</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-information-source.html"
+                     title="CodeSystem/information-source">Information Source</a>
+               </td>
+               <td>
+<p>All possible sources of information</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-iwi-code.html" title="CodeSystem/iwi-code">NZ Iwi</a>
+               </td>
+               <td>
+<p>NZ Iwi Statistical Standard: 27 May 2022.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-nz-residency.html" title="CodeSystem/nz-residency">NZ Residency status</a>
+               </td>
+               <td>
+<p>NZ Residency status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-pho-status.html" title="CodeSystem/pho-status">PHO</a>
+               </td>
+               <td>
+<p>Primary Healthcare Organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-practitioner-registration-status-code.html"
+                     title="CodeSystem/practitioner-registration-status-code">Registration Status of Practitioners</a>
+               </td>
+               <td>
+<p>The code list represents the current practicing status of the Provider Person as per their registration with an RA.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-hpi-practitionerRole-status-reason.html"
+                     title="CodeSystem/hpi-practitionerRole-status-reason">PractitionerRole status reason</a>
+               </td>
+               <td>
+<p>The reason for the current status of PractitionerRole</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-scopeOfPractice.html"
+                     title="CodeSystem/scopeOfPractice">Scope of practice</a>
+               </td>
+               <td>
+<p>A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Terminology: Naming Systems </h3>
+   <p>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-hpiFacility.html" title="NamingSystem/hpiFacility">hpiFacility</a>
+               </td>
+               <td>
+<p>HPI facilities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-hpiOrganization.html"
+                     title="NamingSystem/hpiOrganization">hpiOrganization</a>
+               </td>
+               <td>
+<p>HPI organizations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-hpiProvider.html" title="NamingSystem/hpiProvider">hpiProvider</a>
+               </td>
+               <td>
+<p>HPI providers</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-hpipractitionerrole.html"
+                     title="NamingSystem/hpipractitionerrole">hpipractitionerrole</a>
+               </td>
+               <td>
+<p>HPI PractitionerRole id</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nhi.html" title="NamingSystem/nhi">nhi</a>
+               </td>
+               <td>
+<p>NHI number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzbn.html" title="NamingSystem/nzbn">nzbn</a>
+               </td>
+               <td>
+<p>New Zealand Business Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzchrir.html" title="NamingSystem/nzchrir">nzchrir</a>
+               </td>
+               <td>
+<p>Chiropractic Board Register number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzdental.html" title="NamingSystem/nzdental">nzdental</a>
+               </td>
+               <td>
+<p>Dental Council Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzdiet.html" title="NamingSystem/nzdiet">nzdiet</a>
+               </td>
+               <td>
+<p>Dietitians Board Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzmc.html" title="NamingSystem/nzmc">nzmc</a>
+               </td>
+               <td>
+<p>Medical Council of New Zealand Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzmwife.html" title="NamingSystem/nzmwife">nzmwife</a>
+               </td>
+               <td>
+<p>Midwifery Council Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nznc.html" title="NamingSystem/nznc">nznc</a>
+               </td>
+               <td>
+<p>Nursing Council of New Zealand Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzocc.html" title="NamingSystem/nzocc">nzocc</a>
+               </td>
+               <td>
+<p>Occupational Therapy Board Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzopt.html" title="NamingSystem/nzopt">nzopt</a>
+               </td>
+               <td>
+<p>Optometrists &amp; Dispensing Opticians Board Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzost.html" title="NamingSystem/nzost">nzost</a>
+               </td>
+               <td>
+<p>Osteopathic Council Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzparamed.html" title="NamingSystem/nzparamed">nzparamed</a>
+               </td>
+               <td>
+<p>Paramedic Council Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzpharm.html" title="NamingSystem/nzpharm">nzpharm</a>
+               </td>
+               <td>
+<p>Pharmacy Council of New Zealand Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzphysio.html" title="NamingSystem/nzphysio">nzphysio</a>
+               </td>
+               <td>
+<p>Physiotherapy Board Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzpod.html" title="NamingSystem/nzpod">nzpod</a>
+               </td>
+               <td>
+<p>Podiatrists Board Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzpsycho.html" title="NamingSystem/nzpsycho">nzpsycho</a>
+               </td>
+               <td>
+<p>Psychotherapists Board register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzpsyhc.html" title="NamingSystem/nzpsyhc">nzpsyhc</a>
+               </td>
+               <td>
+<p>Psychologists Board Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzrad.html" title="NamingSystem/nzrad">nzrad</a>
+               </td>
+               <td>
+<p>Medical Radiation Technologists Board Register Number</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-nzscience.html" title="NamingSystem/nzscience">nzscience</a>
+               </td>
+               <td>
+<p>Medical Sciences Council Register Number</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="7"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-CoverageCSC.html" title="Coverage/CoverageCSC">CoverageCSC</a>
+               </td>
+               <td>
+<p>CSC Coverage example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-CoverageGMS.html" title="Coverage/CoverageGMS">CoverageGMS</a>
+               </td>
+               <td>
+<p>GMS Coverage example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-CoverageHUHC.html" title="Coverage/CoverageHUHC">CoverageHUHC</a>
+               </td>
+               <td>
+<p>HUHC Coverage example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-condition-long-term-condition.html"
+                     title="Condition/condition-long-term-condition">condition-long-term-condition</a>
+               </td>
+               <td>
+<p>Example of long term condition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-location-alias-type.html"
+                     title="Location/location-alias-type">location-alias-type</a>
+               </td>
+               <td>
+<p>A location with an alias type against the alias.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-location-established.html"
+                     title="Location/location-established">location-established</a>
+               </td>
+               <td>
+<p>A location with the date established</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-medicationrequest-nzeps-long-term-medication.html"
+                     title="MedicationRequest/medicationrequest-nzeps-long-term-medication">medicationrequest-nzeps-long-term-medication</a>
+               </td>
+               <td>
+<p>Example of long term medication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-medicationrequest-nzeps-supply-period-reason.html"
+                     title="MedicationRequest/medicationrequest-nzeps-supply-period-reason">medicationrequest-nzeps-supply-period-reason</a>
+               </td>
+               <td>
+<p>Example of supply period reason</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MedicationRequest-medicationrequest-nzeps-unusual-dose-quantity.html"
+                     title="MedicationRequest/medicationrequest-nzeps-unusual-dose-quantity">medicationrequest-nzeps-unusual-dose-quantity</a>
+               </td>
+               <td>
+<p>Example of sunusual does quantity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-organization-edi-address.html"
+                     title="Organization/organization-edi-address">organization-edi-address</a>
+               </td>
+               <td>
+<p>Example of edi address extension</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-organization-funded-programme.html"
+                     title="Organization/organization-funded-programme">organization-funded-programme</a>
+               </td>
+               <td>
+<p>Example of Funded programme</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-organization-moh.html"
+                     title="Organization/organization-moh">organization-moh</a>
+               </td>
+               <td>
+<p>Ministrt Of Health</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-address-building-name.html"
+                     title="Patient/patient-address-building-name">patient-address-building-name</a>
+               </td>
+               <td>
+<p>Patient with building name in the address</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-address-suburb.html"
+                     title="Patient/patient-address-suburb">patient-address-suburb</a>
+               </td>
+               <td>
+<p>Patient with building name and suburb in the address</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-building-name.html"
+                     title="Patient/patient-building-name">patient-building-name</a>
+               </td>
+               <td>
+<p>Example of building name extension</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-deceased-information-source.html"
+                     title="Patient/patient-deceased-information-source">patient-deceased-information-source</a>
+               </td>
+               <td>
+<p>Example of information source</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-dhb.html" title="Patient/patient-dhb">patient-dhb</a>
+               </td>
+               <td>
+<p>Patient1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-domicile-code.html"
+                     title="Patient/patient-domicile-code">patient-domicile-code</a>
+               </td>
+               <td>
+<p>Example of Domicile code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-information-source.html"
+                     title="Patient/patient-information-source">patient-information-source</a>
+               </td>
+               <td>
+<p>Example of information source</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-messaging-address.html"
+                     title="Patient/patient-messaging-address">patient-messaging-address</a>
+               </td>
+               <td>
+<p>Patient1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-nhi.html" title="Patient/patient-nhi">patient-nhi</a>
+               </td>
+               <td>
+<p>Example of PHO</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-nz-citizenship.html"
+                     title="Patient/patient-nz-citizenship">patient-nz-citizenship</a>
+               </td>
+               <td>
+<p>Example of citizenship</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-nz-ethnicity.html"
+                     title="Patient/patient-nz-ethnicity">patient-nz-ethnicity</a>
+               </td>
+               <td>
+<p>Example of ethnicity</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-nz-geocode.html"
+                     title="Patient/patient-nz-geocode">patient-nz-geocode</a>
+               </td>
+               <td>
+<p>Example of geocode</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-nz-residency.html"
+                     title="Patient/patient-nz-residency">patient-nz-residency</a>
+               </td>
+               <td>
+<p>Example of citizenship</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-pho.html" title="Patient/patient-pho">patient-pho</a>
+               </td>
+               <td>
+<p>Example of PHO</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-sex-at-birth.html"
+                     title="Patient/patient-sex-at-birth">patient-sex-at-birth</a>
+               </td>
+               <td>
+<p>Example of a Patient with the sex at birth extension</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient-suburb.html" title="Patient/patient-suburb">patient-suburb</a>
+               </td>
+               <td>
+<p>Example of suburb</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-additional-authorisation.html"
+                     title="Practitioner/practitioner-additional-authorisation">practitioner-additional-authorisation</a>
+               </td>
+               <td>
+<p>Additional authorisation example - to give immunizations in 2021</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-condition-on-practice.html"
+                     title="Practitioner/practitioner-condition-on-practice">practitioner-condition-on-practice</a>
+               </td>
+               <td>
+<p>Example of Condition on practice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-death-date.html"
+                     title="Practitioner/practitioner-death-date">practitioner-death-date</a>
+               </td>
+               <td>
+<p>Example of Practitioner with detah date</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-edi-address.html"
+                     title="Practitioner/practitioner-edi-address">practitioner-edi-address</a>
+               </td>
+               <td>
+<p>Example of Condition on practice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-educational-qualification.html"
+                     title="Practitioner/practitioner-educational-qualification">practitioner-educational-qualification</a>
+               </td>
+               <td>
+<p>Example of educational qualification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-registration-initial-date.html"
+                     title="Practitioner/practitioner-registration-initial-date">practitioner-registration-initial-date</a>
+               </td>
+               <td>
+<p>Example of Initial date of registration</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-registration-status-code.html"
+                     title="Practitioner/practitioner-registration-status-code">practitioner-registration-status-code</a>
+               </td>
+               <td>
+<p>Example of registration status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner-scope-of-practice.html"
+                     title="Practitioner/practitioner-scope-of-practice">practitioner-scope-of-practice</a>
+               </td>
+               <td>
+<p>Example of scope of practice</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-practitionerRole-creator.html"
+                     title="PractitionerRole/practitionerRole-creator">practitionerRole-creator</a>
+               </td>
+               <td>
+<p>The creator of a practitioner role. Uses a contained resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-practitionerRole-messaging-address.html"
+                     title="PractitionerRole/practitionerRole-messaging-address">practitionerRole-messaging-address</a>
+               </td>
+               <td>
+<p>Example of status reason</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-practitionerRole-status-reason.html"
+                     title="PractitionerRole/practitionerRole-status-reason">practitionerRole-status-reason</a>
+               </td>
+               <td>
+<p>Example of status reason</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:admin@hl7.org.nz">HL7 New Zealand</a>.  Package fhir.org.nz.ig.base#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 13, 2022 12:42+1300">2022-10-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

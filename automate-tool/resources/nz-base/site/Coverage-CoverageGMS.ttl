@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Coverage/CoverageGMS> a fhir:Coverage;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CoverageGMS"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzCoverage";
+       fhir:index 0;
+       fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzCoverage>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">GMS Entitlement for Raewyn Joseph<br/>NHI ZZZ0032<br/></div>"
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://standards.digital.health.nz/ns/coverage-type-code" ];
+       fhir:Coding.code [ fhir:value "gms" ];
+       fhir:Coding.display [ fhir:value "General Medical Subsidy" ]
+     ]
+  ];
+  fhir:Coverage.subscriber [
+     fhir:link <http://fhir.org.nz/ig/base/Patient/patient-dhb>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-dhb" ]
+  ];
+  fhir:Coverage.beneficiary [
+     fhir:link <http://fhir.org.nz/ig/base/Patient/patient-dhb>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-dhb" ]
+  ];
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/subscriber-relationship" ];
+       fhir:Coding.code [ fhir:value "self" ]
+     ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:link <http://fhir.org.nz/ig/base/Organization/organization-moh>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-moh" ]
+  ];
+  fhir:Coverage.class [
+     fhir:index 0;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://standards.digital.health.nz/ns/coverage-category-code" ];
+         fhir:Coding.code [ fhir:value "under6" ];
+         fhir:Coding.display [ fhir:value "A child under 6 years of age" ]
+       ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "Baby" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Coverage/CoverageGMS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

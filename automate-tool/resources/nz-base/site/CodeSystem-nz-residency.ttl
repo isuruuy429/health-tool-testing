@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/nz-residency> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "nz-residency"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://standards.digital.health.nz/ns/nz-residency-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">yes<a name=\"nz-residency-yes\"> </a></td><td>Permanent Resident</td><td>Use this status if the person holds a residence class visa</td></tr><tr><td style=\"white-space:nowrap\">no<a name=\"nz-residency-no\"> </a></td><td>Not a Permanent Resident</td><td>Use this status for a person who is a NZ Citizen or does not hold a residence class visa</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"nz-residency-unknown\"> </a></td><td>Unknown</td><td>use this status if the residency status of the person cannot be determined or is unknown</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://standards.digital.health.nz/ns/nz-residency-code"];
+  fhir:CodeSystem.version [ fhir:value "1.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NZResidency"];
+  fhir:CodeSystem.title [ fhir:value "NZ Residency status"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-13T12:42:02+13:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 New Zealand"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 New Zealand" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:admin@hl7.org.nz" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "NZ Residency status"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "yes" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Permanent Resident" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Use this status if the person holds a residence class visa" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "no" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not a Permanent Resident" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Use this status for a person who is a NZ Citizen or does not hold a residence class visa" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "use this status if the residency status of the person cannot be determined or is unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/nz-residency.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

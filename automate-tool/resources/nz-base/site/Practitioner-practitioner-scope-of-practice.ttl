@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Practitioner/practitioner-scope-of-practice> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-scope-of-practice"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-scope-of-practice\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"practitioner-scope-of-practice\" </p></div><p><b>name</b>: John Doe</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1998-01-01</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Code</b></td></tr><tr><td>*</td><td></td><td>Bachelor of Science <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0360.html\">degreeLicenseCertificate</a>#BS)</span></td></tr></table></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "John Doe" ];
+     fhir:HumanName.family [ fhir:value "Doe" ];
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "male"];
+  fhir:Practitioner.birthDate [ fhir:value "1998-01-01"^^xsd:date];
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code" ];
+             fhir:Coding.code [ fhir:value "CHIR" ];
+             fhir:Coding.display [ fhir:value "Chiropractor" ]
+           ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "period" ];
+         fhir:Extension.valuePeriod [
+           fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ];
+           fhir:Period.end [ fhir:value "2020-12-31"^^xsd:date ]
+         ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0360" ];
+         fhir:Coding.code [ fhir:value "BS" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Practitioner/practitioner-scope-of-practice.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/ValueSet/domicile-code> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "domicile-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-domicile-code.html\"><code>https://standards.digital.health.nz/ns/domicile-code</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://nzhts.digital.health.nz/fhir/ValueSet/domicile-code"];
+  fhir:ValueSet.version [ fhir:value "3.0"];
+  fhir:ValueSet.name [ fhir:value "DomicileCode"];
+  fhir:ValueSet.title [ fhir:value "Domicile Code"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-10-13T12:42:02+13:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 New Zealand"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 New Zealand" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:admin@hl7.org.nz" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Domicile Code"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://standards.digital.health.nz/ns/domicile-code" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/ValueSet/domicile-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Patient/patient-nhi> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-nhi"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzPatient";
+       fhir:index 0;
+       fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzPatient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>John Doe</b> male, DoB: 1998-01-01 ( id: activeIdent (OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>id: dormant (OLD)</li><li>id: dormant2 (OLD)</li><li>id: other system id (OFFICIAL)</li><li>id: other system id2 (TEMP)</li></ul></td></tr></table></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://standards.digital.health.nz/ns/nhi-id" ];
+     fhir:Identifier.value [ fhir:value "activeIdent" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "old" ];
+     fhir:Identifier.system [ fhir:value "https://standards.digital.health.nz/ns/nhi-id" ];
+     fhir:Identifier.value [ fhir:value "dormant" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.use [ fhir:value "old" ];
+     fhir:Identifier.system [ fhir:value "https://standards.digital.health.nz/ns/nhi-id" ];
+     fhir:Identifier.value [ fhir:value "dormant2" ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://example.com/mysystem" ];
+     fhir:Identifier.value [ fhir:value "other system id" ]
+  ], [
+     fhir:index 4;
+     fhir:Identifier.use [ fhir:value "temp" ];
+     fhir:Identifier.system [ fhir:value "https://example.com/mysystem" ];
+     fhir:Identifier.value [ fhir:value "other system id2" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "John Doe" ];
+     fhir:HumanName.family [ fhir:value "Doe" ];
+     fhir:HumanName.given [
+       fhir:value "John";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1998-01-01"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Patient/patient-nhi.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

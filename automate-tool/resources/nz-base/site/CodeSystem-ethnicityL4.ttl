@@ -1,0 +1,787 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/ethnicityL4> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ethnicityL4"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">10000<a name=\"ethnicityL4-10000\"> </a></td><td>European nfd</td></tr><tr><td style=\"white-space:nowrap\">11111<a name=\"ethnicityL4-11111\"> </a></td><td>New Zealand European</td></tr><tr><td style=\"white-space:nowrap\">12100<a name=\"ethnicityL4-12100\"> </a></td><td>British nfd</td></tr><tr><td style=\"white-space:nowrap\">12111<a name=\"ethnicityL4-12111\"> </a></td><td>Celtic nfd</td></tr><tr><td style=\"white-space:nowrap\">12112<a name=\"ethnicityL4-12112\"> </a></td><td>Channel Islander</td></tr><tr><td style=\"white-space:nowrap\">12113<a name=\"ethnicityL4-12113\"> </a></td><td>Cornish</td></tr><tr><td style=\"white-space:nowrap\">12114<a name=\"ethnicityL4-12114\"> </a></td><td>English</td></tr><tr><td style=\"white-space:nowrap\">12116<a name=\"ethnicityL4-12116\"> </a></td><td>Irish</td></tr><tr><td style=\"white-space:nowrap\">12117<a name=\"ethnicityL4-12117\"> </a></td><td>Manx</td></tr><tr><td style=\"white-space:nowrap\">12119<a name=\"ethnicityL4-12119\"> </a></td><td>Scottish</td></tr><tr><td style=\"white-space:nowrap\">12121<a name=\"ethnicityL4-12121\"> </a></td><td>Welsh</td></tr><tr><td style=\"white-space:nowrap\">12199<a name=\"ethnicityL4-12199\"> </a></td><td>British nec</td></tr><tr><td style=\"white-space:nowrap\">12211<a name=\"ethnicityL4-12211\"> </a></td><td>Dutch</td></tr><tr><td style=\"white-space:nowrap\">12311<a name=\"ethnicityL4-12311\"> </a></td><td>Greek</td></tr><tr><td style=\"white-space:nowrap\">12411<a name=\"ethnicityL4-12411\"> </a></td><td>Polish</td></tr><tr><td style=\"white-space:nowrap\">12500<a name=\"ethnicityL4-12500\"> </a></td><td>South Slav nfd</td></tr><tr><td style=\"white-space:nowrap\">12511<a name=\"ethnicityL4-12511\"> </a></td><td>Croatian</td></tr><tr><td style=\"white-space:nowrap\">12512<a name=\"ethnicityL4-12512\"> </a></td><td>Dalmatian</td></tr><tr><td style=\"white-space:nowrap\">12513<a name=\"ethnicityL4-12513\"> </a></td><td>Macedonian</td></tr><tr><td style=\"white-space:nowrap\">12514<a name=\"ethnicityL4-12514\"> </a></td><td>Serbian</td></tr><tr><td style=\"white-space:nowrap\">12515<a name=\"ethnicityL4-12515\"> </a></td><td>Slovenian</td></tr><tr><td style=\"white-space:nowrap\">12516<a name=\"ethnicityL4-12516\"> </a></td><td>Bosnian</td></tr><tr><td style=\"white-space:nowrap\">12599<a name=\"ethnicityL4-12599\"> </a></td><td>South Slav nec</td></tr><tr><td style=\"white-space:nowrap\">12611<a name=\"ethnicityL4-12611\"> </a></td><td>Italian</td></tr><tr><td style=\"white-space:nowrap\">12711<a name=\"ethnicityL4-12711\"> </a></td><td>German</td></tr><tr><td style=\"white-space:nowrap\">12811<a name=\"ethnicityL4-12811\"> </a></td><td>Australian</td></tr><tr><td style=\"white-space:nowrap\">12911<a name=\"ethnicityL4-12911\"> </a></td><td>Albanian</td></tr><tr><td style=\"white-space:nowrap\">12912<a name=\"ethnicityL4-12912\"> </a></td><td>Armenian</td></tr><tr><td style=\"white-space:nowrap\">12913<a name=\"ethnicityL4-12913\"> </a></td><td>Austrian</td></tr><tr><td style=\"white-space:nowrap\">12914<a name=\"ethnicityL4-12914\"> </a></td><td>Belgian</td></tr><tr><td style=\"white-space:nowrap\">12915<a name=\"ethnicityL4-12915\"> </a></td><td>Bulgarian</td></tr><tr><td style=\"white-space:nowrap\">12916<a name=\"ethnicityL4-12916\"> </a></td><td>Belorussian</td></tr><tr><td style=\"white-space:nowrap\">12918<a name=\"ethnicityL4-12918\"> </a></td><td>Cypriot nfd</td></tr><tr><td style=\"white-space:nowrap\">12919<a name=\"ethnicityL4-12919\"> </a></td><td>Czech</td></tr><tr><td style=\"white-space:nowrap\">12920<a name=\"ethnicityL4-12920\"> </a></td><td>Danish</td></tr><tr><td style=\"white-space:nowrap\">12921<a name=\"ethnicityL4-12921\"> </a></td><td>Estonian</td></tr><tr><td style=\"white-space:nowrap\">12922<a name=\"ethnicityL4-12922\"> </a></td><td>Finnish</td></tr><tr><td style=\"white-space:nowrap\">12923<a name=\"ethnicityL4-12923\"> </a></td><td>Flemish</td></tr><tr><td style=\"white-space:nowrap\">12924<a name=\"ethnicityL4-12924\"> </a></td><td>French</td></tr><tr><td style=\"white-space:nowrap\">12926<a name=\"ethnicityL4-12926\"> </a></td><td>Hungarian</td></tr><tr><td style=\"white-space:nowrap\">12927<a name=\"ethnicityL4-12927\"> </a></td><td>Icelandic</td></tr><tr><td style=\"white-space:nowrap\">12928<a name=\"ethnicityL4-12928\"> </a></td><td>Latvian</td></tr><tr><td style=\"white-space:nowrap\">12929<a name=\"ethnicityL4-12929\"> </a></td><td>Lithuanian</td></tr><tr><td style=\"white-space:nowrap\">12930<a name=\"ethnicityL4-12930\"> </a></td><td>Maltese</td></tr><tr><td style=\"white-space:nowrap\">12931<a name=\"ethnicityL4-12931\"> </a></td><td>Norwegian</td></tr><tr><td style=\"white-space:nowrap\">12932<a name=\"ethnicityL4-12932\"> </a></td><td>Portuguese</td></tr><tr><td style=\"white-space:nowrap\">12933<a name=\"ethnicityL4-12933\"> </a></td><td>Romanian</td></tr><tr><td style=\"white-space:nowrap\">12934<a name=\"ethnicityL4-12934\"> </a></td><td>Romani</td></tr><tr><td style=\"white-space:nowrap\">12935<a name=\"ethnicityL4-12935\"> </a></td><td>Russian</td></tr><tr><td style=\"white-space:nowrap\">12937<a name=\"ethnicityL4-12937\"> </a></td><td>Slavic</td></tr><tr><td style=\"white-space:nowrap\">12938<a name=\"ethnicityL4-12938\"> </a></td><td>Slovak</td></tr><tr><td style=\"white-space:nowrap\">12939<a name=\"ethnicityL4-12939\"> </a></td><td>Spanish</td></tr><tr><td style=\"white-space:nowrap\">12940<a name=\"ethnicityL4-12940\"> </a></td><td>Swedish</td></tr><tr><td style=\"white-space:nowrap\">12941<a name=\"ethnicityL4-12941\"> </a></td><td>Swiss</td></tr><tr><td style=\"white-space:nowrap\">12942<a name=\"ethnicityL4-12942\"> </a></td><td>Ukrainian</td></tr><tr><td style=\"white-space:nowrap\">12943<a name=\"ethnicityL4-12943\"> </a></td><td>American</td></tr><tr><td style=\"white-space:nowrap\">12945<a name=\"ethnicityL4-12945\"> </a></td><td>Canadian</td></tr><tr><td style=\"white-space:nowrap\">12947<a name=\"ethnicityL4-12947\"> </a></td><td>New Caledonian</td></tr><tr><td style=\"white-space:nowrap\">12948<a name=\"ethnicityL4-12948\"> </a></td><td>South African European</td></tr><tr><td style=\"white-space:nowrap\">12949<a name=\"ethnicityL4-12949\"> </a></td><td>Afrikaner</td></tr><tr><td style=\"white-space:nowrap\">12950<a name=\"ethnicityL4-12950\"> </a></td><td>Zimbabwean European</td></tr><tr><td style=\"white-space:nowrap\">12999<a name=\"ethnicityL4-12999\"> </a></td><td>European nec</td></tr><tr><td style=\"white-space:nowrap\">21111<a name=\"ethnicityL4-21111\"> </a></td><td>Māori</td></tr><tr><td style=\"white-space:nowrap\">30000<a name=\"ethnicityL4-30000\"> </a></td><td>Pacific Peoples nfd</td></tr><tr><td style=\"white-space:nowrap\">31111<a name=\"ethnicityL4-31111\"> </a></td><td>Samoan</td></tr><tr><td style=\"white-space:nowrap\">32100<a name=\"ethnicityL4-32100\"> </a></td><td>Cook Islands Maori</td></tr><tr><td style=\"white-space:nowrap\">33111<a name=\"ethnicityL4-33111\"> </a></td><td>Tongan</td></tr><tr><td style=\"white-space:nowrap\">34111<a name=\"ethnicityL4-34111\"> </a></td><td>Niuean</td></tr><tr><td style=\"white-space:nowrap\">35111<a name=\"ethnicityL4-35111\"> </a></td><td>Tokelauan</td></tr><tr><td style=\"white-space:nowrap\">36111<a name=\"ethnicityL4-36111\"> </a></td><td>Fijian</td></tr><tr><td style=\"white-space:nowrap\">37112<a name=\"ethnicityL4-37112\"> </a></td><td>Indigenous Australian</td></tr><tr><td style=\"white-space:nowrap\">37122<a name=\"ethnicityL4-37122\"> </a></td><td>Hawaiian</td></tr><tr><td style=\"white-space:nowrap\">37124<a name=\"ethnicityL4-37124\"> </a></td><td>Kiribati</td></tr><tr><td style=\"white-space:nowrap\">37130<a name=\"ethnicityL4-37130\"> </a></td><td>Nauruan</td></tr><tr><td style=\"white-space:nowrap\">37135<a name=\"ethnicityL4-37135\"> </a></td><td>Papua New Guinean</td></tr><tr><td style=\"white-space:nowrap\">37137<a name=\"ethnicityL4-37137\"> </a></td><td>Pitcairn Islander</td></tr><tr><td style=\"white-space:nowrap\">37138<a name=\"ethnicityL4-37138\"> </a></td><td>Rotuman</td></tr><tr><td style=\"white-space:nowrap\">37140<a name=\"ethnicityL4-37140\"> </a></td><td>Tahitian</td></tr><tr><td style=\"white-space:nowrap\">37141<a name=\"ethnicityL4-37141\"> </a></td><td>Solomon Islander</td></tr><tr><td style=\"white-space:nowrap\">37144<a name=\"ethnicityL4-37144\"> </a></td><td>Tuvaluan</td></tr><tr><td style=\"white-space:nowrap\">37145<a name=\"ethnicityL4-37145\"> </a></td><td>Ni Vanuatu</td></tr><tr><td style=\"white-space:nowrap\">37199<a name=\"ethnicityL4-37199\"> </a></td><td>Pacific Peoples nec</td></tr><tr><td style=\"white-space:nowrap\">40000<a name=\"ethnicityL4-40000\"> </a></td><td>Asian nfd</td></tr><tr><td style=\"white-space:nowrap\">41000<a name=\"ethnicityL4-41000\"> </a></td><td>Southeast Asian nfd</td></tr><tr><td style=\"white-space:nowrap\">41111<a name=\"ethnicityL4-41111\"> </a></td><td>Filipino</td></tr><tr><td style=\"white-space:nowrap\">41211<a name=\"ethnicityL4-41211\"> </a></td><td>Cambodian</td></tr><tr><td style=\"white-space:nowrap\">41311<a name=\"ethnicityL4-41311\"> </a></td><td>Vietnamese</td></tr><tr><td style=\"white-space:nowrap\">41411<a name=\"ethnicityL4-41411\"> </a></td><td>Burmese</td></tr><tr><td style=\"white-space:nowrap\">41412<a name=\"ethnicityL4-41412\"> </a></td><td>Indonesian</td></tr><tr><td style=\"white-space:nowrap\">41413<a name=\"ethnicityL4-41413\"> </a></td><td>Lao</td></tr><tr><td style=\"white-space:nowrap\">41414<a name=\"ethnicityL4-41414\"> </a></td><td>Malay</td></tr><tr><td style=\"white-space:nowrap\">41415<a name=\"ethnicityL4-41415\"> </a></td><td>Thai</td></tr><tr><td style=\"white-space:nowrap\">41416<a name=\"ethnicityL4-41416\"> </a></td><td>Karen</td></tr><tr><td style=\"white-space:nowrap\">41417<a name=\"ethnicityL4-41417\"> </a></td><td>Chin</td></tr><tr><td style=\"white-space:nowrap\">41499<a name=\"ethnicityL4-41499\"> </a></td><td>Southeast Asian nec</td></tr><tr><td style=\"white-space:nowrap\">42100<a name=\"ethnicityL4-42100\"> </a></td><td>Chinese nfd</td></tr><tr><td style=\"white-space:nowrap\">42111<a name=\"ethnicityL4-42111\"> </a></td><td>Hong Kong Chinese</td></tr><tr><td style=\"white-space:nowrap\">42112<a name=\"ethnicityL4-42112\"> </a></td><td>Cambodian Chinese</td></tr><tr><td style=\"white-space:nowrap\">42113<a name=\"ethnicityL4-42113\"> </a></td><td>Malaysian Chinese</td></tr><tr><td style=\"white-space:nowrap\">42114<a name=\"ethnicityL4-42114\"> </a></td><td>Singaporean Chinese</td></tr><tr><td style=\"white-space:nowrap\">42115<a name=\"ethnicityL4-42115\"> </a></td><td>Vietnamese Chinese</td></tr><tr><td style=\"white-space:nowrap\">42116<a name=\"ethnicityL4-42116\"> </a></td><td>Taiwanese</td></tr><tr><td style=\"white-space:nowrap\">42199<a name=\"ethnicityL4-42199\"> </a></td><td>Chinese nec</td></tr><tr><td style=\"white-space:nowrap\">43100<a name=\"ethnicityL4-43100\"> </a></td><td>Indian nfd</td></tr><tr><td style=\"white-space:nowrap\">43111<a name=\"ethnicityL4-43111\"> </a></td><td>Bengali</td></tr><tr><td style=\"white-space:nowrap\">43112<a name=\"ethnicityL4-43112\"> </a></td><td>Fijian Indian</td></tr><tr><td style=\"white-space:nowrap\">43114<a name=\"ethnicityL4-43114\"> </a></td><td>Indian Tamil</td></tr><tr><td style=\"white-space:nowrap\">43115<a name=\"ethnicityL4-43115\"> </a></td><td>Punjabi</td></tr><tr><td style=\"white-space:nowrap\">43116<a name=\"ethnicityL4-43116\"> </a></td><td>Sikh</td></tr><tr><td style=\"white-space:nowrap\">43117<a name=\"ethnicityL4-43117\"> </a></td><td>Anglo Indian</td></tr><tr><td style=\"white-space:nowrap\">43118<a name=\"ethnicityL4-43118\"> </a></td><td>Malaysian Indian</td></tr><tr><td style=\"white-space:nowrap\">43119<a name=\"ethnicityL4-43119\"> </a></td><td>South African Indian</td></tr><tr><td style=\"white-space:nowrap\">43199<a name=\"ethnicityL4-43199\"> </a></td><td>Indian nec</td></tr><tr><td style=\"white-space:nowrap\">44100<a name=\"ethnicityL4-44100\"> </a></td><td>Sri Lankan nfd</td></tr><tr><td style=\"white-space:nowrap\">44111<a name=\"ethnicityL4-44111\"> </a></td><td>Sinhalese</td></tr><tr><td style=\"white-space:nowrap\">44112<a name=\"ethnicityL4-44112\"> </a></td><td>Sri Lankan Tamil</td></tr><tr><td style=\"white-space:nowrap\">44199<a name=\"ethnicityL4-44199\"> </a></td><td>Sri Lankan nec</td></tr><tr><td style=\"white-space:nowrap\">44211<a name=\"ethnicityL4-44211\"> </a></td><td>Japanese</td></tr><tr><td style=\"white-space:nowrap\">44311<a name=\"ethnicityL4-44311\"> </a></td><td>Korean</td></tr><tr><td style=\"white-space:nowrap\">44411<a name=\"ethnicityL4-44411\"> </a></td><td>Afghan</td></tr><tr><td style=\"white-space:nowrap\">44412<a name=\"ethnicityL4-44412\"> </a></td><td>Bangladeshi</td></tr><tr><td style=\"white-space:nowrap\">44413<a name=\"ethnicityL4-44413\"> </a></td><td>Nepali</td></tr><tr><td style=\"white-space:nowrap\">44414<a name=\"ethnicityL4-44414\"> </a></td><td>Pakistani</td></tr><tr><td style=\"white-space:nowrap\">44415<a name=\"ethnicityL4-44415\"> </a></td><td>Tibetan</td></tr><tr><td style=\"white-space:nowrap\">44416<a name=\"ethnicityL4-44416\"> </a></td><td>Eurasian</td></tr><tr><td style=\"white-space:nowrap\">44417<a name=\"ethnicityL4-44417\"> </a></td><td>Bhutanese</td></tr><tr><td style=\"white-space:nowrap\">44418<a name=\"ethnicityL4-44418\"> </a></td><td>Maldivian</td></tr><tr><td style=\"white-space:nowrap\">44419<a name=\"ethnicityL4-44419\"> </a></td><td>Mongolian</td></tr><tr><td style=\"white-space:nowrap\">44499<a name=\"ethnicityL4-44499\"> </a></td><td>Asian nec</td></tr><tr><td style=\"white-space:nowrap\">51100<a name=\"ethnicityL4-51100\"> </a></td><td>Middle Eastern nfd</td></tr><tr><td style=\"white-space:nowrap\">51111<a name=\"ethnicityL4-51111\"> </a></td><td>Algerian</td></tr><tr><td style=\"white-space:nowrap\">51112<a name=\"ethnicityL4-51112\"> </a></td><td>Arab</td></tr><tr><td style=\"white-space:nowrap\">51113<a name=\"ethnicityL4-51113\"> </a></td><td>Assyrian</td></tr><tr><td style=\"white-space:nowrap\">51114<a name=\"ethnicityL4-51114\"> </a></td><td>Egyptian</td></tr><tr><td style=\"white-space:nowrap\">51115<a name=\"ethnicityL4-51115\"> </a></td><td>Iranian/Persian</td></tr><tr><td style=\"white-space:nowrap\">51116<a name=\"ethnicityL4-51116\"> </a></td><td>Iraqi</td></tr><tr><td style=\"white-space:nowrap\">51117<a name=\"ethnicityL4-51117\"> </a></td><td>Israeli/Jewish</td></tr><tr><td style=\"white-space:nowrap\">51118<a name=\"ethnicityL4-51118\"> </a></td><td>Jordanian</td></tr><tr><td style=\"white-space:nowrap\">51119<a name=\"ethnicityL4-51119\"> </a></td><td>Kurd</td></tr><tr><td style=\"white-space:nowrap\">51120<a name=\"ethnicityL4-51120\"> </a></td><td>Lebanese</td></tr><tr><td style=\"white-space:nowrap\">51122<a name=\"ethnicityL4-51122\"> </a></td><td>Moroccan</td></tr><tr><td style=\"white-space:nowrap\">51124<a name=\"ethnicityL4-51124\"> </a></td><td>Palestinian</td></tr><tr><td style=\"white-space:nowrap\">51125<a name=\"ethnicityL4-51125\"> </a></td><td>Syrian</td></tr><tr><td style=\"white-space:nowrap\">51127<a name=\"ethnicityL4-51127\"> </a></td><td>Turkish</td></tr><tr><td style=\"white-space:nowrap\">51199<a name=\"ethnicityL4-51199\"> </a></td><td>Middle Eastern nec</td></tr><tr><td style=\"white-space:nowrap\">52100<a name=\"ethnicityL4-52100\"> </a></td><td>Latin American nfd</td></tr><tr><td style=\"white-space:nowrap\">52111<a name=\"ethnicityL4-52111\"> </a></td><td>Argentinian</td></tr><tr><td style=\"white-space:nowrap\">52112<a name=\"ethnicityL4-52112\"> </a></td><td>Bolivian</td></tr><tr><td style=\"white-space:nowrap\">52113<a name=\"ethnicityL4-52113\"> </a></td><td>Brazilian</td></tr><tr><td style=\"white-space:nowrap\">52114<a name=\"ethnicityL4-52114\"> </a></td><td>Chilean</td></tr><tr><td style=\"white-space:nowrap\">52115<a name=\"ethnicityL4-52115\"> </a></td><td>Colombian</td></tr><tr><td style=\"white-space:nowrap\">52118<a name=\"ethnicityL4-52118\"> </a></td><td>Ecuadorian</td></tr><tr><td style=\"white-space:nowrap\">52123<a name=\"ethnicityL4-52123\"> </a></td><td>Mexican</td></tr><tr><td style=\"white-space:nowrap\">52127<a name=\"ethnicityL4-52127\"> </a></td><td>Peruvian</td></tr><tr><td style=\"white-space:nowrap\">52128<a name=\"ethnicityL4-52128\"> </a></td><td>Puerto Rican</td></tr><tr><td style=\"white-space:nowrap\">52129<a name=\"ethnicityL4-52129\"> </a></td><td>Uruguayan</td></tr><tr><td style=\"white-space:nowrap\">52130<a name=\"ethnicityL4-52130\"> </a></td><td>Venezuelan</td></tr><tr><td style=\"white-space:nowrap\">52199<a name=\"ethnicityL4-52199\"> </a></td><td>Latin American nec</td></tr><tr><td style=\"white-space:nowrap\">53100<a name=\"ethnicityL4-53100\"> </a></td><td>African nfd</td></tr><tr><td style=\"white-space:nowrap\">53113<a name=\"ethnicityL4-53113\"> </a></td><td>Jamaican</td></tr><tr><td style=\"white-space:nowrap\">53114<a name=\"ethnicityL4-53114\"> </a></td><td>Kenyan</td></tr><tr><td style=\"white-space:nowrap\">53115<a name=\"ethnicityL4-53115\"> </a></td><td>Nigerian</td></tr><tr><td style=\"white-space:nowrap\">53116<a name=\"ethnicityL4-53116\"> </a></td><td>African American</td></tr><tr><td style=\"white-space:nowrap\">53118<a name=\"ethnicityL4-53118\"> </a></td><td>Caribbean</td></tr><tr><td style=\"white-space:nowrap\">53119<a name=\"ethnicityL4-53119\"> </a></td><td>Somali</td></tr><tr><td style=\"white-space:nowrap\">53120<a name=\"ethnicityL4-53120\"> </a></td><td>Eritrean</td></tr><tr><td style=\"white-space:nowrap\">53121<a name=\"ethnicityL4-53121\"> </a></td><td>Ethiopian</td></tr><tr><td style=\"white-space:nowrap\">53122<a name=\"ethnicityL4-53122\"> </a></td><td>Ghanaian</td></tr><tr><td style=\"white-space:nowrap\">53123<a name=\"ethnicityL4-53123\"> </a></td><td>Burundian</td></tr><tr><td style=\"white-space:nowrap\">53124<a name=\"ethnicityL4-53124\"> </a></td><td>Congolese</td></tr><tr><td style=\"white-space:nowrap\">53125<a name=\"ethnicityL4-53125\"> </a></td><td>Sudanese</td></tr><tr><td style=\"white-space:nowrap\">53126<a name=\"ethnicityL4-53126\"> </a></td><td>Zambian</td></tr><tr><td style=\"white-space:nowrap\">53127<a name=\"ethnicityL4-53127\"> </a></td><td>Other Zimbabwean</td></tr><tr><td style=\"white-space:nowrap\">53199<a name=\"ethnicityL4-53199\"> </a></td><td>African nec</td></tr><tr><td style=\"white-space:nowrap\">61113<a name=\"ethnicityL4-61113\"> </a></td><td>Indigehous American</td></tr><tr><td style=\"white-space:nowrap\">61115<a name=\"ethnicityL4-61115\"> </a></td><td>Mauritian</td></tr><tr><td style=\"white-space:nowrap\">61116<a name=\"ethnicityL4-61116\"> </a></td><td>Seychellois</td></tr><tr><td style=\"white-space:nowrap\">61117<a name=\"ethnicityL4-61117\"> </a></td><td>Other South African</td></tr><tr><td style=\"white-space:nowrap\">61118<a name=\"ethnicityL4-61118\"> </a></td><td>New Zealander</td></tr><tr><td style=\"white-space:nowrap\">61199<a name=\"ethnicityL4-61199\"> </a></td><td>Other Ethnicity nec</td></tr><tr><td style=\"white-space:nowrap\">94444<a name=\"ethnicityL4-94444\"> </a></td><td>Don't Know</td></tr><tr><td style=\"white-space:nowrap\">95555<a name=\"ethnicityL4-95555\"> </a></td><td>Refused to Answer</td></tr><tr><td style=\"white-space:nowrap\">96666<a name=\"ethnicityL4-96666\"> </a></td><td>Repeated Value</td></tr><tr><td style=\"white-space:nowrap\">97777<a name=\"ethnicityL4-97777\"> </a></td><td>Response Unidentifiable</td></tr><tr><td style=\"white-space:nowrap\">98888<a name=\"ethnicityL4-98888\"> </a></td><td>Response Outside Scope</td></tr><tr><td style=\"white-space:nowrap\">99999<a name=\"ethnicityL4-99999\"> </a></td><td>Not Stated</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://standards.digital.health.nz/ns/ethnic-group-level-4-code"];
+  fhir:CodeSystem.version [ fhir:value "2.1.0"];
+  fhir:CodeSystem.name [ fhir:value "EthnicityL4"];
+  fhir:CodeSystem.title [ fhir:value "Level 4 ethnicity codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-13T12:42:02+13:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 New Zealand"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 New Zealand" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:admin@hl7.org.nz" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes to record a person’s ethnicity, drawn from Level 4 of the Ethnicity code system \ndescribed [here](http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17)"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "186"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "10000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "European nfd" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "11111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "New Zealand European" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "12100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "British nfd" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "12111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Celtic nfd" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "12112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Channel Islander" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "12113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cornish" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "12114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "English" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "12116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Irish" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "12117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Manx" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "12119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Scottish" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "12121" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Welsh" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "12199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "British nec" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "12211" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dutch" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "12311" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Greek" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "12411" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polish" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "12500" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South Slav nfd" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "12511" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Croatian" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "12512" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dalmatian" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "12513" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Macedonian" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "12514" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Serbian" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "12515" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slovenian" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "12516" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bosnian" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "12599" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South Slav nec" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "12611" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Italian" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "12711" ];
+     fhir:CodeSystem.concept.display [ fhir:value "German" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "12811" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Australian" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "12911" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Albanian" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "12912" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Armenian" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "12913" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Austrian" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "12914" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Belgian" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "12915" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bulgarian" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "12916" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Belorussian" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "12918" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cypriot nfd" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "12919" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Czech" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "12920" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Danish" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "12921" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Estonian" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "12922" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Finnish" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "12923" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Flemish" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "12924" ];
+     fhir:CodeSystem.concept.display [ fhir:value "French" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "12926" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hungarian" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "12927" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Icelandic" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "12928" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Latvian" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "12929" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lithuanian" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "12930" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maltese" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "12931" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Norwegian" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "12932" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Portuguese" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "12933" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Romanian" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "12934" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Romani" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "12935" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Russian" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "12937" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slavic" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "12938" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Slovak" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "12939" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spanish" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "12940" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swedish" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "12941" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Swiss" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "12942" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ukrainian" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "12943" ];
+     fhir:CodeSystem.concept.display [ fhir:value "American" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "12945" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Canadian" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "12947" ];
+     fhir:CodeSystem.concept.display [ fhir:value "New Caledonian" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "12948" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South African European" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "12949" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Afrikaner" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "12950" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zimbabwean European" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "12999" ];
+     fhir:CodeSystem.concept.display [ fhir:value "European nec" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "21111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Māori" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "30000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pacific Peoples nfd" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "31111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Samoan" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "32100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cook Islands Maori" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "33111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tongan" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "34111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Niuean" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "35111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tokelauan" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "36111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fijian" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "37112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indigenous Australian" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "37122" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hawaiian" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "37124" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kiribati" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "37130" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nauruan" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "37135" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Papua New Guinean" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "37137" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pitcairn Islander" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "37138" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rotuman" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "37140" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tahitian" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "37141" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Solomon Islander" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "37144" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tuvaluan" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "37145" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ni Vanuatu" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "37199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pacific Peoples nec" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "40000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Asian nfd" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "41000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Southeast Asian nfd" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "41111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Filipino" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "41211" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cambodian" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "41311" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vietnamese" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "41411" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Burmese" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "41412" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indonesian" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "41413" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lao" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "41414" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malay" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "41415" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thai" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "41416" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Karen" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "41417" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chin" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "41499" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Southeast Asian nec" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "42100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chinese nfd" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "42111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hong Kong Chinese" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "42112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cambodian Chinese" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "42113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malaysian Chinese" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "42114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Singaporean Chinese" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "42115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vietnamese Chinese" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "42116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Taiwanese" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "42199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chinese nec" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "43100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indian nfd" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "43111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bengali" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "43112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fijian Indian" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "43114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indian Tamil" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "43115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Punjabi" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "43116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sikh" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "43117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anglo Indian" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "43118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malaysian Indian" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "43119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "South African Indian" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "43199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indian nec" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "44100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sri Lankan nfd" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "44111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sinhalese" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "44112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sri Lankan Tamil" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "44199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sri Lankan nec" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "44211" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Japanese" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "44311" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Korean" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "44411" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Afghan" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "44412" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bangladeshi" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "44413" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nepali" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "44414" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pakistani" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "44415" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tibetan" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "44416" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eurasian" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "44417" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bhutanese" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "44418" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maldivian" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "44419" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mongolian" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "44499" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Asian nec" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "51100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Middle Eastern nfd" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "51111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Algerian" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "51112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Arab" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "51113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Assyrian" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "51114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Egyptian" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "51115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Iranian/Persian" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "51116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Iraqi" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "51117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Israeli/Jewish" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "51118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Jordanian" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "51119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kurd" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "51120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lebanese" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "51122" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Moroccan" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "51124" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Palestinian" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "51125" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Syrian" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "51127" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Turkish" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "51199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Middle Eastern nec" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "52100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Latin American nfd" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "52111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Argentinian" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "52112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bolivian" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "52113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brazilian" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "52114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chilean" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "52115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Colombian" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "52118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ecuadorian" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "52123" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mexican" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "52127" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Peruvian" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "52128" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Puerto Rican" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "52129" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uruguayan" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "52130" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Venezuelan" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "52199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Latin American nec" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "53100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "African nfd" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "53113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Jamaican" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "53114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kenyan" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "53115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nigerian" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "53116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "African American" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "53118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Caribbean" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "53119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Somali" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "53120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Eritrean" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "53121" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ethiopian" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "53122" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ghanaian" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "53123" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Burundian" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "53124" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Congolese" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "53125" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sudanese" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "53126" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zambian" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "53127" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Zimbabwean" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "53199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "African nec" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "61113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indigehous American" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "61115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mauritian" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "61116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Seychellois" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "61117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other South African" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "61118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "New Zealander" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "61199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Ethnicity nec" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "94444" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Don't Know" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "95555" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Refused to Answer" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "96666" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Repeated Value" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "97777" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response Unidentifiable" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "98888" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response Outside Scope" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "99999" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Stated" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/ethnicityL4.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

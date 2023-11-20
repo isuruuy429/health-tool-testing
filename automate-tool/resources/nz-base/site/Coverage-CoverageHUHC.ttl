@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Coverage/CoverageHUHC> a fhir:Coverage;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CoverageHUHC"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzCoverage";
+       fhir:index 0;
+       fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzCoverage>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "additional" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">High User Health Card for Raewyn Joseph<br/>NHI ZZZ0032<br/>HUHC number 12345689<br/></div>"
+  ];
+  fhir:Coverage.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://standards.digital.health.nz/ns/huhc-id" ];
+     fhir:Identifier.value [ fhir:value "123456789" ]
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://standards.digital.health.nz/ns/coverage-type-code" ];
+       fhir:Coding.code [ fhir:value "huhc" ];
+       fhir:Coding.display [ fhir:value "High user health card" ]
+     ]
+  ];
+  fhir:Coverage.subscriber [
+     fhir:link <http://fhir.org.nz/ig/base/Patient/patient-dhb>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-dhb" ]
+  ];
+  fhir:Coverage.beneficiary [
+     fhir:link <http://fhir.org.nz/ig/base/Patient/patient-dhb>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-dhb" ]
+  ];
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/subscriber-relationship" ];
+       fhir:Coding.code [ fhir:value "self" ]
+     ]
+  ];
+  fhir:Coverage.period [
+     fhir:Period.end [ fhir:value "2023-09-17"^^xsd:date ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:link <http://fhir.org.nz/ig/base/Organization/organization-moh>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-moh" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/Coverage/CoverageHUHC.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1082 @@
+{
+  "package": "fhir.org.nz.ig.base",
+  "version": "2.0.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation",
+      "title": "AdditionalAuthorisation",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/alias-type",
+      "title": "AliasType",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/building-name",
+      "title": "Building Name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice",
+      "title": "ConditionOnPractice",
+      "types": [
+        "string",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose",
+      "title": "A specific purpose for which this ContactPoint dataType would be used",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/death-date",
+      "title": "Date of death",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/dhb",
+      "title": "District Health Board linked to a NZ Healthcare Service, Location or Patient",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/domicile-code",
+      "title": "NZ Domicile Code",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
+      "title": "EDI Address",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification",
+      "title": "EducationalQualification",
+      "types": [
+        "string",
+        "string",
+        "date",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/established",
+      "title": "Established",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/funded-programme",
+      "title": "Funded Healthcare Programme",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/information-source",
+      "title": "Information Source",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/long-term-condition",
+      "title": "Long Term Condition Indicator",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/messaging-address",
+      "title": "Messaging Address",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship",
+      "title": "NZ Citizenship",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+      "title": "NZ Ethnicity",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-geocode",
+      "title": "NZ Geocode",
+      "types": [
+        "decimal",
+        "decimal",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-iwi",
+      "title": "Nz_iwi",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency",
+      "title": "NZResidency",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nzeps-long-term-medication",
+      "title": "NZePS Long Term Medication Indicator",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nzeps-supply-period-reason",
+      "title": "NZePS Supply Period Reason",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nzeps-unusual-dose-quantity",
+      "title": "NZePS Unusual Dose Quantity Indicator",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/pho",
+      "title": "Primary Healthcare Organisation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator",
+      "title": "PractitionerRoleCreator",
+      "types": [
+        "Reference",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason",
+      "title": "PractitionerRoleStatusReason",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date",
+      "title": "RegistrationInitialDate",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code",
+      "title": "RegistrationStatusCode",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice",
+      "title": "ScopeOfPractice",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth",
+      "title": "Sex At Birth",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
+      "title": "NZ Suburb",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Condition": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzCondition",
+        "title": "Condition resource for use in NZ"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzCoverage",
+        "title": "Coverage resource for use in NZ (Trial use)"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzHealthcareService",
+        "title": "HealthcareService resource for use in NZ"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzLocation",
+        "title": "Location resource for use in NZ"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzMedicationRequest",
+        "title": "MedicationRequest resource for use in NZ"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzMedicationStatement",
+        "title": "MedicationStatement resource for use in NZ"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzOrganization",
+        "title": "Organization resource for use in NZ"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzPatient",
+        "title": "NZ Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner",
+        "title": "Practitioner resource for use in NZ"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/NzPractitionerRole",
+        "title": "PractitionerRole resource for use in NZ"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/alias-type": [
+      "Location.alias",
+      "Organization.alias"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/building-name": [
+      "Address",
+      "Patient.address"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose": [
+      "ContactPoint"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/death-date": [
+      "Practitioner"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/dhb": [
+      "HealthcareService",
+      "Location",
+      "Patient"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/domicile-code": [
+      "Address",
+      "Patient"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/edi-address": [
+      "Organization.contact.telecom.system",
+      "Practitioner.telecom.system"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification": [
+      "Practitioner",
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/established": [
+      "Location",
+      "Organization"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/funded-programme": [
+      "HealthcareService",
+      "Location",
+      "Organization"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/information-source": [
+      "Patient.birthDate",
+      "Patient.deceasedDateTime",
+      "Patient.name"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/long-term-condition": [
+      "Condition"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/messaging-address": [
+      "Patient",
+      "PractitionerRole"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship": [
+      "Patient"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity": [
+      "Patient",
+      "Practitioner"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nz-geocode": [
+      "Address",
+      "Patient.address"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nz-iwi": [
+      "Patient",
+      "Practitioner"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nz-residency": [
+      "Patient"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nzeps-long-term-medication": [
+      "MedicationRequest",
+      "MedicationStatement"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nzeps-supply-period-reason": [
+      "MedicationRequest"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/nzeps-unusual-dose-quantity": [
+      "MedicationRequest"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/pho": [
+      "Location",
+      "Patient"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator": [
+      "PractitionerRole"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason": [
+      "PractitionerRole"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth": [
+      "Patient"
+    ],
+    "http://hl7.org.nz/fhir/StructureDefinition/suburb": [
+      "Address",
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

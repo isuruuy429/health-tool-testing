@@ -1,0 +1,1177 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR.ORG.NZ.IG.BASE\NZ Iwi - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.76"}
+    h3,h4,h5,h6{--heading-prefix:"7.76"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+
+      
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="http://hl7.org.nz">
+      <img height="50" alt="Project home" src="assets/images/hl7nz-logo.jpg"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7® FHIR® New Zealand Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="namingSystems.html">Identifiers</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artifacts (Json)</a>
+      </li>
+      <li>
+        <a href="definitions.xml.zip">Artifacts (Xml)</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NZ Iwi</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7® FHIR® New Zealand Base Implementation Guide - Local Development build (v2.0.0). See the <a href="http://fhir.org.nz/ig/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-iwi-code.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="CodeSystem-iwi-code.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-iwi-code.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: NZ Iwi - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-05-10
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-iwi-code.json" no-download="true">Raw json</a> | <a href="CodeSystem-iwi-code.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "iwi-code",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;https://standards.digital.health.nz/ns/iwi-code&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;01&lt;a name=\&quot;iwi-code-01\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Tai Tokerau/Tāmaki-makaurau (Northland/Auckland) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0101&lt;a name=\&quot;iwi-code-0101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Aupōuri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0102&lt;a name=\&quot;iwi-code-0102\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0103&lt;a name=\&quot;iwi-code-0103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kurī&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0104&lt;a name=\&quot;iwi-code-0104\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāpuhi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0105&lt;a name=\&quot;iwi-code-0105\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāpuhi ki Whaingaroa-Ngāti Kahu ki Whaingaroa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0106&lt;a name=\&quot;iwi-code-0106\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Rarawa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0107&lt;a name=\&quot;iwi-code-0107\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Takoto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0108&lt;a name=\&quot;iwi-code-0108\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Wai&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0109&lt;a name=\&quot;iwi-code-0109\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Whātua (not Ōrākei or Kaipara)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0110&lt;a name=\&quot;iwi-code-0110\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Kawerau ā Maki&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0111&lt;a name=\&quot;iwi-code-0111\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Uri-o-Hau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0112&lt;a name=\&quot;iwi-code-0112\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Roroa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0113&lt;a name=\&quot;iwi-code-0113\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Whātua o Kaipara&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0114&lt;a name=\&quot;iwi-code-0114\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Whātua o Ōrākei&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0115&lt;a name=\&quot;iwi-code-0115\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Tai ki Tāmaki&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0116&lt;a name=\&quot;iwi-code-0116\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hine (Te Tai Tokerau)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0117&lt;a name=\&quot;iwi-code-0117\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Paatu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0118&lt;a name=\&quot;iwi-code-0118\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Manuhiri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0119&lt;a name=\&quot;iwi-code-0119\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rehua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0120&lt;a name=\&quot;iwi-code-0120\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Torehina ki Mata-ure ō Hau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;02&lt;a name=\&quot;iwi-code-02\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hauraki (Coromandel) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0201&lt;a name=\&quot;iwi-code-0201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hako&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0202&lt;a name=\&quot;iwi-code-0202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hei&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0203&lt;a name=\&quot;iwi-code-0203\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Maru (Hauraki)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0204&lt;a name=\&quot;iwi-code-0204\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Paoa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0205&lt;a name=\&quot;iwi-code-0205\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patukirikiri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0206&lt;a name=\&quot;iwi-code-0206\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Porou ki Harataunga ki Mataora&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0207&lt;a name=\&quot;iwi-code-0207\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Pūkenga ki Waiau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0208&lt;a name=\&quot;iwi-code-0208\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rāhiri Tumutumu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0210&lt;a name=\&quot;iwi-code-0210\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tamaterā&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0211&lt;a name=\&quot;iwi-code-0211\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tara Tokanui&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0212&lt;a name=\&quot;iwi-code-0212\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Whanaunga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0213&lt;a name=\&quot;iwi-code-0213\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Huarere&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;03&lt;a name=\&quot;iwi-code-03\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Waikato/Te Rohe Pōtae (Waikato/King Country) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0301&lt;a name=\&quot;iwi-code-0301\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Haua (Waikato)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0302&lt;a name=\&quot;iwi-code-0302\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Maniapoto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0303&lt;a name=\&quot;iwi-code-0303\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Raukawa (Waikato)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0304&lt;a name=\&quot;iwi-code-0304\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Waikato&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0305&lt;a name=\&quot;iwi-code-0305\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Te Ata&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0306&lt;a name=\&quot;iwi-code-0306\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hīkairo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0307&lt;a name=\&quot;iwi-code-0307\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rereahu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0308&lt;a name=\&quot;iwi-code-0308\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tiipa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0309&lt;a name=\&quot;iwi-code-0309\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Korokī Kahukura&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0310&lt;a name=\&quot;iwi-code-0310\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tamaoho&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0311&lt;a name=\&quot;iwi-code-0311\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Ākitai-Waiohua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0312&lt;a name=\&quot;iwi-code-0312\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tainui Awhiro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;04&lt;a name=\&quot;iwi-code-04\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Arawa/Taupō (Rotorua/Taupō) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0401&lt;a name=\&quot;iwi-code-0401\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Pikiao (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0402&lt;a name=\&quot;iwi-code-0402\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rangiteaorere (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0403&lt;a name=\&quot;iwi-code-0403\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rangitihi (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0404&lt;a name=\&quot;iwi-code-0404\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rangiwewehi (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0405&lt;a name=\&quot;iwi-code-0405\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tapuika (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0406&lt;a name=\&quot;iwi-code-0406\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tarāwhai (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0407&lt;a name=\&quot;iwi-code-0407\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tūhourangi (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0408&lt;a name=\&quot;iwi-code-0408\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uenuku-Kōpako (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0409&lt;a name=\&quot;iwi-code-0409\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Waitaha (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0410&lt;a name=\&quot;iwi-code-0410\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Whakaue (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0411&lt;a name=\&quot;iwi-code-0411\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tūwharetoa (ki Taupō)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0412&lt;a name=\&quot;iwi-code-0412\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tahu-Ngāti Whaoa (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0413&lt;a name=\&quot;iwi-code-0413\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Mākino&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0414&lt;a name=\&quot;iwi-code-0414\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kearoa / Ngāti Tuarā&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0415&lt;a name=\&quot;iwi-code-0415\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rongomai (Te Arawa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;05&lt;a name=\&quot;iwi-code-05\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tauranga Moana/Mātaatua (Bay of Plenty) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0501&lt;a name=\&quot;iwi-code-0501\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Pūkenga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0502&lt;a name=\&quot;iwi-code-0502\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Te Rangi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0503&lt;a name=\&quot;iwi-code-0503\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Ranginui&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0504&lt;a name=\&quot;iwi-code-0504\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Awa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0505&lt;a name=\&quot;iwi-code-0505\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Manawa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0506&lt;a name=\&quot;iwi-code-0506\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Tai (Tauranga Moana/Mātaatua)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0507&lt;a name=\&quot;iwi-code-0507\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tūhoe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0508&lt;a name=\&quot;iwi-code-0508\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Whakatōhea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0509&lt;a name=\&quot;iwi-code-0509\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Whānau-ā-Apanui&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0510&lt;a name=\&quot;iwi-code-0510\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Whare&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0511&lt;a name=\&quot;iwi-code-0511\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngā Pōtiki ā Tamapahore&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0512&lt;a name=\&quot;iwi-code-0512\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Upokorehe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0513&lt;a name=\&quot;iwi-code-0513\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tūwharetoa ki Kawerau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;06&lt;a name=\&quot;iwi-code-06\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Tai Rāwhiti (East Coast) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0601&lt;a name=\&quot;iwi-code-0601\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Porou&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0602&lt;a name=\&quot;iwi-code-0602\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Aitanga-a-Māhaki&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0603&lt;a name=\&quot;iwi-code-0603\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rongowhakaata&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0604&lt;a name=\&quot;iwi-code-0604\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Tāmanuhiri&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0605&lt;a name=\&quot;iwi-code-0605\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Aitanga ā Hauiti&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;07&lt;a name=\&quot;iwi-code-07\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Matau-a-Māui/Wairarapa (Hawke's Bay/Wairarapa) Region iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0701&lt;a name=\&quot;iwi-code-0701\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rongomaiwahine (Te Māhia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0702&lt;a name=\&quot;iwi-code-0702\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahungunu ki Te Wairoa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0703&lt;a name=\&quot;iwi-code-0703\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahungunu ki Heretaunga&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0704&lt;a name=\&quot;iwi-code-0704\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahungunu ki Wairarapa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0706&lt;a name=\&quot;iwi-code-0706\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rangitāne (Te Matau-a-Māui/Hawke's Bay/Wairarapa)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0707&lt;a name=\&quot;iwi-code-0707\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahungunu ki Te Whanganui-a-Orotu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0708&lt;a name=\&quot;iwi-code-0708\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahungunu ki Tamatea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0709&lt;a name=\&quot;iwi-code-0709\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahungunu ki Tamakinui a Rua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0710&lt;a name=\&quot;iwi-code-0710\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Pāhauwera&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0711&lt;a name=\&quot;iwi-code-0711\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rākaipaaka&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0712&lt;a name=\&quot;iwi-code-0712\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hineuru&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0713&lt;a name=\&quot;iwi-code-0713\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maungaharuru Tangitū&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0714&lt;a name=\&quot;iwi-code-0714\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rangitāne o Tamaki nui ā Rua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0715&lt;a name=\&quot;iwi-code-0715\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Ruapani ki Waikaremoana&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0716&lt;a name=\&quot;iwi-code-0716\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Hika o Pāpāuma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0717&lt;a name=\&quot;iwi-code-0717\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hinemanu (Heretaunga)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;08&lt;a name=\&quot;iwi-code-08\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Taranaki Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0801&lt;a name=\&quot;iwi-code-0801\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Atiawa (Taranaki)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0802&lt;a name=\&quot;iwi-code-0802\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Maru (Taranaki)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0803&lt;a name=\&quot;iwi-code-0803\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Mutunga (Taranaki)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0804&lt;a name=\&quot;iwi-code-0804\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngā Rauru&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0805&lt;a name=\&quot;iwi-code-0805\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngā Ruahine&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0806&lt;a name=\&quot;iwi-code-0806\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Ruanui&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0807&lt;a name=\&quot;iwi-code-0807\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tama (Taranaki)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0808&lt;a name=\&quot;iwi-code-0808\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Taranaki&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0809&lt;a name=\&quot;iwi-code-0809\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tangāhoe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0810&lt;a name=\&quot;iwi-code-0810\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pakakohi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;09&lt;a name=\&quot;iwi-code-09\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Whanganui/Rangitīkei (Wanganui/Rangitīkei) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0901&lt;a name=\&quot;iwi-code-0901\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Apa (Rangitīkei)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0902&lt;a name=\&quot;iwi-code-0902\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Ati Haunui-a-Pāpārangi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0903&lt;a name=\&quot;iwi-code-0903\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Haua (Taumarunui)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0904&lt;a name=\&quot;iwi-code-0904\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hauiti (Rangitīkei)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0905&lt;a name=\&quot;iwi-code-0905\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Whitikaupeka (Rangitīkei)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0906&lt;a name=\&quot;iwi-code-0906\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Te Ohuake (Rangitīkei)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0907&lt;a name=\&quot;iwi-code-0907\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tamakōpiri (Rangitīkei)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0908&lt;a name=\&quot;iwi-code-0908\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rangi (Ruapehu, Whanganui)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0909&lt;a name=\&quot;iwi-code-0909\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uenuku (Ruapehu, Waimarino)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0910&lt;a name=\&quot;iwi-code-0910\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tamahaki (Ruapehu, Waimarino)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0911&lt;a name=\&quot;iwi-code-0911\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tamakana (Ruapehu, Waimarino)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;0912&lt;a name=\&quot;iwi-code-0912\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hinemanu (Rangitīkei)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;10&lt;a name=\&quot;iwi-code-10\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Manawatū/Horowhenua/Te Whanganui-a-Tara (Manawatū/Horowhenua/Wellington) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1001&lt;a name=\&quot;iwi-code-1001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Atiawa (Te Whanganui-a-Tara/Wellington)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1002&lt;a name=\&quot;iwi-code-1002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Muaūpoko&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1003&lt;a name=\&quot;iwi-code-1003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rangitāne (Manawatū)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1004&lt;a name=\&quot;iwi-code-1004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Raukawa (Horowhenua/Manawatū)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1005&lt;a name=\&quot;iwi-code-1005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Toarangatira (Te Whanganui-a-Tara/Wellington)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1006&lt;a name=\&quot;iwi-code-1006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Atiawa ki Whakarongotai&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1007&lt;a name=\&quot;iwi-code-1007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tama ki Te Upoko o Te Ika (Te Whanganui-a-Tara/Wellington)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1008&lt;a name=\&quot;iwi-code-1008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kauwhata&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1009&lt;a name=\&quot;iwi-code-1009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tukorehe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;11&lt;a name=\&quot;iwi-code-11\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Waipounamu (South Island) Region Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1101&lt;a name=\&quot;iwi-code-1101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Atiawa (Te Waipounamu/South Island)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1102&lt;a name=\&quot;iwi-code-1102\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Koata&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1103&lt;a name=\&quot;iwi-code-1103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kuia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1104&lt;a name=\&quot;iwi-code-1104\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kāti Māmoe&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1107&lt;a name=\&quot;iwi-code-1107\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rangitāne (Te Waipounamu/South Island)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1108&lt;a name=\&quot;iwi-code-1108\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Rārua&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1109&lt;a name=\&quot;iwi-code-1109\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Tahu / Kāi Tahu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1110&lt;a name=\&quot;iwi-code-1110\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tama ki Te Tauihu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1111&lt;a name=\&quot;iwi-code-1111\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Toarangatira (Te Waipounamu/South Island)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1112&lt;a name=\&quot;iwi-code-1112\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Waitaha (Te Waipounamu/South Island)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1113&lt;a name=\&quot;iwi-code-1113\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Apa ki Te Rā Tō&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;12&lt;a name=\&quot;iwi-code-12\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rēkohu/Wharekauri (Chatham Islands) Region Imi/Iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1201&lt;a name=\&quot;iwi-code-1201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Moriori&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;1202&lt;a name=\&quot;iwi-code-1202\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Mutunga (Wharekauri/Chatham Islands)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;20&lt;a name=\&quot;iwi-code-20\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confederations and Waka, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2001&lt;a name=\&quot;iwi-code-2001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tainui, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2002&lt;a name=\&quot;iwi-code-2002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Arawa, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2003&lt;a name=\&quot;iwi-code-2003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tākitimu, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2004&lt;a name=\&quot;iwi-code-2004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Aotea, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2005&lt;a name=\&quot;iwi-code-2005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mātaatua, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2006&lt;a name=\&quot;iwi-code-2006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mahuru, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2007&lt;a name=\&quot;iwi-code-2007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Māmari, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2008&lt;a name=\&quot;iwi-code-2008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngātokimatawhaorua, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2009&lt;a name=\&quot;iwi-code-2009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nukutere, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2010&lt;a name=\&quot;iwi-code-2010\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tokomaru, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2011&lt;a name=\&quot;iwi-code-2011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Kurahaupō, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2012&lt;a name=\&quot;iwi-code-2012\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Muriwhenua, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2013&lt;a name=\&quot;iwi-code-2013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hauraki / Pare Hauraki, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2014&lt;a name=\&quot;iwi-code-2014\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tūranganui a Kiwa, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2015&lt;a name=\&quot;iwi-code-2015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Tauihu o Te Waka a Māui, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2016&lt;a name=\&quot;iwi-code-2016\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tauranga Moana, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2017&lt;a name=\&quot;iwi-code-2017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Horouta, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2018&lt;a name=\&quot;iwi-code-2018\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mōkai Pātea, iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;21&lt;a name=\&quot;iwi-code-21\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Iwi named, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2101&lt;a name=\&quot;iwi-code-2101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Atiawa, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2102&lt;a name=\&quot;iwi-code-2102\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Haua, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2103&lt;a name=\&quot;iwi-code-2103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Maru, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2104&lt;a name=\&quot;iwi-code-2104\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Mutunga, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2105&lt;a name=\&quot;iwi-code-2105\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rangitāne, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2106&lt;a name=\&quot;iwi-code-2106\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Raukawa, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2107&lt;a name=\&quot;iwi-code-2107\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tama, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2108&lt;a name=\&quot;iwi-code-2108\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Toa, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2109&lt;a name=\&quot;iwi-code-2109\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Waitaha, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2110&lt;a name=\&quot;iwi-code-2110\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Apa, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2111&lt;a name=\&quot;iwi-code-2111\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāi Tai, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2112&lt;a name=\&quot;iwi-code-2112\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Kahungunu, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2113&lt;a name=\&quot;iwi-code-2113\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Tūwharetoa, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2114&lt;a name=\&quot;iwi-code-2114\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ngāti Hinemanu, region not known&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;22&lt;a name=\&quot;iwi-code-22\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hapū affiliated to more than one iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2201&lt;a name=\&quot;iwi-code-2201\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hapū affiliated to more than one iwi&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;23&lt;a name=\&quot;iwi-code-23\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Region known, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2301&lt;a name=\&quot;iwi-code-2301\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Tai Tokerau/Tāmaki-makaurau Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2302&lt;a name=\&quot;iwi-code-2302\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hauraki Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2303&lt;a name=\&quot;iwi-code-2303\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Waikato/Te Rohe Pōtae Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2304&lt;a name=\&quot;iwi-code-2304\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Arawa/Taupō Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2305&lt;a name=\&quot;iwi-code-2305\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tauranga Moana/Mātaatua Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2306&lt;a name=\&quot;iwi-code-2306\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Tai Rāwhiti Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2307&lt;a name=\&quot;iwi-code-2307\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Matau-a-Māui/Wairarapa Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2308&lt;a name=\&quot;iwi-code-2308\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Taranaki Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2309&lt;a name=\&quot;iwi-code-2309\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Whanganui/Rangitīkei Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2310&lt;a name=\&quot;iwi-code-2310\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Manawatū/Horowhenua/Te Whanganui-a-Tara Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2311&lt;a name=\&quot;iwi-code-2311\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Te Waipounamu Region, Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;2312&lt;a name=\&quot;iwi-code-2312\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rēkohu/Wharekauri Region, Imi/Iwi not named&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;44&lt;a name=\&quot;iwi-code-44\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Don't Know&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;4444&lt;a name=\&quot;iwi-code-4444\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Don't Know&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;55&lt;a name=\&quot;iwi-code-55\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Refused To Answer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;5555&lt;a name=\&quot;iwi-code-5555\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Refused To Answer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;77&lt;a name=\&quot;iwi-code-77\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response Unidentifiable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;7777&lt;a name=\&quot;iwi-code-7777\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response Unidentifiable&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;88&lt;a name=\&quot;iwi-code-88\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response Outside Scope&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;8888&lt;a name=\&quot;iwi-code-8888\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Response Outside Scope&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;99&lt;a name=\&quot;iwi-code-99\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not Stated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;9999&lt;a name=\&quot;iwi-code-9999\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not Stated&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://standards.digital.health.nz/ns/iwi-code",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.0.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "Iwi_code",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "NZ Iwi",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-05-10",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "HL7 New Zealand",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 New Zealand",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "mailto:admin@hl7.org.nz"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "NZ Iwi Statistical Standard: 27 May 2022.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">copyright</a>" : "© 2017+ Stats NZ",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.valueSet">valueSet</a>" : "https://nzhts.digital.health.nz/fhir/ValueSet/iwi-code",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.compositional">compositional</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.versionNeeded">versionNeeded</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 208,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "01",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Tai Tokerau/Tāmaki-makaurau (Northland/Auckland) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0101",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Aupōuri"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0102",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kurī"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0104",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāpuhi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0105",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāpuhi ki Whaingaroa-Ngāti Kahu ki Whaingaroa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0106",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Rarawa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0107",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Takoto"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0108",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Wai"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0109",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Whātua (not Ōrākei or Kaipara)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0110",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Kawerau ā Maki"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0111",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Uri-o-Hau"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0112",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Roroa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0113",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Whātua o Kaipara"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0114",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Whātua o Ōrākei"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0115",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Tai ki Tāmaki"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0116",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hine (Te Tai Tokerau)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0117",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Paatu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0118",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Manuhiri"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0119",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rehua"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0120",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Torehina ki Mata-ure ō Hau"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "02",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hauraki (Coromandel) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0201",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hako"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0202",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hei"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0203",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Maru (Hauraki)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0204",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Paoa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0205",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Patukirikiri"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0206",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Porou ki Harataunga ki Mataora"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0207",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Pūkenga ki Waiau"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0208",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rāhiri Tumutumu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0210",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tamaterā"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0211",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tara Tokanui"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0212",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Whanaunga"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0213",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Huarere"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "03",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Waikato/Te Rohe Pōtae (Waikato/King Country) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0301",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Haua (Waikato)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0302",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Maniapoto"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0303",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Raukawa (Waikato)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0304",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Waikato"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0305",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Te Ata"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0306",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hīkairo"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0307",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rereahu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0308",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tiipa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0309",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Korokī Kahukura"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0310",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tamaoho"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0311",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Ākitai-Waiohua"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0312",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tainui Awhiro"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "04",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Arawa/Taupō (Rotorua/Taupō) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0401",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Pikiao (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0402",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rangiteaorere (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0403",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rangitihi (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0404",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rangiwewehi (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0405",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tapuika (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0406",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tarāwhai (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0407",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tūhourangi (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0408",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uenuku-Kōpako (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0409",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Waitaha (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0410",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Whakaue (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0411",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tūwharetoa (ki Taupō)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0412",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tahu-Ngāti Whaoa (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0413",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Mākino"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0414",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kearoa / Ngāti Tuarā"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0415",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rongomai (Te Arawa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "05",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tauranga Moana/Mātaatua (Bay of Plenty) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0501",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Pūkenga"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0502",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Te Rangi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0503",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Ranginui"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0504",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Awa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0505",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Manawa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0506",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Tai (Tauranga Moana/Mātaatua)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0507",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tūhoe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0508",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Whakatōhea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0509",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Whānau-ā-Apanui"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0510",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Whare"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0511",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngā Pōtiki ā Tamapahore"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0512",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Upokorehe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0513",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tūwharetoa ki Kawerau"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "06",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Tai Rāwhiti (East Coast) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0601",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Porou"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0602",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Aitanga-a-Māhaki"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0603",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rongowhakaata"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0604",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Tāmanuhiri"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0605",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Aitanga ā Hauiti"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "07",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Matau-a-Māui/Wairarapa (Hawke's Bay/Wairarapa) Region iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0701",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rongomaiwahine (Te Māhia)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0702",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahungunu ki Te Wairoa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0703",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahungunu ki Heretaunga"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0704",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahungunu ki Wairarapa"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0706",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rangitāne (Te Matau-a-Māui/Hawke's Bay/Wairarapa)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0707",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahungunu ki Te Whanganui-a-Orotu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0708",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahungunu ki Tamatea"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0709",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahungunu ki Tamakinui a Rua"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0710",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Pāhauwera"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0711",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rākaipaaka"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0712",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hineuru"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0713",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maungaharuru Tangitū"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0714",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rangitāne o Tamaki nui ā Rua"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0715",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Ruapani ki Waikaremoana"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0716",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Hika o Pāpāuma"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0717",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hinemanu (Heretaunga)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "08",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Taranaki Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0801",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Atiawa (Taranaki)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0802",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Maru (Taranaki)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0803",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Mutunga (Taranaki)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0804",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngā Rauru"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0805",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngā Ruahine"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0806",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Ruanui"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0807",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tama (Taranaki)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0808",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Taranaki"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0809",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tangāhoe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0810",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pakakohi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "09",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Whanganui/Rangitīkei (Wanganui/Rangitīkei) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0901",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Apa (Rangitīkei)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0902",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Ati Haunui-a-Pāpārangi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0903",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Haua (Taumarunui)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0904",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hauiti (Rangitīkei)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0905",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Whitikaupeka (Rangitīkei)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0906",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Te Ohuake (Rangitīkei)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0907",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tamakōpiri (Rangitīkei)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0908",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rangi (Ruapehu, Whanganui)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0909",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uenuku (Ruapehu, Waimarino)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0910",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tamahaki (Ruapehu, Waimarino)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0911",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tamakana (Ruapehu, Waimarino)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "0912",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hinemanu (Rangitīkei)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "10",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Manawatū/Horowhenua/Te Whanganui-a-Tara (Manawatū/Horowhenua/Wellington) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Atiawa (Te Whanganui-a-Tara/Wellington)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Muaūpoko"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rangitāne (Manawatū)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Raukawa (Horowhenua/Manawatū)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1005",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Toarangatira (Te Whanganui-a-Tara/Wellington)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Atiawa ki Whakarongotai"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1007",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tama ki Te Upoko o Te Ika (Te Whanganui-a-Tara/Wellington)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1008",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kauwhata"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1009",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tukorehe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "11",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Waipounamu (South Island) Region Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1101",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Atiawa (Te Waipounamu/South Island)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1102",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Koata"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kuia"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1104",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kāti Māmoe"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1107",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rangitāne (Te Waipounamu/South Island)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1108",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Rārua"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1109",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Tahu / Kāi Tahu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1110",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tama ki Te Tauihu"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1111",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Toarangatira (Te Waipounamu/South Island)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1112",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Waitaha (Te Waipounamu/South Island)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1113",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Apa ki Te Rā Tō"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "12",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rēkohu/Wharekauri (Chatham Islands) Region Imi/Iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1201",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Moriori"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "1202",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Mutunga (Wharekauri/Chatham Islands)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "20",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Confederations and Waka, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tainui, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Arawa, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tākitimu, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Aotea, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2005",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mātaatua, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mahuru, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2007",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Māmari, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2008",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngātokimatawhaorua, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2009",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Nukutere, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2010",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tokomaru, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2011",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Kurahaupō, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2012",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Muriwhenua, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2013",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hauraki / Pare Hauraki, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2014",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tūranganui a Kiwa, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2015",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Tauihu o Te Waka a Māui, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2016",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tauranga Moana, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2017",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Horouta, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2018",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mōkai Pātea, iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "21",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Iwi named, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2101",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Atiawa, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2102",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Haua, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Maru, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2104",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Mutunga, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2105",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rangitāne, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2106",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Raukawa, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2107",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tama, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2108",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Toa, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2109",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Waitaha, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2110",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Apa, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2111",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāi Tai, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2112",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Kahungunu, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2113",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Tūwharetoa, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2114",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ngāti Hinemanu, region not known"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "22",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hapū affiliated to more than one iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2201",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hapū affiliated to more than one iwi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "23",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Region known, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2301",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Tai Tokerau/Tāmaki-makaurau Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2302",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hauraki Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2303",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Waikato/Te Rohe Pōtae Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2304",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Arawa/Taupō Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2305",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tauranga Moana/Mātaatua Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2306",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Tai Rāwhiti Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2307",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Matau-a-Māui/Wairarapa Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2308",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Taranaki Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2309",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Whanganui/Rangitīkei Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2310",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Manawatū/Horowhenua/Te Whanganui-a-Tara Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2311",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Te Waipounamu Region, Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "2312",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Rēkohu/Wharekauri Region, Imi/Iwi not named"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "44",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Don't Know"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "4444",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Don't Know"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "55",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Refused To Answer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "5555",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Refused To Answer"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "77",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Response Unidentifiable"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "7777",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Response Unidentifiable"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "88",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Response Outside Scope"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "8888",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Response Outside Scope"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "99",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Not Stated"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "9999",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Not Stated"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:admin@hl7.org.nz">HL7 New Zealand</a>.  Package fhir.org.nz.ig.base#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 13, 2022 12:42+1300">2022-10-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,2493 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir.org.nz.ig.base"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7FHIRNewZealandBaseImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base</pre><div><p>New Zealand base profiles</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base"];
+  fhir:ImplementationGuide.version [ fhir:value "2.0.0"];
+  fhir:ImplementationGuide.name [ fhir:value "HL7FHIRNewZealandBaseImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "HL7® FHIR® New Zealand Base Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.date [ fhir:value "2022-10-13T12:42:02+13:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 New Zealand"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 New Zealand" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:admin@hl7.org.nz" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "New Zealand base profiles"];
+  fhir:ImplementationGuide.packageId [ fhir:value "fhir.org.nz.ig.base"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "higtools" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools";
+       fhir:link <http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.tools" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "Release" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://fhir.org.nz/ig/base/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzAddress>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzAddress" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Common NZ Address datatype" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Adds building name, suburb, domicile code and geocode to the Address datatype" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzCondition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzCondition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condition resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile adds the Long-Term Condition extension to the base Condition resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzContactPoint>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzContactPoint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Common NZ ContactPoint datatype" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile adds the Contact Point Purpose and EDI address extensions to the standard data type" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzCoverage>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzCoverage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage resource for use in NZ (Trial use)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Coverage resource for use in NZ (Trial use)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzHealthcareService>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzHealthcareService" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HealthcareService resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HealthcareService resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzLocation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzLocation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Location resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Location resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzMedicationRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzMedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationRequest resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationRequest resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzMedicationStatement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzMedicationStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationStatement resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MedicationStatement resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzOrganization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzOrganization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzPatient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzPatient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The base New Zealand Patient profile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzPractitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzPractitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/NzPractitionerRole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NzPractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole resource for use in NZ" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/additional-authorisation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/additional-authorisation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AdditionalAuthorisation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional authorisations that a practitioner is authorised to perform" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/alias-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/alias-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AliasType" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/building-name>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/building-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Building Name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The name of a building cited in an address." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/condition-on-practice>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/condition-on-practice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConditionOnPractice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A full description of the conditions the health practitioner is subject to in relation to their scope of practice." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/contactpoint-purpose>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/contactpoint-purpose" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "A specific purpose for which this ContactPoint dataType would be used" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A specific purpose for which this ContactPoint dataType would be used. An example would be to indicate that this ContactPoint is used for video conferencing." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/death-date>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/death-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Date of death" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The date of death of the individual, plus the source of that information" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/dhb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/dhb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "District Health Board linked to a NZ Healthcare Service, Location or Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "District Health Board relating to a NZ Healthcare Service, Location (Facility) or Patient (primary, physical home address)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/domicile-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/domicile-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Domicile Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NZ Domicile Code. Derived from a patient's primary physical, home address." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/edi-address>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/edi-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EDI Address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being 'other'. The value of the extension is the EDI supplier, the actual EDI address is the value element. Note that a new extension 'messaging address' is preferred." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/educational-qualification>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/educational-qualification" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EducationalQualification" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Educational qualifications a practitioner has. These may or may not be related to registration information." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/established>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/established" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Established" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The period over which the location or Organization is open" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/funded-programme>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/funded-programme" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Funded Healthcare Programme" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Funded NZ Healthcare Programmes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/information-source>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/information-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Information Source" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The official source of information held about a patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/long-term-condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/long-term-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Long Term Condition Indicator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Long Term Condition Indicator. A long term condition can be  defined as any ongoing, long term or recurring conditions that can have a significant impact on people’s lives." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/messaging-address>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/messaging-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Messaging Address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The address to where electronic communications might be sent. For historical reasons, there is an overlap with edi-address." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nz-residency>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nz-residency" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZResidency" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NZ Residency status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nz-citizenship>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nz-citizenship" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Citizenship" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand citizenship" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nz-ethnicity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nz-ethnicity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Ethnicity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.\n\nThe Stats New Zealand standard can be found [here](http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nz-geocode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nz-geocode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Geocode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand Geocode. This uses a different datum from that defined in the HL7 FHIR specification for a Geocode." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nz-iwi>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nz-iwi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nz_iwi" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Persons Iwi affiliation" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nzeps-long-term-medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nzeps-long-term-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZePS Long Term Medication Indicator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NZePS Long Term Medication Indicator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nzeps-supply-period-reason>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nzeps-supply-period-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZePS Supply Period Reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reason for a non-standard Supply Period." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/nzeps-unusual-dose-quantity>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/nzeps-unusual-dose-quantity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZePS Unusual Dose Quantity Indicator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NZePS Unusual Dose Quantity Indicator" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/pho>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pho" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Primary Healthcare Organisation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Primary Healthcare Organisation associated with a General Practice linked to a NZ Healthcare Service, Location (Facility) or Patient (GP)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/practitionerRole-creator>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/practitionerRole-creator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRoleCreator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The organisation and person that created this role" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/practitionerRole-status-reason>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/practitionerRole-status-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRoleStatusReason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reason for the status. Generally only used for inactive resources." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/registration-initial-date>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/registration-initial-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RegistrationInitialDate" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The date the practitioner first became registered with the Responsible Authority or professional body" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/registration-status-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/registration-status-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RegistrationStatusCode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/scope-of-practice>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/scope-of-practice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ScopeOfPractice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The type or range of health services a practitioner is authorised to perform, as determined by the Responsible Authority or professional body." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/sex-at-birth>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sex-at-birth" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sex At Birth" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A person’s sex at the time of their birth (considered to be immutable)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/StructureDefinition/suburb>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/suburb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Suburb" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Suburb element of a NZ Address." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/location-alias-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/location-alias-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alias types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The complete set of alias types that apply to Locations and Organizations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/citizenship-status>;
+         fhir:Reference.reference [ fhir:value "ValueSet/citizenship-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Citizenship status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Citizenship status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/contact-point-purpose>;
+         fhir:Reference.reference [ fhir:value "ValueSet/contact-point-purpose" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ContactPoint purpose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The purpose of a ContactPoint - what it is used for." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/coverage-category>;
+         fhir:Reference.reference [ fhir:value "ValueSet/coverage-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage Category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand codes for Coverage category types" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/coverage-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/coverage-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand codes for Coverage Types" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/dhb>;
+         fhir:Reference.reference [ fhir:value "ValueSet/dhb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "District Health Board Identifer" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "District Health Board Identifer. Assigned by the HPI." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/datumCode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/datumCode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Datum code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Datum codes used" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/dod-information-source>;
+         fhir:Reference.reference [ fhir:value "ValueSet/dod-information-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Death date Information Source" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The source from where the date of death was sourced" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/domicile-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/domicile-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Domicile Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Domicile Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/ethnicity>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ethnicity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ethnicity of a person" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to record a person's ethnicity, drawn from [Level 4 of the Ethnicity code system](http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/funded-programme>;
+         fhir:Reference.reference [ fhir:value "ValueSet/funded-programme" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Funded Programme" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Some sort of funded programme" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/information-source>;
+         fhir:Reference.reference [ fhir:value "ValueSet/information-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Information Source" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The source from where the value of this item was sourced" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/iwi>;
+         fhir:Reference.reference [ fhir:value "ValueSet/iwi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Iwi" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand iwi codes.  The 2 digit codes are abstract codes and provided in the expansion for navigational purposes. A user should not select an abstract code directly as a proper value." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/nhi-use>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nhi-use" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Valid use values for NHI" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NHI Use codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/nz-residency>;
+         fhir:Reference.reference [ fhir:value "ValueSet/nz-residency" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Residency status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Is the person a NZ resident" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/pho>;
+         fhir:Reference.reference [ fhir:value "ValueSet/pho" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PHO" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Primary Healthcare Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/practitioner-additional-authorisation-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/practitioner-additional-authorisation-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Additional Practitioner authorisations" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded type for additional authorisations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/practitioner-registration-status-code>;
+         fhir:Reference.reference [ fhir:value "ValueSet/practitioner-registration-status-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Registration Status of Practitioners" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The code list represents the current practicing status of the Provider Person as per their registration with an RA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/hpi-practitionerrole-status-reason>;
+         fhir:Reference.reference [ fhir:value "ValueSet/hpi-practitionerrole-status-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole status reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reason for the current status of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/ValueSet/practitioner-scope-of-practice>;
+         fhir:Reference.reference [ fhir:value "ValueSet/practitioner-scope-of-practice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scope of practice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A coded type for professional scope of practice." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/practitioner-additional-authorisation>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/practitioner-additional-authorisation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Additional Authorisation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional authorisations that a practitioner is authorised to practice or prescribe." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/alias-type>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/alias-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type of Alias" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used in Organization and Location to indicate what is the type of Alias" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/citizenship-status>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/citizenship-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Citizenship status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Is this person a NZ Citizen" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/contact-point-purpose>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/contact-point-purpose" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ContactPoint purpose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The purpose of a ContactPoint - what it is used for." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/coverage-category>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/coverage-category" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage category" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand codes for Coverage category types" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/coverage-type>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/coverage-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Coverage type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand codes for Coverage Types" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/datum-code>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/datum-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Datum codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible datum codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/dhb-code>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/dhb-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ DHB" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NZ District Health Board (HPI-ORG) Codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/domicile-code>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/domicile-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Domicile Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Domicile Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/ethnicityL4>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ethnicityL4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Level 4 ethnicity codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to record a person’s ethnicity, drawn from Level 4 of the Ethnicity code system \ndescribed [here](http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/funded-programme>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/funded-programme" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Funded Programme" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Some sort of funded programme" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/information-source>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/information-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Information Source" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All possible sources of information" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/iwi-code>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/iwi-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Iwi" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NZ Iwi Statistical Standard: 27 May 2022." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/nz-residency>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nz-residency" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NZ Residency status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NZ Residency status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/pho-status>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pho-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PHO" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Primary Healthcare Organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/practitioner-registration-status-code>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/practitioner-registration-status-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Registration Status of Practitioners" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The code list represents the current practicing status of the Provider Person as per their registration with an RA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/hpi-practitionerRole-status-reason>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/hpi-practitionerRole-status-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole status reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The reason for the current status of PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/CodeSystem/scopeOfPractice>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/scopeOfPractice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scope of practice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Coverage/CoverageCSC>;
+         fhir:Reference.reference [ fhir:value "Coverage/CoverageCSC" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoverageCSC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CSC Coverage example" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzCoverage";
+         fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzCoverage>
+       ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Coverage/CoverageGMS>;
+         fhir:Reference.reference [ fhir:value "Coverage/CoverageGMS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoverageGMS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "GMS Coverage example" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzCoverage";
+         fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzCoverage>
+       ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Coverage/CoverageHUHC>;
+         fhir:Reference.reference [ fhir:value "Coverage/CoverageHUHC" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CoverageHUHC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HUHC Coverage example" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzCoverage";
+         fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzCoverage>
+       ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Condition/condition-long-term-condition>;
+         fhir:Reference.reference [ fhir:value "Condition/condition-long-term-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "condition-long-term-condition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of long term condition" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/hpiFacility>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/hpiFacility" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "hpiFacility" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HPI facilities" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/hpiOrganization>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/hpiOrganization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "hpiOrganization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HPI organizations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/hpiProvider>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/hpiProvider" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "hpiProvider" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HPI providers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/hpipractitionerrole>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/hpipractitionerrole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "hpipractitionerrole" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HPI PractitionerRole id" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Location/location-alias-type>;
+         fhir:Reference.reference [ fhir:value "Location/location-alias-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "location-alias-type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A location with an alias type against the alias." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Location/location-established>;
+         fhir:Reference.reference [ fhir:value "Location/location-established" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "location-established" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A location with the date established" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/MedicationRequest/medicationrequest-nzeps-long-term-medication>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/medicationrequest-nzeps-long-term-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "medicationrequest-nzeps-long-term-medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of long term medication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/MedicationRequest/medicationrequest-nzeps-supply-period-reason>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/medicationrequest-nzeps-supply-period-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "medicationrequest-nzeps-supply-period-reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of supply period reason" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/MedicationRequest/medicationrequest-nzeps-unusual-dose-quantity>;
+         fhir:Reference.reference [ fhir:value "MedicationRequest/medicationrequest-nzeps-unusual-dose-quantity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "medicationrequest-nzeps-unusual-dose-quantity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of sunusual does quantity" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nhi>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nhi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nhi" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NHI number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzbn>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzbn" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzbn" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "New Zealand Business Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzchrir>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzchrir" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzchrir" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chiropractic Board Register number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzdental>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzdental" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzdental" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dental Council Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzdiet>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzdiet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzdiet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dietitians Board Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzmc>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzmc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzmc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medical Council of New Zealand Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzmwife>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzmwife" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzmwife" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Midwifery Council Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nznc>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nznc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nznc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nursing Council of New Zealand Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzocc>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzocc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzocc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Occupational Therapy Board Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzopt>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzopt" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzopt" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Optometrists & Dispensing Opticians Board Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzost>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzost" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzost" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Osteopathic Council Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzparamed>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzparamed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzparamed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paramedic Council Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzpharm>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzpharm" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzpharm" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pharmacy Council of New Zealand Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzphysio>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzphysio" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzphysio" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Physiotherapy Board Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzpod>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzpod" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzpod" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Podiatrists Board Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzpsycho>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzpsycho" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzpsycho" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Psychotherapists Board register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzpsyhc>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzpsyhc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzpsyhc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Psychologists Board Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzrad>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzrad" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzrad" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medical Radiation Technologists Board Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/NamingSystem/nzscience>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/nzscience" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "nzscience" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Medical Sciences Council Register Number" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Organization/organization-edi-address>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-edi-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization-edi-address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of edi address extension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Organization/organization-funded-programme>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-funded-programme" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization-funded-programme" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Funded programme" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Organization/organization-moh>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-moh" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization-moh" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ministrt Of Health" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-address-building-name>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-address-building-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-address-building-name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient with building name in the address" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-address-suburb>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-address-suburb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-address-suburb" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient with building name and suburb in the address" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-building-name>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-building-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-building-name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of building name extension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-deceased-information-source>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-deceased-information-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-deceased-information-source" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of information source" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzPatient";
+         fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzPatient>
+       ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-dhb>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-dhb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-dhb" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-domicile-code>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-domicile-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-domicile-code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Domicile code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-information-source>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-information-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-information-source" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of information source" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-messaging-address>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-messaging-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-messaging-address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-nhi>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-nhi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-nhi" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of PHO" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://hl7.org.nz/fhir/StructureDefinition/NzPatient";
+         fhir:link <http://hl7.org.nz/fhir/StructureDefinition/NzPatient>
+       ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-nz-citizenship>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-nz-citizenship" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-nz-citizenship" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of citizenship" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-nz-ethnicity>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-nz-ethnicity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-nz-ethnicity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of ethnicity" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-nz-geocode>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-nz-geocode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-nz-geocode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of geocode" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-nz-residency>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-nz-residency" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-nz-residency" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of citizenship" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-pho>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-pho" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-pho" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of PHO" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-sex-at-birth>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-sex-at-birth" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-sex-at-birth" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a Patient with the sex at birth extension" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Patient/patient-suburb>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-suburb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-suburb" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of suburb" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-additional-authorisation>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-additional-authorisation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-additional-authorisation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Additional authorisation example - to give immunizations in 2021" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-condition-on-practice>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-condition-on-practice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-condition-on-practice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Condition on practice" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-death-date>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-death-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-death-date" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Practitioner with detah date" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-edi-address>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-edi-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-edi-address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Condition on practice" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-educational-qualification>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-educational-qualification" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-educational-qualification" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of educational qualification" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-registration-initial-date>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-registration-initial-date" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-registration-initial-date" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of Initial date of registration" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-registration-status-code>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-registration-status-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-registration-status-code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of registration status" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/Practitioner/practitioner-scope-of-practice>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner-scope-of-practice" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-scope-of-practice" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of scope of practice" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/PractitionerRole/practitionerRole-creator>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/practitionerRole-creator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitionerRole-creator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The creator of a practitioner role. Uses a contained resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/PractitionerRole/practitionerRole-messaging-address>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/practitionerRole-messaging-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitionerRole-messaging-address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of status reason" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org.nz/ig/base/PractitionerRole/practitionerRole-status-reason>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/practitionerRole-status-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitionerRole-status-reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of status reason" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ];
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "extensions.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extensions.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "namingSystems.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "namingSystems.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Naming Systems" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "profiles.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "StructureDefinition-nzpatient-summary.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-nzpatient-summary.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Structure Definition Nzpatient Summary" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "terminology.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

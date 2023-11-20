@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR.ORG.NZ.IG.BASE\Ethnicity of a person - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7.53"}
+    h3,h4,h5,h6{--heading-prefix:"7.53"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+
+      
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="http://hl7.org.nz">
+      <img height="50" alt="Project home" src="assets/images/hl7nz-logo.jpg"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7® FHIR® New Zealand Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0 - Release
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="namingSystems.html">Identifiers</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artifacts (Json)</a>
+      </li>
+      <li>
+        <a href="definitions.xml.zip">Artifacts (Xml)</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Ethnicity of a person</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7® FHIR® New Zealand Base Implementation Guide - Local Development build (v2.0.0). See the <a href="http://fhir.org.nz/ig/base/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-ethnicity.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ethnicity.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ethnicity.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Ethnicity of a person
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code|2.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-10-13
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Ethnicity</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Codes to record a person’s ethnicity, drawn from <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">Level 4 of the Ethnicity code system</a></p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-nz-ethnicity.html">NZ Ethnicity</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ethnicityL4.html"><code>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 186 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-ethnicityL4.html">Level 4 ethnicity codes v2.1.0 (CodeSystem)</a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-10000"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-10000">10000</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>European nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-11111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-11111">11111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>New Zealand European</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12100">12100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>British nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12111">12111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Celtic nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12112"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12112">12112</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Channel Islander</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12113"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12113">12113</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Cornish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12114"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12114">12114</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>English</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12116"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12116">12116</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Irish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12117"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12117">12117</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Manx</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12119"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12119">12119</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Scottish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12121"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12121">12121</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Welsh</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12199">12199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>British nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12211"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12211">12211</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Dutch</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12311"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12311">12311</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Greek</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12411"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12411">12411</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Polish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12500"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12500">12500</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>South Slav nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12511"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12511">12511</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Croatian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12512"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12512">12512</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Dalmatian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12513"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12513">12513</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Macedonian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12514"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12514">12514</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Serbian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12515"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12515">12515</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Slovenian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12516"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12516">12516</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Bosnian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12599"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12599">12599</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>South Slav nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12611"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12611">12611</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Italian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12711"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12711">12711</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>German</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12811"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12811">12811</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Australian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12911"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12911">12911</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Albanian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12912"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12912">12912</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Armenian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12913"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12913">12913</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Austrian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12914"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12914">12914</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Belgian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12915"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12915">12915</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Bulgarian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12916"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12916">12916</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Belorussian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12918"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12918">12918</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Cypriot nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12919"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12919">12919</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Czech</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12920"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12920">12920</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Danish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12921"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12921">12921</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Estonian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12922"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12922">12922</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Finnish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12923"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12923">12923</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Flemish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12924"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12924">12924</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>French</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12926"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12926">12926</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Hungarian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12927"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12927">12927</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Icelandic</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12928"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12928">12928</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Latvian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12929"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12929">12929</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Lithuanian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12930"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12930">12930</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Maltese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12931"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12931">12931</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Norwegian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12932"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12932">12932</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Portuguese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12933"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12933">12933</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Romanian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12934"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12934">12934</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Romani</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12935"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12935">12935</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Russian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12937"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12937">12937</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Slavic</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12938"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12938">12938</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Slovak</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12939"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12939">12939</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Spanish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12940"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12940">12940</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Swedish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12941"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12941">12941</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Swiss</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12942"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12942">12942</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Ukrainian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12943"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12943">12943</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>American</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12945"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12945">12945</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Canadian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12947"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12947">12947</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>New Caledonian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12948"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12948">12948</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>South African European</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12949"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12949">12949</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Afrikaner</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12950"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12950">12950</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Zimbabwean European</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-12999"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-12999">12999</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>European nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-21111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-21111">21111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Māori</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-30000"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-30000">30000</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Pacific Peoples nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-31111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-31111">31111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Samoan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-32100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-32100">32100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Cook Islands Maori</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-33111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-33111">33111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Tongan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-34111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-34111">34111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Niuean</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-35111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-35111">35111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Tokelauan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-36111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-36111">36111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Fijian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37112"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37112">37112</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Indigenous Australian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37122"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37122">37122</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Hawaiian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37124"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37124">37124</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Kiribati</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37130"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37130">37130</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Nauruan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37135"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37135">37135</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Papua New Guinean</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37137"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37137">37137</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Pitcairn Islander</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37138"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37138">37138</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Rotuman</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37140"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37140">37140</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Tahitian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37141"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37141">37141</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Solomon Islander</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37144"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37144">37144</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Tuvaluan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37145"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37145">37145</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Ni Vanuatu</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-37199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-37199">37199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Pacific Peoples nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-40000"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-40000">40000</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Asian nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41000"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41000">41000</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Southeast Asian nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41111">41111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Filipino</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41211"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41211">41211</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Cambodian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41311"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41311">41311</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Vietnamese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41411"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41411">41411</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Burmese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41412"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41412">41412</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Indonesian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41413"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41413">41413</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Lao</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41414"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41414">41414</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Malay</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41415"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41415">41415</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Thai</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41416"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41416">41416</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Karen</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41417"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41417">41417</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Chin</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-41499"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-41499">41499</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Southeast Asian nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42100">42100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Chinese nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42111">42111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Hong Kong Chinese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42112"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42112">42112</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Cambodian Chinese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42113"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42113">42113</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Malaysian Chinese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42114"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42114">42114</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Singaporean Chinese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42115"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42115">42115</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Vietnamese Chinese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42116"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42116">42116</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Taiwanese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-42199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-42199">42199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Chinese nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43100">43100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Indian nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43111">43111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Bengali</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43112"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43112">43112</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Fijian Indian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43114"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43114">43114</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Indian Tamil</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43115"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43115">43115</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Punjabi</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43116"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43116">43116</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Sikh</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43117"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43117">43117</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Anglo Indian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43118"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43118">43118</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Malaysian Indian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43119"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43119">43119</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>South African Indian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-43199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-43199">43199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Indian nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44100">44100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Sri Lankan nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44111">44111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Sinhalese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44112"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44112">44112</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Sri Lankan Tamil</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44199">44199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Sri Lankan nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44211"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44211">44211</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Japanese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44311"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44311">44311</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Korean</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44411"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44411">44411</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Afghan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44412"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44412">44412</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Bangladeshi</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44413"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44413">44413</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Nepali</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44414"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44414">44414</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Pakistani</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44415"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44415">44415</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Tibetan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44416"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44416">44416</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Eurasian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44417"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44417">44417</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Bhutanese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44418"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44418">44418</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Maldivian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44419"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44419">44419</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Mongolian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-44499"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-44499">44499</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Asian nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51100">51100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Middle Eastern nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51111">51111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Algerian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51112"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51112">51112</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Arab</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51113"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51113">51113</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Assyrian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51114"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51114">51114</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Egyptian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51115"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51115">51115</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Iranian/Persian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51116"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51116">51116</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Iraqi</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51117"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51117">51117</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Israeli/Jewish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51118"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51118">51118</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Jordanian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51119"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51119">51119</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Kurd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51120"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51120">51120</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Lebanese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51122"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51122">51122</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Moroccan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51124"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51124">51124</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Palestinian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51125"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51125">51125</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Syrian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51127"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51127">51127</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Turkish</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-51199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-51199">51199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Middle Eastern nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52100">52100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Latin American nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52111"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52111">52111</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Argentinian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52112"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52112">52112</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Bolivian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52113"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52113">52113</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Brazilian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52114"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52114">52114</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Chilean</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52115"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52115">52115</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Colombian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52118"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52118">52118</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Ecuadorian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52123"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52123">52123</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Mexican</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52127"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52127">52127</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Peruvian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52128"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52128">52128</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Puerto Rican</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52129"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52129">52129</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Uruguayan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52130"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52130">52130</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Venezuelan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-52199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-52199">52199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Latin American nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53100"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53100">53100</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>African nfd</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53113"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53113">53113</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Jamaican</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53114"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53114">53114</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Kenyan</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53115"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53115">53115</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Nigerian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53116"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53116">53116</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>African American</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53118"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53118">53118</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Caribbean</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53119"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53119">53119</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Somali</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53120"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53120">53120</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Eritrean</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53121"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53121">53121</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Ethiopian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53122"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53122">53122</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Ghanaian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53123"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53123">53123</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Burundian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53124"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53124">53124</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Congolese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53125"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53125">53125</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Sudanese</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53126"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53126">53126</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Zambian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53127"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53127">53127</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Other Zimbabwean</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-53199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-53199">53199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>African nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-61113"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-61113">61113</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Indigehous American</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-61115"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-61115">61115</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Mauritian</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-61116"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-61116">61116</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Seychellois</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-61117"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-61117">61117</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Other South African</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-61118"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-61118">61118</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>New Zealander</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-61199"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-61199">61199</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Other Ethnicity nec</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-94444"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-94444">94444</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Don't Know</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-95555"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-95555">95555</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Refused to Answer</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-96666"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-96666">96666</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Repeated Value</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-97777"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-97777">97777</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Response Unidentifiable</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-98888"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-98888">98888</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Response Outside Scope</td></tr><tr><td style="white-space:nowrap"><a name="https---standards.digital.health.nz-ns-ethnic-group-level-4-code-99999"> </a>  <a href="CodeSystem-ethnicityL4.html#ethnicityL4-99999">99999</a></td><td>https://standards.digital.health.nz/ns/ethnic-group-level-4-code</td><td>Not Stated</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:admin@hl7.org.nz">HL7 New Zealand</a>.  Package fhir.org.nz.ig.base#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 13, 2022 12:42+1300">2022-10-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,882 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/iwi-code> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "iwi-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://standards.digital.health.nz/ns/iwi-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"iwi-code-01\"> </a></td><td>Te Tai Tokerau/Tāmaki-makaurau (Northland/Auckland) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0101<a name=\"iwi-code-0101\"> </a></td><td>Te Aupōuri</td></tr><tr><td style=\"white-space:nowrap\">0102<a name=\"iwi-code-0102\"> </a></td><td>Ngāti Kahu</td></tr><tr><td style=\"white-space:nowrap\">0103<a name=\"iwi-code-0103\"> </a></td><td>Ngāti Kurī</td></tr><tr><td style=\"white-space:nowrap\">0104<a name=\"iwi-code-0104\"> </a></td><td>Ngāpuhi</td></tr><tr><td style=\"white-space:nowrap\">0105<a name=\"iwi-code-0105\"> </a></td><td>Ngāpuhi ki Whaingaroa-Ngāti Kahu ki Whaingaroa</td></tr><tr><td style=\"white-space:nowrap\">0106<a name=\"iwi-code-0106\"> </a></td><td>Te Rarawa</td></tr><tr><td style=\"white-space:nowrap\">0107<a name=\"iwi-code-0107\"> </a></td><td>Ngāi Takoto</td></tr><tr><td style=\"white-space:nowrap\">0108<a name=\"iwi-code-0108\"> </a></td><td>Ngāti Wai</td></tr><tr><td style=\"white-space:nowrap\">0109<a name=\"iwi-code-0109\"> </a></td><td>Ngāti Whātua (not Ōrākei or Kaipara)</td></tr><tr><td style=\"white-space:nowrap\">0110<a name=\"iwi-code-0110\"> </a></td><td>Te Kawerau ā Maki</td></tr><tr><td style=\"white-space:nowrap\">0111<a name=\"iwi-code-0111\"> </a></td><td>Te Uri-o-Hau</td></tr><tr><td style=\"white-space:nowrap\">0112<a name=\"iwi-code-0112\"> </a></td><td>Te Roroa</td></tr><tr><td style=\"white-space:nowrap\">0113<a name=\"iwi-code-0113\"> </a></td><td>Ngāti Whātua o Kaipara</td></tr><tr><td style=\"white-space:nowrap\">0114<a name=\"iwi-code-0114\"> </a></td><td>Ngāti Whātua o Ōrākei</td></tr><tr><td style=\"white-space:nowrap\">0115<a name=\"iwi-code-0115\"> </a></td><td>Ngāi Tai ki Tāmaki</td></tr><tr><td style=\"white-space:nowrap\">0116<a name=\"iwi-code-0116\"> </a></td><td>Ngāti Hine (Te Tai Tokerau)</td></tr><tr><td style=\"white-space:nowrap\">0117<a name=\"iwi-code-0117\"> </a></td><td>Te Paatu</td></tr><tr><td style=\"white-space:nowrap\">0118<a name=\"iwi-code-0118\"> </a></td><td>Ngāti Manuhiri</td></tr><tr><td style=\"white-space:nowrap\">0119<a name=\"iwi-code-0119\"> </a></td><td>Ngāti Rehua</td></tr><tr><td style=\"white-space:nowrap\">0120<a name=\"iwi-code-0120\"> </a></td><td>Ngāti Torehina ki Mata-ure ō Hau</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"iwi-code-02\"> </a></td><td>Hauraki (Coromandel) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0201<a name=\"iwi-code-0201\"> </a></td><td>Ngāti Hako</td></tr><tr><td style=\"white-space:nowrap\">0202<a name=\"iwi-code-0202\"> </a></td><td>Ngāti Hei</td></tr><tr><td style=\"white-space:nowrap\">0203<a name=\"iwi-code-0203\"> </a></td><td>Ngāti Maru (Hauraki)</td></tr><tr><td style=\"white-space:nowrap\">0204<a name=\"iwi-code-0204\"> </a></td><td>Ngāti Paoa</td></tr><tr><td style=\"white-space:nowrap\">0205<a name=\"iwi-code-0205\"> </a></td><td>Patukirikiri</td></tr><tr><td style=\"white-space:nowrap\">0206<a name=\"iwi-code-0206\"> </a></td><td>Ngāti Porou ki Harataunga ki Mataora</td></tr><tr><td style=\"white-space:nowrap\">0207<a name=\"iwi-code-0207\"> </a></td><td>Ngāti Pūkenga ki Waiau</td></tr><tr><td style=\"white-space:nowrap\">0208<a name=\"iwi-code-0208\"> </a></td><td>Ngāti Rāhiri Tumutumu</td></tr><tr><td style=\"white-space:nowrap\">0210<a name=\"iwi-code-0210\"> </a></td><td>Ngāti Tamaterā</td></tr><tr><td style=\"white-space:nowrap\">0211<a name=\"iwi-code-0211\"> </a></td><td>Ngāti Tara Tokanui</td></tr><tr><td style=\"white-space:nowrap\">0212<a name=\"iwi-code-0212\"> </a></td><td>Ngāti Whanaunga</td></tr><tr><td style=\"white-space:nowrap\">0213<a name=\"iwi-code-0213\"> </a></td><td>Ngāti Huarere</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"iwi-code-03\"> </a></td><td>Waikato/Te Rohe Pōtae (Waikato/King Country) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0301<a name=\"iwi-code-0301\"> </a></td><td>Ngāti Haua (Waikato)</td></tr><tr><td style=\"white-space:nowrap\">0302<a name=\"iwi-code-0302\"> </a></td><td>Ngāti Maniapoto</td></tr><tr><td style=\"white-space:nowrap\">0303<a name=\"iwi-code-0303\"> </a></td><td>Raukawa (Waikato)</td></tr><tr><td style=\"white-space:nowrap\">0304<a name=\"iwi-code-0304\"> </a></td><td>Waikato</td></tr><tr><td style=\"white-space:nowrap\">0305<a name=\"iwi-code-0305\"> </a></td><td>Ngāti Te Ata</td></tr><tr><td style=\"white-space:nowrap\">0306<a name=\"iwi-code-0306\"> </a></td><td>Ngāti Hīkairo</td></tr><tr><td style=\"white-space:nowrap\">0307<a name=\"iwi-code-0307\"> </a></td><td>Rereahu</td></tr><tr><td style=\"white-space:nowrap\">0308<a name=\"iwi-code-0308\"> </a></td><td>Ngāti Tiipa</td></tr><tr><td style=\"white-space:nowrap\">0309<a name=\"iwi-code-0309\"> </a></td><td>Ngāti Korokī Kahukura</td></tr><tr><td style=\"white-space:nowrap\">0310<a name=\"iwi-code-0310\"> </a></td><td>Ngāti Tamaoho</td></tr><tr><td style=\"white-space:nowrap\">0311<a name=\"iwi-code-0311\"> </a></td><td>Te Ākitai-Waiohua</td></tr><tr><td style=\"white-space:nowrap\">0312<a name=\"iwi-code-0312\"> </a></td><td>Tainui Awhiro</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"iwi-code-04\"> </a></td><td>Te Arawa/Taupō (Rotorua/Taupō) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0401<a name=\"iwi-code-0401\"> </a></td><td>Ngāti Pikiao (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0402<a name=\"iwi-code-0402\"> </a></td><td>Ngāti Rangiteaorere (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0403<a name=\"iwi-code-0403\"> </a></td><td>Ngāti Rangitihi (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0404<a name=\"iwi-code-0404\"> </a></td><td>Ngāti Rangiwewehi (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0405<a name=\"iwi-code-0405\"> </a></td><td>Tapuika (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0406<a name=\"iwi-code-0406\"> </a></td><td>Ngāti Tarāwhai (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0407<a name=\"iwi-code-0407\"> </a></td><td>Tūhourangi (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0408<a name=\"iwi-code-0408\"> </a></td><td>Uenuku-Kōpako (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0409<a name=\"iwi-code-0409\"> </a></td><td>Waitaha (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0410<a name=\"iwi-code-0410\"> </a></td><td>Ngāti Whakaue (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0411<a name=\"iwi-code-0411\"> </a></td><td>Ngāti Tūwharetoa (ki Taupō)</td></tr><tr><td style=\"white-space:nowrap\">0412<a name=\"iwi-code-0412\"> </a></td><td>Ngāti Tahu-Ngāti Whaoa (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">0413<a name=\"iwi-code-0413\"> </a></td><td>Ngāti Mākino</td></tr><tr><td style=\"white-space:nowrap\">0414<a name=\"iwi-code-0414\"> </a></td><td>Ngāti Kearoa / Ngāti Tuarā</td></tr><tr><td style=\"white-space:nowrap\">0415<a name=\"iwi-code-0415\"> </a></td><td>Ngāti Rongomai (Te Arawa)</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"iwi-code-05\"> </a></td><td>Tauranga Moana/Mātaatua (Bay of Plenty) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0501<a name=\"iwi-code-0501\"> </a></td><td>Ngāti Pūkenga</td></tr><tr><td style=\"white-space:nowrap\">0502<a name=\"iwi-code-0502\"> </a></td><td>Ngāi Te Rangi</td></tr><tr><td style=\"white-space:nowrap\">0503<a name=\"iwi-code-0503\"> </a></td><td>Ngāti Ranginui</td></tr><tr><td style=\"white-space:nowrap\">0504<a name=\"iwi-code-0504\"> </a></td><td>Ngāti Awa</td></tr><tr><td style=\"white-space:nowrap\">0505<a name=\"iwi-code-0505\"> </a></td><td>Ngāti Manawa</td></tr><tr><td style=\"white-space:nowrap\">0506<a name=\"iwi-code-0506\"> </a></td><td>Ngāi Tai (Tauranga Moana/Mātaatua)</td></tr><tr><td style=\"white-space:nowrap\">0507<a name=\"iwi-code-0507\"> </a></td><td>Tūhoe</td></tr><tr><td style=\"white-space:nowrap\">0508<a name=\"iwi-code-0508\"> </a></td><td>Whakatōhea</td></tr><tr><td style=\"white-space:nowrap\">0509<a name=\"iwi-code-0509\"> </a></td><td>Te Whānau-ā-Apanui</td></tr><tr><td style=\"white-space:nowrap\">0510<a name=\"iwi-code-0510\"> </a></td><td>Ngāti Whare</td></tr><tr><td style=\"white-space:nowrap\">0511<a name=\"iwi-code-0511\"> </a></td><td>Ngā Pōtiki ā Tamapahore</td></tr><tr><td style=\"white-space:nowrap\">0512<a name=\"iwi-code-0512\"> </a></td><td>Te Upokorehe</td></tr><tr><td style=\"white-space:nowrap\">0513<a name=\"iwi-code-0513\"> </a></td><td>Ngāti Tūwharetoa ki Kawerau</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"iwi-code-06\"> </a></td><td>Te Tai Rāwhiti (East Coast) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0601<a name=\"iwi-code-0601\"> </a></td><td>Ngāti Porou</td></tr><tr><td style=\"white-space:nowrap\">0602<a name=\"iwi-code-0602\"> </a></td><td>Te Aitanga-a-Māhaki</td></tr><tr><td style=\"white-space:nowrap\">0603<a name=\"iwi-code-0603\"> </a></td><td>Rongowhakaata</td></tr><tr><td style=\"white-space:nowrap\">0604<a name=\"iwi-code-0604\"> </a></td><td>Ngāi Tāmanuhiri</td></tr><tr><td style=\"white-space:nowrap\">0605<a name=\"iwi-code-0605\"> </a></td><td>Te Aitanga ā Hauiti</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"iwi-code-07\"> </a></td><td>Te Matau-a-Māui/Wairarapa (Hawke's Bay/Wairarapa) Region iwi</td></tr><tr><td style=\"white-space:nowrap\">0701<a name=\"iwi-code-0701\"> </a></td><td>Rongomaiwahine (Te Māhia)</td></tr><tr><td style=\"white-space:nowrap\">0702<a name=\"iwi-code-0702\"> </a></td><td>Ngāti Kahungunu ki Te Wairoa</td></tr><tr><td style=\"white-space:nowrap\">0703<a name=\"iwi-code-0703\"> </a></td><td>Ngāti Kahungunu ki Heretaunga</td></tr><tr><td style=\"white-space:nowrap\">0704<a name=\"iwi-code-0704\"> </a></td><td>Ngāti Kahungunu ki Wairarapa</td></tr><tr><td style=\"white-space:nowrap\">0706<a name=\"iwi-code-0706\"> </a></td><td>Rangitāne (Te Matau-a-Māui/Hawke's Bay/Wairarapa)</td></tr><tr><td style=\"white-space:nowrap\">0707<a name=\"iwi-code-0707\"> </a></td><td>Ngāti Kahungunu ki Te Whanganui-a-Orotu</td></tr><tr><td style=\"white-space:nowrap\">0708<a name=\"iwi-code-0708\"> </a></td><td>Ngāti Kahungunu ki Tamatea</td></tr><tr><td style=\"white-space:nowrap\">0709<a name=\"iwi-code-0709\"> </a></td><td>Ngāti Kahungunu ki Tamakinui a Rua</td></tr><tr><td style=\"white-space:nowrap\">0710<a name=\"iwi-code-0710\"> </a></td><td>Ngāti Pāhauwera</td></tr><tr><td style=\"white-space:nowrap\">0711<a name=\"iwi-code-0711\"> </a></td><td>Ngāti Rākaipaaka</td></tr><tr><td style=\"white-space:nowrap\">0712<a name=\"iwi-code-0712\"> </a></td><td>Ngāti Hineuru</td></tr><tr><td style=\"white-space:nowrap\">0713<a name=\"iwi-code-0713\"> </a></td><td>Maungaharuru Tangitū</td></tr><tr><td style=\"white-space:nowrap\">0714<a name=\"iwi-code-0714\"> </a></td><td>Rangitāne o Tamaki nui ā Rua</td></tr><tr><td style=\"white-space:nowrap\">0715<a name=\"iwi-code-0715\"> </a></td><td>Ngāti Ruapani ki Waikaremoana</td></tr><tr><td style=\"white-space:nowrap\">0716<a name=\"iwi-code-0716\"> </a></td><td>Te Hika o Pāpāuma</td></tr><tr><td style=\"white-space:nowrap\">0717<a name=\"iwi-code-0717\"> </a></td><td>Ngāti Hinemanu (Heretaunga)</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"iwi-code-08\"> </a></td><td>Taranaki Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0801<a name=\"iwi-code-0801\"> </a></td><td>Te Atiawa (Taranaki)</td></tr><tr><td style=\"white-space:nowrap\">0802<a name=\"iwi-code-0802\"> </a></td><td>Ngāti Maru (Taranaki)</td></tr><tr><td style=\"white-space:nowrap\">0803<a name=\"iwi-code-0803\"> </a></td><td>Ngāti Mutunga (Taranaki)</td></tr><tr><td style=\"white-space:nowrap\">0804<a name=\"iwi-code-0804\"> </a></td><td>Ngā Rauru</td></tr><tr><td style=\"white-space:nowrap\">0805<a name=\"iwi-code-0805\"> </a></td><td>Ngā Ruahine</td></tr><tr><td style=\"white-space:nowrap\">0806<a name=\"iwi-code-0806\"> </a></td><td>Ngāti Ruanui</td></tr><tr><td style=\"white-space:nowrap\">0807<a name=\"iwi-code-0807\"> </a></td><td>Ngāti Tama (Taranaki)</td></tr><tr><td style=\"white-space:nowrap\">0808<a name=\"iwi-code-0808\"> </a></td><td>Taranaki</td></tr><tr><td style=\"white-space:nowrap\">0809<a name=\"iwi-code-0809\"> </a></td><td>Tangāhoe</td></tr><tr><td style=\"white-space:nowrap\">0810<a name=\"iwi-code-0810\"> </a></td><td>Pakakohi</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"iwi-code-09\"> </a></td><td>Whanganui/Rangitīkei (Wanganui/Rangitīkei) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">0901<a name=\"iwi-code-0901\"> </a></td><td>Ngāti Apa (Rangitīkei)</td></tr><tr><td style=\"white-space:nowrap\">0902<a name=\"iwi-code-0902\"> </a></td><td>Te Ati Haunui-a-Pāpārangi</td></tr><tr><td style=\"white-space:nowrap\">0903<a name=\"iwi-code-0903\"> </a></td><td>Ngāti Haua (Taumarunui)</td></tr><tr><td style=\"white-space:nowrap\">0904<a name=\"iwi-code-0904\"> </a></td><td>Ngāti Hauiti (Rangitīkei)</td></tr><tr><td style=\"white-space:nowrap\">0905<a name=\"iwi-code-0905\"> </a></td><td>Ngāti Whitikaupeka (Rangitīkei)</td></tr><tr><td style=\"white-space:nowrap\">0906<a name=\"iwi-code-0906\"> </a></td><td>Ngāi Te Ohuake (Rangitīkei)</td></tr><tr><td style=\"white-space:nowrap\">0907<a name=\"iwi-code-0907\"> </a></td><td>Ngāti Tamakōpiri (Rangitīkei)</td></tr><tr><td style=\"white-space:nowrap\">0908<a name=\"iwi-code-0908\"> </a></td><td>Ngāti Rangi (Ruapehu, Whanganui)</td></tr><tr><td style=\"white-space:nowrap\">0909<a name=\"iwi-code-0909\"> </a></td><td>Uenuku (Ruapehu, Waimarino)</td></tr><tr><td style=\"white-space:nowrap\">0910<a name=\"iwi-code-0910\"> </a></td><td>Tamahaki (Ruapehu, Waimarino)</td></tr><tr><td style=\"white-space:nowrap\">0911<a name=\"iwi-code-0911\"> </a></td><td>Tamakana (Ruapehu, Waimarino)</td></tr><tr><td style=\"white-space:nowrap\">0912<a name=\"iwi-code-0912\"> </a></td><td>Ngāti Hinemanu (Rangitīkei)</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"iwi-code-10\"> </a></td><td>Manawatū/Horowhenua/Te Whanganui-a-Tara (Manawatū/Horowhenua/Wellington) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"iwi-code-1001\"> </a></td><td>Te Atiawa (Te Whanganui-a-Tara/Wellington)</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"iwi-code-1002\"> </a></td><td>Muaūpoko</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"iwi-code-1003\"> </a></td><td>Rangitāne (Manawatū)</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"iwi-code-1004\"> </a></td><td>Ngāti Raukawa (Horowhenua/Manawatū)</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"iwi-code-1005\"> </a></td><td>Ngāti Toarangatira (Te Whanganui-a-Tara/Wellington)</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"iwi-code-1006\"> </a></td><td>Te Atiawa ki Whakarongotai</td></tr><tr><td style=\"white-space:nowrap\">1007<a name=\"iwi-code-1007\"> </a></td><td>Ngāti Tama ki Te Upoko o Te Ika (Te Whanganui-a-Tara/Wellington)</td></tr><tr><td style=\"white-space:nowrap\">1008<a name=\"iwi-code-1008\"> </a></td><td>Ngāti Kauwhata</td></tr><tr><td style=\"white-space:nowrap\">1009<a name=\"iwi-code-1009\"> </a></td><td>Ngāti Tukorehe</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"iwi-code-11\"> </a></td><td>Te Waipounamu (South Island) Region Iwi</td></tr><tr><td style=\"white-space:nowrap\">1101<a name=\"iwi-code-1101\"> </a></td><td>Te Atiawa (Te Waipounamu/South Island)</td></tr><tr><td style=\"white-space:nowrap\">1102<a name=\"iwi-code-1102\"> </a></td><td>Ngāti Koata</td></tr><tr><td style=\"white-space:nowrap\">1103<a name=\"iwi-code-1103\"> </a></td><td>Ngāti Kuia</td></tr><tr><td style=\"white-space:nowrap\">1104<a name=\"iwi-code-1104\"> </a></td><td>Kāti Māmoe</td></tr><tr><td style=\"white-space:nowrap\">1107<a name=\"iwi-code-1107\"> </a></td><td>Rangitāne (Te Waipounamu/South Island)</td></tr><tr><td style=\"white-space:nowrap\">1108<a name=\"iwi-code-1108\"> </a></td><td>Ngāti Rārua</td></tr><tr><td style=\"white-space:nowrap\">1109<a name=\"iwi-code-1109\"> </a></td><td>Ngāi Tahu / Kāi Tahu</td></tr><tr><td style=\"white-space:nowrap\">1110<a name=\"iwi-code-1110\"> </a></td><td>Ngāti Tama ki Te Tauihu</td></tr><tr><td style=\"white-space:nowrap\">1111<a name=\"iwi-code-1111\"> </a></td><td>Ngāti Toarangatira (Te Waipounamu/South Island)</td></tr><tr><td style=\"white-space:nowrap\">1112<a name=\"iwi-code-1112\"> </a></td><td>Waitaha (Te Waipounamu/South Island)</td></tr><tr><td style=\"white-space:nowrap\">1113<a name=\"iwi-code-1113\"> </a></td><td>Ngāti Apa ki Te Rā Tō</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"iwi-code-12\"> </a></td><td>Rēkohu/Wharekauri (Chatham Islands) Region Imi/Iwi</td></tr><tr><td style=\"white-space:nowrap\">1201<a name=\"iwi-code-1201\"> </a></td><td>Moriori</td></tr><tr><td style=\"white-space:nowrap\">1202<a name=\"iwi-code-1202\"> </a></td><td>Ngāti Mutunga (Wharekauri/Chatham Islands)</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"iwi-code-20\"> </a></td><td>Confederations and Waka, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2001<a name=\"iwi-code-2001\"> </a></td><td>Tainui, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2002<a name=\"iwi-code-2002\"> </a></td><td>Te Arawa, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2003<a name=\"iwi-code-2003\"> </a></td><td>Tākitimu, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2004<a name=\"iwi-code-2004\"> </a></td><td>Aotea, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2005<a name=\"iwi-code-2005\"> </a></td><td>Mātaatua, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2006<a name=\"iwi-code-2006\"> </a></td><td>Mahuru, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2007<a name=\"iwi-code-2007\"> </a></td><td>Māmari, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2008<a name=\"iwi-code-2008\"> </a></td><td>Ngātokimatawhaorua, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2009<a name=\"iwi-code-2009\"> </a></td><td>Nukutere, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2010<a name=\"iwi-code-2010\"> </a></td><td>Tokomaru, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2011<a name=\"iwi-code-2011\"> </a></td><td>Kurahaupō, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2012<a name=\"iwi-code-2012\"> </a></td><td>Muriwhenua, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2013<a name=\"iwi-code-2013\"> </a></td><td>Hauraki / Pare Hauraki, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2014<a name=\"iwi-code-2014\"> </a></td><td>Tūranganui a Kiwa, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2015<a name=\"iwi-code-2015\"> </a></td><td>Te Tauihu o Te Waka a Māui, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2016<a name=\"iwi-code-2016\"> </a></td><td>Tauranga Moana, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2017<a name=\"iwi-code-2017\"> </a></td><td>Horouta, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2018<a name=\"iwi-code-2018\"> </a></td><td>Mōkai Pātea, iwi not named</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"iwi-code-21\"> </a></td><td>Iwi named, region not known</td></tr><tr><td style=\"white-space:nowrap\">2101<a name=\"iwi-code-2101\"> </a></td><td>Te Atiawa, region not known</td></tr><tr><td style=\"white-space:nowrap\">2102<a name=\"iwi-code-2102\"> </a></td><td>Ngāti Haua, region not known</td></tr><tr><td style=\"white-space:nowrap\">2103<a name=\"iwi-code-2103\"> </a></td><td>Ngāti Maru, region not known</td></tr><tr><td style=\"white-space:nowrap\">2104<a name=\"iwi-code-2104\"> </a></td><td>Ngāti Mutunga, region not known</td></tr><tr><td style=\"white-space:nowrap\">2105<a name=\"iwi-code-2105\"> </a></td><td>Rangitāne, region not known</td></tr><tr><td style=\"white-space:nowrap\">2106<a name=\"iwi-code-2106\"> </a></td><td>Ngāti Raukawa, region not known</td></tr><tr><td style=\"white-space:nowrap\">2107<a name=\"iwi-code-2107\"> </a></td><td>Ngāti Tama, region not known</td></tr><tr><td style=\"white-space:nowrap\">2108<a name=\"iwi-code-2108\"> </a></td><td>Ngāti Toa, region not known</td></tr><tr><td style=\"white-space:nowrap\">2109<a name=\"iwi-code-2109\"> </a></td><td>Waitaha, region not known</td></tr><tr><td style=\"white-space:nowrap\">2110<a name=\"iwi-code-2110\"> </a></td><td>Ngāti Apa, region not known</td></tr><tr><td style=\"white-space:nowrap\">2111<a name=\"iwi-code-2111\"> </a></td><td>Ngāi Tai, region not known</td></tr><tr><td style=\"white-space:nowrap\">2112<a name=\"iwi-code-2112\"> </a></td><td>Ngāti Kahungunu, region not known</td></tr><tr><td style=\"white-space:nowrap\">2113<a name=\"iwi-code-2113\"> </a></td><td>Ngāti Tūwharetoa, region not known</td></tr><tr><td style=\"white-space:nowrap\">2114<a name=\"iwi-code-2114\"> </a></td><td>Ngāti Hinemanu, region not known</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"iwi-code-22\"> </a></td><td>Hapū affiliated to more than one iwi</td></tr><tr><td style=\"white-space:nowrap\">2201<a name=\"iwi-code-2201\"> </a></td><td>Hapū affiliated to more than one iwi</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"iwi-code-23\"> </a></td><td>Region known, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2301<a name=\"iwi-code-2301\"> </a></td><td>Te Tai Tokerau/Tāmaki-makaurau Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2302<a name=\"iwi-code-2302\"> </a></td><td>Hauraki Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2303<a name=\"iwi-code-2303\"> </a></td><td>Waikato/Te Rohe Pōtae Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2304<a name=\"iwi-code-2304\"> </a></td><td>Te Arawa/Taupō Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2305<a name=\"iwi-code-2305\"> </a></td><td>Tauranga Moana/Mātaatua Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2306<a name=\"iwi-code-2306\"> </a></td><td>Te Tai Rāwhiti Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2307<a name=\"iwi-code-2307\"> </a></td><td>Te Matau-a-Māui/Wairarapa Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2308<a name=\"iwi-code-2308\"> </a></td><td>Taranaki Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2309<a name=\"iwi-code-2309\"> </a></td><td>Whanganui/Rangitīkei Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2310<a name=\"iwi-code-2310\"> </a></td><td>Manawatū/Horowhenua/Te Whanganui-a-Tara Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2311<a name=\"iwi-code-2311\"> </a></td><td>Te Waipounamu Region, Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">2312<a name=\"iwi-code-2312\"> </a></td><td>Rēkohu/Wharekauri Region, Imi/Iwi not named</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"iwi-code-44\"> </a></td><td>Don't Know</td></tr><tr><td style=\"white-space:nowrap\">4444<a name=\"iwi-code-4444\"> </a></td><td>Don't Know</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"iwi-code-55\"> </a></td><td>Refused To Answer</td></tr><tr><td style=\"white-space:nowrap\">5555<a name=\"iwi-code-5555\"> </a></td><td>Refused To Answer</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"iwi-code-77\"> </a></td><td>Response Unidentifiable</td></tr><tr><td style=\"white-space:nowrap\">7777<a name=\"iwi-code-7777\"> </a></td><td>Response Unidentifiable</td></tr><tr><td style=\"white-space:nowrap\">88<a name=\"iwi-code-88\"> </a></td><td>Response Outside Scope</td></tr><tr><td style=\"white-space:nowrap\">8888<a name=\"iwi-code-8888\"> </a></td><td>Response Outside Scope</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"iwi-code-99\"> </a></td><td>Not Stated</td></tr><tr><td style=\"white-space:nowrap\">9999<a name=\"iwi-code-9999\"> </a></td><td>Not Stated</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://standards.digital.health.nz/ns/iwi-code"];
+  fhir:CodeSystem.version [ fhir:value "2.0.0"];
+  fhir:CodeSystem.name [ fhir:value "Iwi_code"];
+  fhir:CodeSystem.title [ fhir:value "NZ Iwi"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-10"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 New Zealand"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 New Zealand" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "mailto:admin@hl7.org.nz" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "NZ Iwi Statistical Standard: 27 May 2022."];
+  fhir:CodeSystem.copyright [ fhir:value "© 2017+ Stats NZ"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [
+     fhir:value "https://nzhts.digital.health.nz/fhir/ValueSet/iwi-code";
+     fhir:link <https://nzhts.digital.health.nz/fhir/ValueSet/iwi-code>
+  ];
+  fhir:CodeSystem.compositional [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.versionNeeded [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "208"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "01" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Tai Tokerau/Tāmaki-makaurau (Northland/Auckland) Region Iwi" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "0101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Aupōuri" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "0102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahu" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "0103" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kurī" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "0104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāpuhi" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "0105" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāpuhi ki Whaingaroa-Ngāti Kahu ki Whaingaroa" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "0106" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Rarawa" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "0107" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Takoto" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "0108" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Wai" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "0109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Whātua (not Ōrākei or Kaipara)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "0110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Kawerau ā Maki" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "0111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Uri-o-Hau" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "0112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Roroa" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "0113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Whātua o Kaipara" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "0114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Whātua o Ōrākei" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "0115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Tai ki Tāmaki" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "0116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hine (Te Tai Tokerau)" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "0117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Paatu" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "0118" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Manuhiri" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "0119" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rehua" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "0120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Torehina ki Mata-ure ō Hau" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "02" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hauraki (Coromandel) Region Iwi" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "0201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hako" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "0202" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hei" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "0203" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Maru (Hauraki)" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "0204" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Paoa" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "0205" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Patukirikiri" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "0206" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Porou ki Harataunga ki Mataora" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "0207" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Pūkenga ki Waiau" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "0208" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rāhiri Tumutumu" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "0210" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tamaterā" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "0211" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tara Tokanui" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "0212" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Whanaunga" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "0213" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Huarere" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "03" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Waikato/Te Rohe Pōtae (Waikato/King Country) Region Iwi" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "0301" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Haua (Waikato)" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "0302" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Maniapoto" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "0303" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Raukawa (Waikato)" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "0304" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Waikato" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "0305" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Te Ata" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "0306" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hīkairo" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "0307" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rereahu" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "0308" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tiipa" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "0309" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Korokī Kahukura" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "0310" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tamaoho" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "0311" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Ākitai-Waiohua" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "0312" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tainui Awhiro" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "04" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Arawa/Taupō (Rotorua/Taupō) Region Iwi" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "0401" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Pikiao (Te Arawa)" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "0402" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rangiteaorere (Te Arawa)" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "0403" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rangitihi (Te Arawa)" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "0404" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rangiwewehi (Te Arawa)" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "0405" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tapuika (Te Arawa)" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "0406" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tarāwhai (Te Arawa)" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "0407" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tūhourangi (Te Arawa)" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "0408" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uenuku-Kōpako (Te Arawa)" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "0409" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Waitaha (Te Arawa)" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "0410" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Whakaue (Te Arawa)" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "0411" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tūwharetoa (ki Taupō)" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "0412" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tahu-Ngāti Whaoa (Te Arawa)" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "0413" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Mākino" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "0414" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kearoa / Ngāti Tuarā" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "0415" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rongomai (Te Arawa)" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "05" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tauranga Moana/Mātaatua (Bay of Plenty) Region Iwi" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "0501" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Pūkenga" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "0502" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Te Rangi" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "0503" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Ranginui" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "0504" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Awa" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "0505" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Manawa" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "0506" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Tai (Tauranga Moana/Mātaatua)" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "0507" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tūhoe" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "0508" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Whakatōhea" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "0509" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Whānau-ā-Apanui" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "0510" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Whare" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "0511" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngā Pōtiki ā Tamapahore" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "0512" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Upokorehe" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "0513" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tūwharetoa ki Kawerau" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "06" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Tai Rāwhiti (East Coast) Region Iwi" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "0601" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Porou" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "0602" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Aitanga-a-Māhaki" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "0603" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rongowhakaata" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "0604" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Tāmanuhiri" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "0605" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Aitanga ā Hauiti" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "07" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Matau-a-Māui/Wairarapa (Hawke's Bay/Wairarapa) Region iwi" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "0701" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rongomaiwahine (Te Māhia)" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "0702" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahungunu ki Te Wairoa" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "0703" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahungunu ki Heretaunga" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "0704" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahungunu ki Wairarapa" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "0706" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rangitāne (Te Matau-a-Māui/Hawke's Bay/Wairarapa)" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "0707" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahungunu ki Te Whanganui-a-Orotu" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "0708" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahungunu ki Tamatea" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "0709" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahungunu ki Tamakinui a Rua" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "0710" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Pāhauwera" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "0711" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rākaipaaka" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "0712" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hineuru" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "0713" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Maungaharuru Tangitū" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "0714" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rangitāne o Tamaki nui ā Rua" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "0715" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Ruapani ki Waikaremoana" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "0716" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Hika o Pāpāuma" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "0717" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hinemanu (Heretaunga)" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "08" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Taranaki Region Iwi" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "0801" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Atiawa (Taranaki)" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "0802" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Maru (Taranaki)" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "0803" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Mutunga (Taranaki)" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "0804" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngā Rauru" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "0805" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngā Ruahine" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "0806" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Ruanui" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "0807" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tama (Taranaki)" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "0808" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Taranaki" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "0809" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tangāhoe" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "0810" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pakakohi" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "09" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Whanganui/Rangitīkei (Wanganui/Rangitīkei) Region Iwi" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "0901" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Apa (Rangitīkei)" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "0902" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Ati Haunui-a-Pāpārangi" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "0903" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Haua (Taumarunui)" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "0904" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hauiti (Rangitīkei)" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "0905" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Whitikaupeka (Rangitīkei)" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "0906" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Te Ohuake (Rangitīkei)" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "0907" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tamakōpiri (Rangitīkei)" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "0908" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rangi (Ruapehu, Whanganui)" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "0909" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uenuku (Ruapehu, Waimarino)" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "0910" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tamahaki (Ruapehu, Waimarino)" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "0911" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tamakana (Ruapehu, Waimarino)" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "0912" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hinemanu (Rangitīkei)" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Manawatū/Horowhenua/Te Whanganui-a-Tara (Manawatū/Horowhenua/Wellington) Region Iwi" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "1001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Atiawa (Te Whanganui-a-Tara/Wellington)" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "1002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Muaūpoko" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "1003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rangitāne (Manawatū)" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "1004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Raukawa (Horowhenua/Manawatū)" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "1005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Toarangatira (Te Whanganui-a-Tara/Wellington)" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "1006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Atiawa ki Whakarongotai" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "1007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tama ki Te Upoko o Te Ika (Te Whanganui-a-Tara/Wellington)" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "1008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kauwhata" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "1009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tukorehe" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Waipounamu (South Island) Region Iwi" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "1101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Atiawa (Te Waipounamu/South Island)" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "1102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Koata" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "1103" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kuia" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "1104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kāti Māmoe" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "1107" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rangitāne (Te Waipounamu/South Island)" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "1108" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Rārua" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "1109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Tahu / Kāi Tahu" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "1110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tama ki Te Tauihu" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "1111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Toarangatira (Te Waipounamu/South Island)" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "1112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Waitaha (Te Waipounamu/South Island)" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "1113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Apa ki Te Rā Tō" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rēkohu/Wharekauri (Chatham Islands) Region Imi/Iwi" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "1201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Moriori" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "1202" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Mutunga (Wharekauri/Chatham Islands)" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Confederations and Waka, iwi not named" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "2001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tainui, iwi not named" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "2002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Arawa, iwi not named" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "2003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tākitimu, iwi not named" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "2004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aotea, iwi not named" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "2005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mātaatua, iwi not named" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "2006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mahuru, iwi not named" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "2007" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Māmari, iwi not named" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "2008" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngātokimatawhaorua, iwi not named" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "2009" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nukutere, iwi not named" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "2010" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tokomaru, iwi not named" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "2011" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kurahaupō, iwi not named" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "2012" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Muriwhenua, iwi not named" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "2013" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hauraki / Pare Hauraki, iwi not named" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "2014" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tūranganui a Kiwa, iwi not named" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "2015" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Tauihu o Te Waka a Māui, iwi not named" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "2016" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tauranga Moana, iwi not named" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "2017" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Horouta, iwi not named" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "2018" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mōkai Pātea, iwi not named" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Iwi named, region not known" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "2101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Atiawa, region not known" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "2102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Haua, region not known" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "2103" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Maru, region not known" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "2104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Mutunga, region not known" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "2105" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rangitāne, region not known" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "2106" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Raukawa, region not known" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "2107" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tama, region not known" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "2108" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Toa, region not known" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "2109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Waitaha, region not known" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "2110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Apa, region not known" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "2111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāi Tai, region not known" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "2112" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Kahungunu, region not known" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "2113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Tūwharetoa, region not known" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "2114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ngāti Hinemanu, region not known" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hapū affiliated to more than one iwi" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "2201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hapū affiliated to more than one iwi" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Region known, Iwi not named" ]
+  ], [
+     fhir:index 186;
+     fhir:CodeSystem.concept.code [ fhir:value "2301" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Tai Tokerau/Tāmaki-makaurau Region, Iwi not named" ]
+  ], [
+     fhir:index 187;
+     fhir:CodeSystem.concept.code [ fhir:value "2302" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hauraki Region, Iwi not named" ]
+  ], [
+     fhir:index 188;
+     fhir:CodeSystem.concept.code [ fhir:value "2303" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Waikato/Te Rohe Pōtae Region, Iwi not named" ]
+  ], [
+     fhir:index 189;
+     fhir:CodeSystem.concept.code [ fhir:value "2304" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Arawa/Taupō Region, Iwi not named" ]
+  ], [
+     fhir:index 190;
+     fhir:CodeSystem.concept.code [ fhir:value "2305" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tauranga Moana/Mātaatua Region, Iwi not named" ]
+  ], [
+     fhir:index 191;
+     fhir:CodeSystem.concept.code [ fhir:value "2306" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Tai Rāwhiti Region, Iwi not named" ]
+  ], [
+     fhir:index 192;
+     fhir:CodeSystem.concept.code [ fhir:value "2307" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Matau-a-Māui/Wairarapa Region, Iwi not named" ]
+  ], [
+     fhir:index 193;
+     fhir:CodeSystem.concept.code [ fhir:value "2308" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Taranaki Region, Iwi not named" ]
+  ], [
+     fhir:index 194;
+     fhir:CodeSystem.concept.code [ fhir:value "2309" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Whanganui/Rangitīkei Region, Iwi not named" ]
+  ], [
+     fhir:index 195;
+     fhir:CodeSystem.concept.code [ fhir:value "2310" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Manawatū/Horowhenua/Te Whanganui-a-Tara Region, Iwi not named" ]
+  ], [
+     fhir:index 196;
+     fhir:CodeSystem.concept.code [ fhir:value "2311" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Te Waipounamu Region, Iwi not named" ]
+  ], [
+     fhir:index 197;
+     fhir:CodeSystem.concept.code [ fhir:value "2312" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rēkohu/Wharekauri Region, Imi/Iwi not named" ]
+  ], [
+     fhir:index 198;
+     fhir:CodeSystem.concept.code [ fhir:value "44" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Don't Know" ]
+  ], [
+     fhir:index 199;
+     fhir:CodeSystem.concept.code [ fhir:value "4444" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Don't Know" ]
+  ], [
+     fhir:index 200;
+     fhir:CodeSystem.concept.code [ fhir:value "55" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Refused To Answer" ]
+  ], [
+     fhir:index 201;
+     fhir:CodeSystem.concept.code [ fhir:value "5555" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Refused To Answer" ]
+  ], [
+     fhir:index 202;
+     fhir:CodeSystem.concept.code [ fhir:value "77" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response Unidentifiable" ]
+  ], [
+     fhir:index 203;
+     fhir:CodeSystem.concept.code [ fhir:value "7777" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response Unidentifiable" ]
+  ], [
+     fhir:index 204;
+     fhir:CodeSystem.concept.code [ fhir:value "88" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response Outside Scope" ]
+  ], [
+     fhir:index 205;
+     fhir:CodeSystem.concept.code [ fhir:value "8888" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Response Outside Scope" ]
+  ], [
+     fhir:index 206;
+     fhir:CodeSystem.concept.code [ fhir:value "99" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Stated" ]
+  ], [
+     fhir:index 207;
+     fhir:CodeSystem.concept.code [ fhir:value "9999" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Stated" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org.nz/ig/base/CodeSystem/iwi-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
