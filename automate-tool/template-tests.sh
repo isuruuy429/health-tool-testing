@@ -10,9 +10,9 @@ specPath="resources/nz-base/site/"
 outputgenPath="outputgen"
 orgname="healthcare"
 version="2.0.0"
-includedProfile="http://hl7.org.nz/fhir/StructureDefinition/NzMedicationRequest"
+profile1="http://hl7.org.nz/fhir/StructureDefinition/NzMedicationRequest"
 expectedDirname="medicationrequest"
-includedProfile2="http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner"
+profile2="http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner"
 
 publishPackage(){
     expected_output="Creating bala
@@ -133,7 +133,7 @@ tc217(){
 
 tc208(){
     tcId="208"
-    fhir_output=$(bal health fhir -m template --dependent-package $dependentPkg --included-profile $includedProfile $specPath 2>&1)
+    fhir_output=$(bal health fhir -m template --dependent-package $dependentPkg --included-profile $profile1 $specPath 2>&1)
     
     # Find directories inside the target directory, excluding subdirectories
     directories=$(find "generated-template" -mindepth 1 -maxdepth 1 -type d)
@@ -162,7 +162,7 @@ tc208(){
 
 tc210(){
     tcId="210"
-    fhir_output=$(bal health fhir -m template --dependent-package $dependentPkg --included-profile $includedProfile --included-profile $includedProfile2 $specPath 2>&1)
+    fhir_output=$(bal health fhir -m template --dependent-package $dependentPkg --included-profile $profile1 --included-profile $profile2 $specPath 2>&1)
 
     directories=$(find "generated-template" -mindepth 1 -maxdepth 1 -type d)
     count=$(echo "$directories" | wc -l | tr -d ' ')
@@ -182,8 +182,54 @@ tc210(){
     fi
     rm -rf generated-template
 
-
 }
+
+tc211(){
+    tcId="211"
+    fhir_output=$(bal health fhir -m template --dependent-package $dependentPkg --excluded-profile $profile1 $specPath 2>&1)
+    
+    # Find directories inside the target directory, excluding subdirectories
+    directories=$(find "generated-template" -mindepth 1 -maxdepth 1 -type d)
+    count=$(echo "$directories" | wc -l | tr -d ' ')
+
+    if [[ $fhir_output == *"Ballerina FHIR API templates generation completed successfully."* ]]; then
+        if [[ $count == 9 ]]; then
+            echo $tcId $success
+            echo '{"status": '$success',"case_id": '$tcId'}' >> results.json
+        else
+            echo -e "Actual count is $count\n" $tcId $failed
+            echo '{"status": '$failed',"case_id": '$tcId'}' >> results.json
+        fi
+    else
+        echo -e "Template generation failed\n"$tcId $failed
+        echo '{"status": '$failed',"case_id": '$tcId'}' >> results.json
+    fi
+    rm -rf generated-template
+}
+
+tc213(){
+    tcId="213"
+    fhir_output=$(bal health fhir -m template --dependent-package $dependentPkg --excluded-profile $profile1 --excluded-profile $profile2 $specPath 2>&1)
+    
+    # Find directories inside the target directory, excluding subdirectories
+    directories=$(find "generated-template" -mindepth 1 -maxdepth 1 -type d)
+    count=$(echo "$directories" | wc -l | tr -d ' ')
+
+    if [[ $fhir_output == *"Ballerina FHIR API templates generation completed successfully."* ]]; then
+        if [[ $count == 8 ]]; then
+            echo $tcId $success
+            echo '{"status": '$success',"case_id": '$tcId'}' >> results.json
+        else
+            echo -e "Actual count is $count\n" $tcId $failed
+            echo '{"status": '$failed',"case_id": '$tcId'}' >> results.json
+        fi
+    else
+        echo -e "Template generation failed\n"$tcId $failed
+        echo '{"status": '$failed',"case_id": '$tcId'}' >> results.json
+    fi
+    rm -rf generated-template
+}
+
 
 tc204
 tc206
@@ -193,3 +239,4 @@ tc214
 tc217
 tc208
 tc210
+tc211
