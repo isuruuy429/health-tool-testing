@@ -1,30 +1,33 @@
 #!/bin/bash
+source utils.sh
 
-failed='"failed"'
-packageName="nzbase" 
-success='"passed"'
-specPath="resources/nz-base/site/"
+file="results.txt"
+jsonFile="output.json"
 
+# Remove the results file before starting tests
+remove_file_if_exists "$file"
+remove_file_if_exists "$jsonFile"
 
-# Check the version of the tool.
-version_output=$(bal health --version 2>&1)
+## Execute tests related to the tool
+execute_test_suite "tool-tests.sh" "Executing tool related tests"
 
-# Check if the output includes 'unknown command 'health''
-if [[ $version_output == *"unknown command 'health'"* ]]; then
-    echo "Unknown command 'health'. Pulling the tool..."
+## Install Bal health tool
+echo "Pulling Ballerina Health Tool"
+bal tool pull health
 
-    pull_output=$(bal tool pull health 2>&1)
-    if [[ $pull_output == *"pulled successfully."* ]]; then
-        echo -e "The tool pull was successful.\n 192 $success"
-        echo '{"status": '$success',"case_id": 192}' >> results.json
-       source run1.sh
-    else
-        echo "Failed to pull the tool. Output: $pull_output"
-    fi
-else
-    echo "Tool version:"
-    echo "$version_output"
-fi
+## Execute tests related to pacakge generation
+execute_test_suite "package-tests.sh" "Executing package related tests"
 
-fhir_output=$(bal tool remove health 2>&1)
-echo $fhir_output
+## Execute tests related to template generation
+execute_test_suite "template-tests.sh" "Executing template related tests"
+
+## Remove Health tool
+bal tool remove health 
+
+sed '$!s/$/,/' "$file" > temp_file && mv temp_file "$file"
+
+echo -n '{"results": [' > output.json
+cat "$file" >> output.json
+echo ']}' >> output.json
+
+publish_results "$1"
