@@ -24,10 +24,11 @@ execute_test_suite "template-tests.sh" "Executing template related tests"
 ## Remove Health tool
 bal tool remove health 
 
+## Create the test results file to the expected format. 
 sed '$!s/$/,/' "$file" > temp_file && mv temp_file "$file"
-
 echo -n '{"results": [' > output.json
 cat "$file" >> output.json
 echo ']}' >> output.json
 
+## Publish test results to Qase
 publish_results "$1"
